@@ -1,4 +1,4 @@
-# gujemsandroidssdk
+# gujemsandroidsdk
 
 ## Requirements
 
