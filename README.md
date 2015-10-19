@@ -113,7 +113,7 @@ This is no longer supported. Set the zone or adunit with the respective setter m
 
 Providing inventory to the Google Ad Exchange for programmatic advertising is handled internally by the SDK and configured by G+J e|MS via the adserver.
 
-<a name="#video"></a>
+<a name="video"></a>
 ## Video Advertising
 
 The new SDK comes with the current beta version of the Google IMA3 SDK for Android. A player capable of displaying ads from G+J e|MS is included as well as a view displaying videos with ads: GuJEMSVideoView. Both the view and the player are based on the IMA3 reference implementation.
@@ -192,7 +192,7 @@ Depending on the lifecyle of your avctivity / fragment, add these
 
 Everything else is handled via G+J e|MS and the respective adserver.
 
-<a name="#native"></a>
+<a name="native"></a>
 ## Native Advertising
 
 The new SDK comes with the current beta version of Google NativeContentAds. These ads are meant to be fully customized and display content in the same style and layout as your app. Native content ads are typically filled with things like a headline, an image, a logo and a call to action.
