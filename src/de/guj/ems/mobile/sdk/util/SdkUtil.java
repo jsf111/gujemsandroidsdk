@@ -507,8 +507,8 @@ public class SdkUtil {
 			return adunit + "," + pos + "," + ind;
 		}
 		else {
-			SdkLog.e(TAG, "There is no mapping defined for zone " + zone);
-			return zone;
+			SdkLog.e(TAG, "There is no mapping defined for zone " + zone + " using a TEST ad unit");
+			return getContext().getResources().getString(R.string.ems_dfpNetwork) + "sdktest,1";
 		}
 	}
 
