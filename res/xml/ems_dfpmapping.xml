@@ -420,6 +420,14 @@
     <zone name="22270" adunit="capital_ip/_default" position="1" index="no"/>
     <zone name="22272" adunit="capital_ip/_default" position="10" index="no"/>
     <zone name="22258" adunit="capital_ip/homepage" position="1" index=""/>
+    <zone name="26249" adunit="ck_and/einkaufsliste" position="1" index="true"/>
+    <zone name="26251" adunit="ck_and/kochbuch" position="1" index="true"/>
+    <zone name="26253" adunit="ck_ip/einkaufsliste" position="1" index="true"/>
+    <zone name="26255" adunit="ck_ip/kochbuch" position="1" index="true"/>
+    <zone name="26259" adunit="ck_ipad/einkaufsliste" position="1" index="true"/>
+    <zone name="26257" adunit="ck_ipad/kochbuch" position="1" index="true"/>
+    <zone name="26261" adunit="ck_tab/einkaufsliste" position="1" index="true"/>
+    <zone name="26263" adunit="ck_tab/kochbuch" position="1" index="true"/>    
     <zone name="16824" adunit="ck_ip/einkaufsliste" position="10" index="yes"/>
     <zone name="16838" adunit="ck_ip/einkaufsliste" position="1" index="yes"/>
     <zone name="15710" adunit="ck_and/merkzettel" position="1" index="yes"/>
