@@ -464,7 +464,7 @@
     <zone name="15716" adunit="ck_and/suche" position="1" index="yes"/>
     <zone name="16847" adunit="ck_and/suche" position="10" index="yes"/>
     <zone name="16853" adunit="ck_and/suche" position="1" index="yes"/>
-    <zone name="22305" adunit="ck_tab/suche" position="10" index="yes"/>
+    <zone name="22305" adunit="ck_tab/suche" position="1" index="yes"/>
     <zone name="13085" adunit="comunio_ip/_default" position="1" index="no"/>
     <zone name="17828" adunit="comunio_and/_default" position="1" index="no"/>
     <zone name="17834" adunit="comunio_and/_default" position="0" index=""/>
