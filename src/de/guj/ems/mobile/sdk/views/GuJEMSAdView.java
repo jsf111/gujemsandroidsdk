@@ -54,6 +54,12 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 
 	private int position = 0;
 
+	private boolean disallowRectangle = false;
+	private boolean disallowBillboard = false;
+	private boolean disallowDesktopBillboard = false;
+	private boolean disallowLeaderboard = false;
+	private boolean disallowTwoToOne = false;
+
 	/**
 	 * Initialize view without configuration
 	 * 
@@ -71,7 +77,7 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 	 * 
 	 * @param context
 	 *            android application context
-	 * @param resId
+	 * @param set
 	 *            resource ID of the XML layout file to inflate from
 	 */
 	public GuJEMSAdView(Context context, AttributeSet set) {
@@ -83,7 +89,7 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 	 * 
 	 * @param context
 	 *            android application context
-	 * @param resId
+	 * @param set
 	 *            resource ID of the XML layout file to inflate from
 	 * @param load
 	 *            if set to true, the adview loads implicitly, if false, call
@@ -316,7 +322,9 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 				if (parser.getName().equals(
 						"de.guj.ems.mobile.sdk.views.GuJEMSAdView")
 						|| parser.getName().equals(
-								"de.guj.ems.mobile.sdk.views.GuJEMSListAdView")) {
+								"de.guj.ems.mobile.sdk.views.GuJEMSListAdView") ||
+						parser.getName().equals(
+								"de.guj.ems.mobile.sdk.views.GuJEMSNativeContentAdView")) {
 					as = Xml.asAttributeSet(parser);
 					break;
 				} else {
@@ -381,26 +389,53 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 		GuJEMSAdInterface.getInstance().doAppEvent(this.adView, arg0, arg1);
 	}
 
+	public void setNoRectangle(Boolean rS) {
+		this.disallowRectangle = rS;
+		this.setAdSizes();
+	}
+
+	public void setNoBillboard(Boolean rS) {
+		this.disallowBillboard = rS;
+		this.setAdSizes();
+	}
+
+	public void setNoDesktopBillboard(Boolean rS) {
+		this.disallowDesktopBillboard = rS;
+		this.setAdSizes();
+	}
+
+	public void setNoLeaderboard(Boolean rS) {
+		this.disallowLeaderboard = rS;
+		this.setAdSizes();
+	}
+
+	public void setNoTwoToOne(Boolean rS) {
+		this.disallowTwoToOne = rS;
+		this.setAdSizes();
+	}
+
 	private void setAdSizes() {
 		if (SdkUtil.isLargerThanPhone()) {
 			AdSize[] adSizes = { AdSize.BANNER, new AdSize(768, 90),
 					new AdSize(728, 90), new AdSize(768, 300),
 					new AdSize(1024, 220), new AdSize(800, 250),
 					new AdSize(300, 250) };
-			if (((DFPSettingsAdapter) this.settings).isNoRectangle()) {
+			if (((DFPSettingsAdapter) this.settings).isNoRectangle() || this.disallowRectangle) {
 				SdkLog.d(TAG, settings.hashCode() + " removing accepted size: 300x250");
 				adSizes[6] = new AdSize(1, 1);
 			}
-			if (((DFPSettingsAdapter) this.settings).isNoDesktopBillboard()) {
+			if (((DFPSettingsAdapter) this.settings).isNoDesktopBillboard() ||
+					this.disallowDesktopBillboard) {
 				SdkLog.d(TAG, settings.hashCode() + " removing accepted sizes: 800x250");
 				adSizes[5] = new AdSize(1, 1);
 			}
-			if (((DFPSettingsAdapter) this.settings).isNoBillboard()) {
+			if (((DFPSettingsAdapter) this.settings).isNoBillboard() || this.disallowBillboard) {
 				SdkLog.d(TAG, settings.hashCode()
 						+ " removing accepted sizes: 1024x220, 768x300");
 				adSizes[4] = adSizes[3] = new AdSize(1, 1);
 			}
-			if (((DFPSettingsAdapter) this.settings).isNoLeaderboard()) {
+			if (((DFPSettingsAdapter) this.settings).isNoLeaderboard() ||
+					this.disallowLeaderboard) {
 				SdkLog.d(TAG, settings.hashCode()
 						+ " removing accepted sizes: 728x90, 768x90");
 				adSizes[2] = adSizes[1] = new AdSize(1, 1);
@@ -411,16 +446,16 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 					new AdSize(300, 75), new AdSize(300, 50),
 					new AdSize(768, 90), new AdSize(728, 90),
 					new AdSize(300, 150), new AdSize(300, 250) };
-			if (((DFPSettingsAdapter) this.settings).isNoTwoToOne()) {
+			if (((DFPSettingsAdapter) this.settings).isNoTwoToOne() || this.disallowTwoToOne) {
 				SdkLog.d(TAG, settings.hashCode() + " removing accepted size: 300x150");
 				adSizes[6] = new AdSize(1, 1);
 			}
-			if (((DFPSettingsAdapter) this.settings).isNoRectangle()) {
+			if (((DFPSettingsAdapter) this.settings).isNoRectangle() || this.disallowRectangle) {
 				SdkLog.d(TAG, settings.hashCode() + " removing accepted size: 300x250");
 				adSizes[7] = new AdSize(1, 1);
 			}
 
-			if (((DFPSettingsAdapter) this.settings).isNoLeaderboard()) {
+			if (((DFPSettingsAdapter) this.settings).isNoLeaderboard() || this.disallowLeaderboard) {
 				SdkLog.d(TAG, settings.hashCode()
 						+ " removing accepted sizes: 728x90, 768x90");
 				adSizes[4] = adSizes[5] = new AdSize(1, 1);

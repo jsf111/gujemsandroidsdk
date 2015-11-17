@@ -153,7 +153,6 @@ public class GuJEMSNativeContentAdView extends GuJEMSAdView {
 		String adUnit = tVals
 				.getString(R.styleable.GuJEMSNativeContentAdView_ems_adUnit);
 		tVals.recycle();
-		
 
 		if (set != null && !isInEditMode()) {
 			this.settings = new DFPSettingsAdapter();
@@ -163,15 +162,10 @@ public class GuJEMSNativeContentAdView extends GuJEMSAdView {
 			}			
 		}
 
-		this.adLoader = new AdLoader.Builder(context, mAdUnit != null ? mAdUnit : settings.mapToDfpAdUnit())
-				.forContentAd(new OnContentAdLoadedListener() {
-					@Override
-					public void onContentAdLoaded(NativeContentAd contentAd) {
-						displayContentAd(contentAd);
-					}
-					
-				}).withAdListener(new GuJEMSAdListener(settings))
-				.build();
+		if (this.mAdUnit != null) {
+			this.setAdLoader(context);
+		}
+
 		if (nkws != null) {
 			SdkLog.w(TAG, "Negative keywords are no longer supported");
 		}
@@ -198,20 +192,26 @@ public class GuJEMSNativeContentAdView extends GuJEMSAdView {
 			this.settings = new DFPSettingsAdapter();
 			this.settings.setup(context, set);
 			if (adUnit != null) {
-				setAdUnitId(adUnit,  1);
+				setAdUnitId(adUnit, 1);
 			}
 		}
 
+		if (this.mAdUnit != null) {
+			this.setAdLoader(context);
+		}
+		
+		SdkLog.d(TAG, settings.hashCode() + " native ad loader initialized");
+	}
+
+	private void setAdLoader(Context context) {
 		this.adLoader = new AdLoader.Builder(context, mAdUnit != null ? mAdUnit : settings.mapToDfpAdUnit())
 				.forContentAd(new OnContentAdLoadedListener() {
 					@Override
 					public void onContentAdLoaded(NativeContentAd contentAd) {
-						displayContentAd(contentAd);
+					displayContentAd(contentAd);
 					}
 				}).withAdListener(new GuJEMSAdListener(settings))
-				.build();
-		
-		SdkLog.d(TAG, settings.hashCode() + " native ad loader initialized");
+			.build();
 	}
 
 	@Override
@@ -221,7 +221,7 @@ public class GuJEMSNativeContentAdView extends GuJEMSAdView {
 			// Start request if online
 			if (SdkUtil.isOnline()) {
 				SdkLog.i(TAG, settings.hashCode() + " starting ad request");
-				
+
 				Builder requestBuilder = ((DFPSettingsAdapter) settings)
 						.getGoogleRequestBuilder(1);
 				this.adLoader.loadAd(requestBuilder.build());
@@ -243,7 +243,12 @@ public class GuJEMSNativeContentAdView extends GuJEMSAdView {
 	 * 
 	 * @param adUnitId
 	 */
-	public void setAdUnitId(String adUnitId, int position) {
+	public void setAdUnitId(String adUnitId) {
 		this.mAdUnit = getContext().getResources().getString(R.string.ems_dfpNetwork) + adUnitId;
-	}	
+		this.setAdLoader(getContext());
+	}
+
+	public void setAdUnitId(String adUnitId, int position) {
+		this.setAdUnitId(adUnitId);
+	}
 }
