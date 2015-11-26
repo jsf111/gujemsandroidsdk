@@ -11,6 +11,117 @@ Dependencies **Google Play Services v25 or higher required**
 
 The SDK is available as a downloadable Eclipse project. A gradle build archive will be available soon.
 
+1. Extract and import the SDK to your Eclipse project.
+2. Set the SDK as Android Library ("Project Properties" -> "Android" -> "Is Library").
+3. Add the SDK to your project ("Project Properties" -> Android -> Add...).
+4. Add "Google Play Services" to the SDK.
+5. Well done! :-)
+
+## Usage
+If you are interested in upgrading the SDK please move forward to Chapter "Upgrading from v1.4.x to v2.0.x".
+In this chapter we will show you how to add banner ads, interstitial ads, video ads and native ads to your android app.
+
+Before you start with the implementation please make sure that you recieved your Ad Unit Id. 
+### banner ad
+You have two possibilities to add one or more banner ads to your app. The first way is by adding a view to your layout file.
+```xml
+<de.guj.ems.mobile.sdk.views.GuJEMSAdView
+        android:id="@+id/banner_top" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ems:ems_onAdEmpty="onAdEmpty"
+        ems:ems_onAdError="onAdError"
+        ems:ems_onAdSuccess="onAdSuccess"
+        ems:ems_adUnit="sdktest,1,no" />
+```
+To get the ems namespace add the following attribute to your Root-View:
+```xml
+xmlns:ems="http://schemas.android.com/apk/res/[your package path]"
+````
+Let's have a look on the attributes for GuJEMSAdView:
+- ems_onAdEmpty : Method which is called, when no ad was found.
+- ems_onAdError : Method which is called, when an error occured
+- ems_onAdSuccess : Method which is called, when an ad is loaded successfully
+- ems_adUnit : [your Ad Unit Id], [Ad Position], [Is index page?]
+- ems_geo : **[true / false]** Add the current geo location if it exists
+- ems_kw : **[true / false]** Allow transmission of keywords 
+- ems_noRectangle, ems_noBillboard, ems_no[...] : Block special ad sizes for this ad slot
+
+You also have the possibility to ad banner ad programmatically:
+
+- Create an separate layout file for your banner ad 
+- Add a GuJEMSAdView to the file. Example:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<de.guj.ems.mobile.sdk.views.GuJEMSAdView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/banner_top">
+</de.guj.ems.mobile.sdk.views.GuJEMSAdView>
+```
+- Create the view in your code. Example: 
+```java
+/* initialize the GujEMSAdView */ 
+GuJEMSAdView gujView = new GuJEMSAdView(getActivity(), R.id.banner_top, false);
+/* set Ad Unit Id and position */
+gujView.setAdUnitId("sdktest", 1);
+/* Is Index Page? */
+gujView.getSettings().addCustomRequestParameter("ind", "no");
+/* set event listener call when ad is empty */
+gujView.setOnAdEmptyListener(new IOnAdEmptyListener() {
+    @Override
+    public void onAdEmpty() {
+        /*** Do something ***/
+    }
+});
+/* set event listener called when error occured */
+gujView.setOnAdErrorListener(new IOnAdErrorListener() {
+    @Override
+    public void onAdError(String msg) {
+        /*** Do something ***/
+    }
+
+    @Override
+    public void onAdError(String msg, Throwable t) {
+        /*** Do something ***/
+    }
+});
+/* block rectangle */
+gujView.setNoRectangle(true);
+/* load ad */
+gujView.load();
+/* add adView to Layout */
+addView(gujView);
+```` 
+### interstitial ad
+**The interstitial ad can oly create programmatically.**
+Let's have a look on an example:
+```java
+Intent target = new Intent(getApplicationContext(), <TARGET-ACTIVITY>);
+Intent i = new Intent(getActivity(),
+        InterstitialSwitchReceiver.class);
+/* set Ad Unit Id */
+i.putExtra("adUnitId", "sdktest");
+/* initialize an ListenerEvents object -> class wihich implements IOnAdEmptyListener, etc.) */
+ListenerEvents le = new ListenerEvents(); 
+/* set event listener */
+i.putExtra("ems_onAdSuccess", le);
+i.putExtra("ems_onAdEmpty", le);
+i.putExtra("ems_onAdError", le);
+/* set target activity */
+i.putExtra("target", target);
+/* open interstitial */
+getActivity().sendBroadcast(i);
+```
+If the intent “target” is not set, the interstitial closes itself and returns to the previous view. The Class ListenerEvents isn't part of the SDK.
+
+### video ad
+Please have a look at the chapter "Video Advertising".
+
+### native ad
+Please have a look at the chapter "Native Advertisitng".
+
 ## Upgrading from v1.4.x to v2.0.x
 
 If you are not upgrading please contact us for an additional update you will need.
@@ -211,6 +322,18 @@ In your activity's or fragment's layout include the view like this (please not t
 ```
 
 The view accepts all the same additional attributes as GuJEMSAdView. [provided_adUnit] will be a string you receive from G+J e|MS - it reflects the app's name or category in the app where native ads should be displayed. If you are unable to set the adUnit via xml, you can set the ad unit programmatically with setAdUnit.
+```java
+ GuJEMSNativeContentAdView adview = new GuJEMSNativeContentAdView(
+    getContext(),
+    R.layout.layout_native, /* seperate layout file - see banner ad for more informations */
+    false
+);
+/* set Ad Unit Id */
+adview.setAdUnitId("sdktest");
+/* load ad */
+adview.load();
+addView(adview);
+```
 
 ### Here's how to change the style and layout for the view
 
