@@ -10,6 +10,7 @@ Dependencies **Google Play Services v25 or higher required**
 ## Installation
 
 The SDK is available as a downloadable Eclipse project. A gradle build archive will be available soon.
+
 1. Extract and import the SDK to your Eclipse project.
 2. Set the SDK as Android Library ("Project Properties" -> "Android" -> "Is Library").
 3. Add the SDK to your project ("Project Properties" -> Android -> Add...).
@@ -47,8 +48,9 @@ Let's have a look on the attributes for GuJEMSAdView:
 - ems_noRectangle, ems_noBillboard, ems_no[...] : Block special ad sizes for this ad slot
 
 You also have the possibility to ad banner ad programmatically:
-1. Create an separate layout file for your banner ad 
-2. Add a GuJEMSAdView to the file. Example:
+
+- Create an separate layout file for your banner ad 
+- Add a GuJEMSAdView to the file. Example:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <de.guj.ems.mobile.sdk.views.GuJEMSAdView
@@ -58,7 +60,7 @@ You also have the possibility to ad banner ad programmatically:
     android:id="@+id/banner_top">
 </de.guj.ems.mobile.sdk.views.GuJEMSAdView>
 ```
-3. Create the view in your code. Example: 
+- Create the view in your code. Example: 
 ```java
 /* initialize the GujEMSAdView */ 
 GuJEMSAdView gujView = new GuJEMSAdView(getActivity(), R.id.banner_top, false);
