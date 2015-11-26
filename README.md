@@ -63,7 +63,7 @@ You also have the possibility to ad banner ad programmatically:
 - Create the view in your code. Example: 
 ```java
 /* initialize the GujEMSAdView */ 
-GuJEMSAdView gujView = new GuJEMSAdView(getActivity(), R.id.banner_top, false);
+GuJEMSAdView gujView = new GuJEMSAdView(getApplicationContext(), R.id.banner_top, false);
 /* set Ad Unit Id and position */
 gujView.setAdUnitId("sdktest", 1);
 /* Is Index Page? */
@@ -324,7 +324,7 @@ In your activity's or fragment's layout include the view like this (please not t
 The view accepts all the same additional attributes as GuJEMSAdView. [provided_adUnit] will be a string you receive from G+J e|MS - it reflects the app's name or category in the app where native ads should be displayed. If you are unable to set the adUnit via xml, you can set the ad unit programmatically with setAdUnit.
 ```java
  GuJEMSNativeContentAdView adview = new GuJEMSNativeContentAdView(
-    getContext(),
+    getApplicationContext(),
     R.layout.layout_native, /* seperate layout file - see banner ad for more informations */
     false
 );
