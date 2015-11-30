@@ -167,12 +167,12 @@
     <zone name="26151" adunit="bok_ipad/homepage" position="0" index=""/>
     <zone name="26153" adunit="bok_tab/_default" position="0" index=""/>
     <zone name="26155" adunit="bok_ipad/_default" position="0" index=""/>
-    <zone name="12997" adunit="brigitte_and/_default" position="10" index="no"/>
-    <zone name="13308" adunit="brigitte_and/_default" position="1" index="no"/>
-    <zone name="14472" adunit="brigitte_and/_default" position="1" index="no"/>
+    <zone name="12997" adunit="brigitte_and/_default" position="10" index=""/>
+    <zone name="13308" adunit="brigitte_and/_default" position="1" index=""/>
+    <zone name="14472" adunit="brigitte_and/_default" position="1" index=""/>
     <zone name="15362" adunit="brigitte_and/_default" position="0" index=""/>
     <zone name="15365" adunit="brigitte_and/_default" position="0" index=""/>
-    <zone name="15661" adunit="brigitte_and/_default" position="2" index="no"/>
+    <zone name="15661" adunit="brigitte_and/_default" position="2" index=""/>
     <zone name="23460" adunit="brigitte_and/_default" position="0" index=""/>
     <zone name="23462" adunit="brigitte_and/_default" position="0" index=""/>
     <zone name="23472" adunit="brigitte_and/_default" position="0" index=""/>
@@ -182,17 +182,17 @@
     <zone name="23414" adunit="brigitte_and/_default" position="0" index=""/>
     <zone name="23468" adunit="brigitte_and/_default" position="0" index=""/>
     <zone name="23470" adunit="brigitte_and/_default" position="0" index=""/>
-    <zone name="23480" adunit="brigitte_and/_default" position="1" index="no"/>
-    <zone name="23482" adunit="brigitte_and/_default" position="2" index="no"/>
-    <zone name="560" adunit="brigitte_ip/_default" position="10" index="no"/>
-    <zone name="566" adunit="brigitte_ip/horoskop" position="1" index="no"/>
-    <zone name="13310" adunit="brigitte_ip/_default" position="1" index="no"/>
+    <zone name="23480" adunit="brigitte_and/_default" position="1" index=""/>
+    <zone name="23482" adunit="brigitte_and/_default" position="2" index=""/>
+    <zone name="560" adunit="brigitte_ip/_default" position="10" index=""/>
+    <zone name="566" adunit="brigitte_ip/horoskop" position="1" index=""/>
+    <zone name="13310" adunit="brigitte_ip/_default" position="1" index=""/>
     <zone name="15326" adunit="brigitte_ip/horoskop" position="0" index=""/>
     <zone name="15371" adunit="brigitte_ip/_default" position="0" index=""/>
-    <zone name="12824" adunit="brigitte_trend_ip/_default" position="1" index="no"/>
-    <zone name="12826" adunit="brigitte_trend_ip/_default" position="10" index="no"/>
+    <zone name="12824" adunit="brigitte_trend_ip/_default" position="1" index=""/>
+    <zone name="12826" adunit="brigitte_trend_ip/_default" position="10" index=""/>
     <zone name="12828" adunit="brigitte_trend_ip/_default" position="0" index=""/>
-    <zone name="15677" adunit="brigitte_ip/horoskop" position="2" index="no"/>
+    <zone name="15677" adunit="brigitte_ip/horoskop" position="2" index=""/>
     <zone name="23386" adunit="brigitte_ip/horoskop" position="0" index=""/>
     <zone name="23388" adunit="brigitte_ip/horoskop" position="0" index=""/>
     <zone name="23398" adunit="brigitte_ip/_default" position="0" index=""/>
@@ -203,84 +203,84 @@
     <zone name="14756" adunit="brigitte_ipad/_default" position="0" index=""/>
     <zone name="16300" adunit="brigitte_ipad/_default" position="0" index=""/>
     <zone name="14780" adunit="brigitte_trend_and/_default" position="0" index=""/>
-    <zone name="14782" adunit="brigitte_trend_and/_default" position="10" index="no"/>
-    <zone name="14784" adunit="brigitte_trend_and/_default" position="1" index="no"/>
+    <zone name="14782" adunit="brigitte_trend_and/_default" position="10" index=""/>
+    <zone name="14784" adunit="brigitte_trend_and/_default" position="1" index=""/>
     <zone name="23394" adunit="brigitte_ip/_default" position="0" index=""/>
     <zone name="23396" adunit="brigitte_ip/_default" position="0" index=""/>
-    <zone name="23402" adunit="brigitte_ip/_default" position="1" index="no"/>
-    <zone name="23406" adunit="brigitte_ip/_default" position="2" index="no"/>
+    <zone name="23402" adunit="brigitte_ip/_default" position="1" index=""/>
+    <zone name="23406" adunit="brigitte_ip/_default" position="2" index=""/>
     <zone name="23408" adunit="brigitte_ip/_default" position="0" index=""/>
-    <zone name="21323" adunit="brigitte_horoskop_ip/_default" position="1" index="no"/>
-    <zone name="21325" adunit="brigitte_horoskop_ip/_default" position="2" index="no"/>
-    <zone name="21327" adunit="brigitte_horoskop_ip/_default" position="10" index="no"/>
+    <zone name="21323" adunit="brigitte_horoskop_ip/_default" position="1" index=""/>
+    <zone name="21325" adunit="brigitte_horoskop_ip/_default" position="2" index=""/>
+    <zone name="21327" adunit="brigitte_horoskop_ip/_default" position="10" index=""/>
     <zone name="21329" adunit="brigitte_horoskop_ip/_default" position="0" index=""/>
     <zone name="22294" adunit="brigitte_and/_default" position="0" index=""/>
     <zone name="22292" adunit="brigitte_ip/_default" position="0" index=""/>
     <zone name="566" adunit="brigitte_ip/horoskop" position="1" index=""/>
-    <zone name="13015" adunit="brigitte_and/beauty" position="1" index="no"/>
+    <zone name="13015" adunit="brigitte_and/beauty" position="1" index=""/>
     <zone name="13028" adunit="brigitte_and/beauty" position="0" index=""/>
-    <zone name="15645" adunit="brigitte_and/beauty" position="2" index="no"/>
+    <zone name="15645" adunit="brigitte_and/beauty" position="2" index=""/>
     <zone name="23424" adunit="brigitte_and/beauty" position="0" index=""/>
     <zone name="23426" adunit="brigitte_and/beauty" position="0" index=""/>
-    <zone name="561" adunit="brigitte_ip/beauty" position="1" index="no"/>
+    <zone name="561" adunit="brigitte_ip/beauty" position="1" index=""/>
     <zone name="575" adunit="brigitte_ip/beauty" position="0" index=""/>
-    <zone name="15673" adunit="brigitte_ip/beauty" position="2" index="no"/>
+    <zone name="15673" adunit="brigitte_ip/beauty" position="2" index=""/>
     <zone name="23349" adunit="brigitte_ip/beauty" position="0" index=""/>
     <zone name="23351" adunit="brigitte_ip/beauty" position="0" index=""/>
     <zone name="561" adunit="brigitte_ip/beauty" position="1" index=""/>
     <zone name="575" adunit="brigitte_ip/beauty" position="0" index=""/>
     <zone name="576" adunit="brigitte_ip/figur" position="0" index=""/>
     <zone name="576" adunit="brigitte_ip/figur" position="0" index=""/>
-    <zone name="13003" adunit="brigitte_and/figur" position="1" index="no"/>
+    <zone name="13003" adunit="brigitte_and/figur" position="1" index=""/>
     <zone name="13032" adunit="brigitte_and/figur" position="0" index=""/>
-    <zone name="15663" adunit="brigitte_and/figur" position="2" index="no"/>
+    <zone name="15663" adunit="brigitte_and/figur" position="2" index=""/>
     <zone name="23432" adunit="brigitte_and/figur" position="0" index=""/>
     <zone name="23434" adunit="brigitte_and/figur" position="0" index=""/>
-    <zone name="562" adunit="brigitte_ip/figur" position="1" index="no"/>
-    <zone name="15669" adunit="brigitte_ip/figur" position="2" index="no"/>
+    <zone name="562" adunit="brigitte_ip/figur" position="1" index=""/>
+    <zone name="15669" adunit="brigitte_ip/figur" position="2" index=""/>
     <zone name="23337" adunit="brigitte_ip/figur" position="0" index=""/>
     <zone name="23357" adunit="brigitte_ip/figur" position="0" index=""/>
     <zone name="23359" adunit="brigitte_ip/figur" position="0" index=""/>
     <zone name="562" adunit="brigitte_ip/figur" position="1" index=""/>
     <zone name="16278" adunit="brigitte_and/frauen" position="0" index=""/>
-    <zone name="16282" adunit="brigitte_and/frauen" position="1" index="no"/>
-    <zone name="16286" adunit="brigitte_and/frauen" position="2" index="no"/>
+    <zone name="16282" adunit="brigitte_and/frauen" position="1" index=""/>
+    <zone name="16286" adunit="brigitte_and/frauen" position="2" index=""/>
     <zone name="23444" adunit="brigitte_and/frauen" position="0" index=""/>
     <zone name="23446" adunit="brigitte_and/frauen" position="0" index=""/>
-    <zone name="16262" adunit="brigitte_ip/frauen" position="2" index="no"/>
+    <zone name="16262" adunit="brigitte_ip/frauen" position="2" index=""/>
     <zone name="16294" adunit="brigitte_ip/frauen" position="0" index=""/>
-    <zone name="16296" adunit="brigitte_ip/frauen" position="1" index="no"/>
+    <zone name="16296" adunit="brigitte_ip/frauen" position="1" index=""/>
     <zone name="23370" adunit="brigitte_ip/frauen" position="0" index=""/>
     <zone name="23372" adunit="brigitte_ip/frauen" position="0" index=""/>
-    <zone name="13017" adunit="brigitte_and/gesellschaft" position="1" index="no"/>
-    <zone name="15649" adunit="brigitte_and/gesellschaft" position="2" index="no"/>
-    <zone name="563" adunit="brigitte_ip/gesellschaft" position="1" index="no"/>
+    <zone name="13017" adunit="brigitte_and/gesellschaft" position="1" index=""/>
+    <zone name="15649" adunit="brigitte_and/gesellschaft" position="2" index=""/>
+    <zone name="563" adunit="brigitte_ip/gesellschaft" position="1" index=""/>
     <zone name="577" adunit="brigitte_ip/gesellschaft" position="0" index=""/>
-    <zone name="15675" adunit="brigitte_ip/gesellschaft" position="2" index="no"/>
+    <zone name="15675" adunit="brigitte_ip/gesellschaft" position="2" index=""/>
     <zone name="563" adunit="brigitte_ip/gesellschaft" position="1" index=""/>
     <zone name="567" adunit="brigitte_ip/gesellschaft" position="1" index=""/>
     <zone name="569" adunit="brigitte_ip/quiz" position="1" index=""/>
     <zone name="572" adunit="brigitte_ip/gesellschaft" position="1" index=""/>
     <zone name="577" adunit="brigitte_ip/gesellschaft" position="0" index=""/>
-    <zone name="14478" adunit="brigitte_and/gesundheit" position="1" index="no"/>
+    <zone name="14478" adunit="brigitte_and/gesundheit" position="1" index=""/>
     <zone name="15352" adunit="brigitte_and/gesundheit" position="0" index=""/>
-    <zone name="15636" adunit="brigitte_and/gesundheit" position="2" index="no"/>
+    <zone name="15636" adunit="brigitte_and/gesundheit" position="2" index=""/>
     <zone name="23436" adunit="brigitte_and/gesundheit" position="0" index=""/>
     <zone name="23438" adunit="brigitte_and/gesundheit" position="0" index=""/>
-    <zone name="565" adunit="brigitte_ip/gesundheit" position="1" index="no"/>
+    <zone name="565" adunit="brigitte_ip/gesundheit" position="1" index=""/>
     <zone name="15324" adunit="brigitte_ip/gesundheit" position="0" index=""/>
-    <zone name="15681" adunit="brigitte_ip/gesundheit" position="2" index="no"/>
+    <zone name="15681" adunit="brigitte_ip/gesundheit" position="2" index=""/>
     <zone name="23362" adunit="brigitte_ip/gesundheit" position="0" index=""/>
     <zone name="23364" adunit="brigitte_ip/gesundheit" position="0" index=""/>
     <zone name="565" adunit="brigitte_ip/gesundheit" position="1" index=""/>
-    <zone name="13010" adunit="brigitte_and/homepage" position="1" index="no"/>
-    <zone name="15641" adunit="brigitte_and/homepage" position="2" index="no"/>
+    <zone name="13010" adunit="brigitte_and/homepage" position="1" index=""/>
+    <zone name="15641" adunit="brigitte_and/homepage" position="2" index=""/>
     <zone name="16280" adunit="brigitte_and/homepage" position="0" index=""/>
     <zone name="21884" adunit="brigitte_and/homepage" position="0" index=""/>
     <zone name="23416" adunit="brigitte_and/homepage" position="0" index=""/>
     <zone name="23418" adunit="brigitte_and/homepage" position="0" index=""/>
-    <zone name="559" adunit="brigitte_ip/homepage" position="1" index="no"/>
-    <zone name="15671" adunit="brigitte_ip/homepage" position="2" index="no"/>
+    <zone name="559" adunit="brigitte_ip/homepage" position="1" index=""/>
+    <zone name="15671" adunit="brigitte_ip/homepage" position="2" index=""/>
     <zone name="16260" adunit="brigitte_ip/homepage" position="0" index=""/>
     <zone name="21882" adunit="brigitte_ip/homepage" position="0" index=""/>
     <zone name="23341" adunit="brigitte_ip/homepage" position="0" index=""/>
@@ -290,99 +290,99 @@
     <zone name="16290" adunit="brigitte_ipad/homepage" position="0" index=""/>
     <zone name="21886" adunit="brigitte_ipad/homepage" position="0" index=""/>
     <zone name="21888" adunit="brigitte_ipad/homepage" position="0" index=""/>
-    <zone name="14474" adunit="brigitte_and/_default" position="1" index="no"/>
-    <zone name="14476" adunit="brigitte_and/quiz" position="1" index="no"/>
+    <zone name="14474" adunit="brigitte_and/_default" position="1" index=""/>
+    <zone name="14476" adunit="brigitte_and/quiz" position="1" index=""/>
     <zone name="15385" adunit="brigitte_and/_default" position="0" index=""/>
-    <zone name="15657" adunit="brigitte_and/_default" position="2" index="no"/>
-    <zone name="15659" adunit="brigitte_and/quiz" position="2" index="no"/>
-    <zone name="572" adunit="brigitte_ip/_default" position="1" index="no"/>
+    <zone name="15657" adunit="brigitte_and/_default" position="2" index=""/>
+    <zone name="15659" adunit="brigitte_and/quiz" position="2" index=""/>
+    <zone name="572" adunit="brigitte_ip/_default" position="1" index=""/>
     <zone name="15320" adunit="brigitte_ip/quiz" position="0" index=""/>
     <zone name="15369" adunit="brigitte_ip/_default" position="0" index=""/>
-    <zone name="15689" adunit="brigitte_ip/_default" position="2" index="no"/>
-    <zone name="14466" adunit="brigitte_and/kultur" position="1" index="no"/>
+    <zone name="15689" adunit="brigitte_ip/_default" position="2" index=""/>
+    <zone name="14466" adunit="brigitte_and/kultur" position="1" index=""/>
     <zone name="15354" adunit="brigitte_and/kultur" position="0" index=""/>
-    <zone name="15651" adunit="brigitte_and/kultur" position="2" index="no"/>
+    <zone name="15651" adunit="brigitte_and/kultur" position="2" index=""/>
     <zone name="23448" adunit="brigitte_and/kultur" position="0" index=""/>
     <zone name="23450" adunit="brigitte_and/kultur" position="0" index=""/>
     <zone name="570" adunit="brigitte_ip/kultur" position="1" index="no"/>
     <zone name="15314" adunit="brigitte_ip/kultur" position="0" index=""/>
-    <zone name="15683" adunit="brigitte_ip/kultur" position="2" index="no"/>
+    <zone name="15683" adunit="brigitte_ip/kultur" position="2" index=""/>
     <zone name="23374" adunit="brigitte_ip/kultur" position="0" index=""/>
     <zone name="23376" adunit="brigitte_ip/kultur" position="0" index=""/>
     <zone name="570" adunit="brigitte_ip/kultur" position="1" index=""/>
     <zone name="15360" adunit="brigitte_and/quiz" position="0" index=""/>
-    <zone name="569" adunit="brigitte_ip/quiz" position="1" index="no"/>
-    <zone name="15692" adunit="brigitte_ip/quiz" position="2" index="no"/>
-    <zone name="13001" adunit="brigitte_and/liebe" position="1" index="no"/>
+    <zone name="569" adunit="brigitte_ip/quiz" position="1" index=""/>
+    <zone name="15692" adunit="brigitte_ip/quiz" position="2" index=""/>
+    <zone name="13001" adunit="brigitte_and/liebe" position="1" index=""/>
     <zone name="13022" adunit="brigitte_and/liebe" position="0" index=""/>
-    <zone name="15639" adunit="brigitte_and/liebe" position="2" index="no"/>
+    <zone name="15639" adunit="brigitte_and/liebe" position="2" index=""/>
     <zone name="23440" adunit="brigitte_and/liebe" position="0" index=""/>
     <zone name="23442" adunit="brigitte_and/liebe" position="0" index=""/>
-    <zone name="564" adunit="brigitte_ip/liebe" position="1" index="no"/>
+    <zone name="564" adunit="brigitte_ip/liebe" position="1" index=""/>
     <zone name="578" adunit="brigitte_ip/liebe" position="0" index=""/>
-    <zone name="15667" adunit="brigitte_ip/liebe" position="2" index="no"/>
+    <zone name="15667" adunit="brigitte_ip/liebe" position="2" index=""/>
     <zone name="23366" adunit="brigitte_ip/liebe" position="0" index=""/>
     <zone name="23368" adunit="brigitte_ip/liebe" position="0" index=""/>
     <zone name="564" adunit="brigitte_ip/liebe" position="1" index=""/>
     <zone name="578" adunit="brigitte_ip/liebe" position="0" index=""/>
-    <zone name="13034" adunit="brigitte_and/mbooklet" position="1" index="no"/>
-    <zone name="13036" adunit="brigitte_and/mbooklet" position="1" index="no"/>
-    <zone name="13038" adunit="brigitte_and/mbooklet" position="1" index="no"/>
-    <zone name="13040" adunit="brigitte_and/mbooklet" position="1" index="no"/>
-    <zone name="11820" adunit="brigitte_ip/mbooklet" position="1" index="no"/>
-    <zone name="11832" adunit="brigitte_ip/mbooklet" position="1" index="no"/>
-    <zone name="11834" adunit="brigitte_ip/mbooklet" position="1" index="no"/>
-    <zone name="11836" adunit="brigitte_ip/mbooklet" position="1" index="no"/>
-    <zone name="14464" adunit="brigitte_and/mode" position="1" index="no"/>
+    <zone name="13034" adunit="brigitte_and/mbooklet" position="1" index=""/>
+    <zone name="13036" adunit="brigitte_and/mbooklet" position="1" index=""/>
+    <zone name="13038" adunit="brigitte_and/mbooklet" position="1" index=""/>
+    <zone name="13040" adunit="brigitte_and/mbooklet" position="1" index=""/>
+    <zone name="11820" adunit="brigitte_ip/mbooklet" position="1" index=""/>
+    <zone name="11832" adunit="brigitte_ip/mbooklet" position="1" index=""/>
+    <zone name="11834" adunit="brigitte_ip/mbooklet" position="1" index=""/>
+    <zone name="11836" adunit="brigitte_ip/mbooklet" position="1" index=""/>
+    <zone name="14464" adunit="brigitte_and/mode" position="1" index=""/>
     <zone name="15350" adunit="brigitte_and/mode" position="0" index=""/>
-    <zone name="15647" adunit="brigitte_and/mode" position="2" index="no"/>
+    <zone name="15647" adunit="brigitte_and/mode" position="2" index=""/>
     <zone name="23420" adunit="brigitte_and/mode" position="0" index=""/>
     <zone name="23422" adunit="brigitte_and/mode" position="0" index=""/>
-    <zone name="573" adunit="brigitte_ip/mode" position="1" index="no"/>
+    <zone name="573" adunit="brigitte_ip/mode" position="1" index=""/>
     <zone name="15322" adunit="brigitte_ip/mode" position="0" index=""/>
-    <zone name="15679" adunit="brigitte_ip/mode" position="2" index="no"/>
+    <zone name="15679" adunit="brigitte_ip/mode" position="2" index=""/>
     <zone name="23345" adunit="brigitte_ip/mode" position="0" index=""/>
     <zone name="23347" adunit="brigitte_ip/mode" position="0" index=""/>
     <zone name="573" adunit="brigitte_ip/mode" position="1" index=""/>
-    <zone name="14468" adunit="brigitte_and/reise" position="1" index="no"/>
+    <zone name="14468" adunit="brigitte_and/reise" position="1" index=""/>
     <zone name="15356" adunit="brigitte_and/reise" position="0" index=""/>
-    <zone name="15653" adunit="brigitte_and/reise" position="2" index="no"/>
+    <zone name="15653" adunit="brigitte_and/reise" position="2" index=""/>
     <zone name="23452" adunit="brigitte_and/reise" position="0" index=""/>
     <zone name="23454" adunit="brigitte_and/reise" position="0" index=""/>
-    <zone name="568" adunit="brigitte_ip/reise" position="1" index="no"/>
+    <zone name="568" adunit="brigitte_ip/reise" position="1" index=""/>
     <zone name="15316" adunit="brigitte_ip/reise" position="0" index=""/>
-    <zone name="15685" adunit="brigitte_ip/reise" position="2" index="no"/>
+    <zone name="15685" adunit="brigitte_ip/reise" position="2" index=""/>
     <zone name="23378" adunit="brigitte_ip/reise" position="0" index=""/>
     <zone name="23380" adunit="brigitte_ip/reise" position="0" index=""/>
     <zone name="568" adunit="brigitte_ip/reise" position="1" index=""/>
-    <zone name="13074" adunit="brigitte_and/rezepte" position="1" index="no"/>
-    <zone name="15643" adunit="brigitte_and/rezepte" position="2" index="no"/>
+    <zone name="13074" adunit="brigitte_and/rezepte" position="1" index=""/>
+    <zone name="15643" adunit="brigitte_and/rezepte" position="2" index=""/>
     <zone name="23410" adunit="brigitte_and/rezepte" position="0" index=""/>
     <zone name="23428" adunit="brigitte_and/rezepte" position="0" index=""/>
     <zone name="23430" adunit="brigitte_and/rezepte" position="0" index=""/>
-    <zone name="13076" adunit="brigitte_ip/rezepte" position="1" index="no"/>
+    <zone name="13076" adunit="brigitte_ip/rezepte" position="1" index=""/>
     <zone name="15367" adunit="brigitte_ip/rezepte" position="0" index=""/>
-    <zone name="15665" adunit="brigitte_ip/rezepte" position="2" index="no"/>
+    <zone name="15665" adunit="brigitte_ip/rezepte" position="2" index=""/>
     <zone name="23353" adunit="brigitte_ip/rezepte" position="0" index=""/>
     <zone name="23355" adunit="brigitte_ip/rezepte" position="0" index=""/>
     <zone name="23412" adunit="brigitte_and/video" position="0" index=""/>
     <zone name="23464" adunit="brigitte_and/video" position="0" index=""/>
     <zone name="23466" adunit="brigitte_and/video" position="0" index=""/>
-    <zone name="23476" adunit="brigitte_and/video" position="1" index="no"/>
-    <zone name="23478" adunit="brigitte_and/video" position="2" index="no"/>
+    <zone name="23476" adunit="brigitte_and/video" position="1" index=""/>
+    <zone name="23478" adunit="brigitte_and/video" position="2" index=""/>
     <zone name="23339" adunit="brigitte_ip/video" position="0" index=""/>
     <zone name="23390" adunit="brigitte_ip/video" position="0" index=""/>
     <zone name="23392" adunit="brigitte_ip/video" position="0" index=""/>
-    <zone name="23404" adunit="brigitte_ip/video" position="1" index="no"/>
+    <zone name="23404" adunit="brigitte_ip/video" position="1" index=""/>
     <zone name="574" adunit="brigitte_ip/video" position="2" index=""/>
-    <zone name="14470" adunit="brigitte_and/wohnen" position="1" index="no"/>
+    <zone name="14470" adunit="brigitte_and/wohnen" position="1" index=""/>
     <zone name="15358" adunit="brigitte_and/wohnen" position="0" index=""/>
-    <zone name="15655" adunit="brigitte_and/wohnen" position="2" index="no"/>
+    <zone name="15655" adunit="brigitte_and/wohnen" position="2" index=""/>
     <zone name="23456" adunit="brigitte_and/wohnen" position="0" index=""/>
     <zone name="23458" adunit="brigitte_and/wohnen" position="0" index=""/>
-    <zone name="571" adunit="brigitte_ip/wohnen" position="1" index="no"/>
+    <zone name="571" adunit="brigitte_ip/wohnen" position="1" index=""/>
     <zone name="15318" adunit="brigitte_ip/wohnen" position="0" index=""/>
-    <zone name="15687" adunit="brigitte_ip/wohnen" position="2" index="no"/>
+    <zone name="15687" adunit="brigitte_ip/wohnen" position="2" index=""/>
     <zone name="23382" adunit="brigitte_ip/wohnen" position="0" index=""/>
     <zone name="23384" adunit="brigitte_ip/wohnen" position="0" index=""/>
     <zone name="571" adunit="brigitte_ip/wohnen" position="1" index=""/>
@@ -619,8 +619,8 @@
     <zone name="24327" adunit="gala_and/_default/bilder" position="0" index=""/>
     <zone name="25548" adunit="gala_ip/_default" position="0" index=""/>
     <zone name="25550" adunit="gala_and/_default" position="0" index=""/>
-    <zone name="25581" adunit="gala_ip/_default" position="2" index=""/>
-    <zone name="25583" adunit="gala_and/_default" position="3" index=""/>
+    <zone name="25581" adunit="gala_ip/_default" position="3" index="yes"/>
+    <zone name="25583" adunit="gala_and/_default" position="3" index="yes"/>
     <zone name="17529" adunit="gala_ip/_default" position="0" index=""/>
     <zone name="17565" adunit="gala_ip/_default" position="1" index="yes"/>
     <zone name="17706" adunit="gala_and/_default" position="1" index="yes"/>
@@ -630,8 +630,8 @@
     <zone name="21565" adunit="gala_and/_default" position="2" index="yes"/>
     <zone name="24290" adunit="gala_ip/_default" position="10" index="yes"/>
     <zone name="24329" adunit="gala_and/_default" position="10" index="yes"/>
-    <zone name="25562" adunit="gala_and/_default" position="3" index=""/>
-    <zone name="25574" adunit="gala_ip/_default" position="2" index=""/>
+    <zone name="25562" adunit="gala_and/_default" position="3" index="yes"/>
+    <zone name="25574" adunit="gala_ip/_default" position="3" index="yes"/>
     <zone name="17521" adunit="gala_ip/beauty_fashion" position="0" index=""/>
     <zone name="17551" adunit="gala_ip/beauty_fashion" position="1" index="yes"/>
     <zone name="17553" adunit="gala_ip/beauty_fashion" position="1" index="no"/>
@@ -657,16 +657,16 @@
     <zone name="24337" adunit="gala_and/beauty_fashion/bilder" position="10" index="no"/>
     <zone name="25086" adunit="gala_and/beauty_fashion" position="2" index="no"/>
     <zone name="25094" adunit="gala_ip/beauty_fashion" position="2" index="no"/>
-    <zone name="25139" adunit="gala_and/beauty_fashion" position="1" index=""/>
-    <zone name="25148" adunit="gala_and/beauty_fashion" position="2" index=""/>
-    <zone name="25156" adunit="gala_and/beauty_fashion" position="10" index=""/>
-    <zone name="25164" adunit="gala_ip/beauty_fashion" position="1" index=""/>
-    <zone name="25173" adunit="gala_ip/beauty_fashion" position="2" index=""/>
-    <zone name="25181" adunit="gala_ip/beauty_fashion" position="10" index=""/>
-    <zone name="25259" adunit="gala_and/beauty_fashion" position="2" index=""/>
-    <zone name="25267" adunit="gala_ip/beauty_fashion" position="2" index=""/>
-    <zone name="25554" adunit="gala_and/beauty_fashion" position="3" index=""/>
-    <zone name="25564" adunit="gala_ip/beauty_fashion" position="2" index=""/>
+    <zone name="25139" adunit="gala_and/beauty_fashion" position="1" index="yes"/>
+    <zone name="25148" adunit="gala_and/beauty_fashion" position="2" index="yes"/>
+    <zone name="25156" adunit="gala_and/beauty_fashion" position="10" index="yes"/>
+    <zone name="25164" adunit="gala_ip/beauty_fashion" position="1" index="yes"/>
+    <zone name="25173" adunit="gala_ip/beauty_fashion" position="3" index="yes"/>
+    <zone name="25181" adunit="gala_ip/beauty_fashion" position="10" index="yes"/>
+    <zone name="25259" adunit="gala_and/beauty_fashion" position="3" index="yes"/>
+    <zone name="25267" adunit="gala_ip/beauty_fashion" position="2" index="yes"/>
+    <zone name="25554" adunit="gala_and/beauty_fashion" position="3" index="yes"/>
+    <zone name="25564" adunit="gala_ip/beauty_fashion" position="3" index="yes"/>
     <zone name="20615" adunit="gala_ip/_default" position="1" index="yes"/>
     <zone name="22676" adunit="gala_and/_default" position="1" index="no"/>
     <zone name="17519" adunit="gala_ip/homepage" position="0" index=""/>
@@ -679,8 +679,8 @@
     <zone name="24263" adunit="gala_ip/homepage" position="10" index="yes"/>
     <zone name="24301" adunit="gala_ip/homepage" position="0" index=""/>
     <zone name="24339" adunit="gala_and/homepage" position="0" index=""/>
-    <zone name="25577" adunit="gala_and/homepage" position="3" index=""/>
-    <zone name="25579" adunit="gala_ip/homepage" position="2" index=""/>
+    <zone name="25577" adunit="gala_and/homepage" position="3" index="yes"/>
+    <zone name="25579" adunit="gala_ip/homepage" position="3" index="yes"/>
     <zone name="17527" adunit="gala_ip/lifestyle" position="0" index=""/>
     <zone name="17561" adunit="gala_ip/lifestyle" position="1" index="yes"/>
     <zone name="17563" adunit="gala_ip/lifestyle" position="1" index="no"/>
@@ -698,20 +698,20 @@
     <zone name="24319" adunit="gala_and/lifestyle" position="10" index="no"/>
     <zone name="25091" adunit="gala_and/lifestyle" position="2" index="no"/>
     <zone name="25096" adunit="gala_ip/lifestyle" position="2" index="no"/>
-    <zone name="25137" adunit="gala_and/lifestyle" position="1" index=""/>
-    <zone name="25146" adunit="gala_and/lifestyle" position="2" index=""/>
-    <zone name="25154" adunit="gala_and/lifestyle" position="10" index=""/>
-    <zone name="25162" adunit="gala_ip/lifestyle" position="1" index=""/>
-    <zone name="25171" adunit="gala_ip/lifestyle" position="2" index=""/>
-    <zone name="25179" adunit="gala_ip/lifestyle" position="10" index=""/>
-    <zone name="25257" adunit="gala_and/lifestyle" position="2" index=""/>
-    <zone name="25265" adunit="gala_ip/lifestyle" position="2" index=""/>
-    <zone name="25560" adunit="gala_and/lifestyle" position="3" index=""/>
-    <zone name="25572" adunit="gala_ip/lifestyle" position="2" index=""/>
+    <zone name="25137" adunit="gala_and/lifestyle" position="1" index="yes"/>
+    <zone name="25146" adunit="gala_and/lifestyle" position="2" index="yes"/>
+    <zone name="25154" adunit="gala_and/lifestyle" position="10" index="yes"/>
+    <zone name="25162" adunit="gala_ip/lifestyle" position="1" index="yes"/>
+    <zone name="25171" adunit="gala_ip/lifestyle" position="3" index="yes"/>
+    <zone name="25179" adunit="gala_ip/lifestyle" position="10" index="yes"/>
+    <zone name="25257" adunit="gala_and/lifestyle" position="3" index="yes"/>
+    <zone name="25265" adunit="gala_ip/lifestyle" position="2" index="yes"/>
+    <zone name="25560" adunit="gala_and/lifestyle" position="3" index="yes"/>
+    <zone name="25572" adunit="gala_ip/lifestyle" position="3" index="yes"/>
     <zone name="17567" adunit="gala_ip/_default" position="1" index="yes"/>
-    <zone name="17704" adunit="gala_and/_default" position="1" index=""/>
+    <zone name="17704" adunit="gala_and/_default" position="1" index="yes"/>
     <zone name="17569" adunit="gala_ip/_default" position="1" index="yes"/>
-    <zone name="17702" adunit="gala_and/_default" position="1" index=""/>
+    <zone name="17702" adunit="gala_and/_default" position="1" index="yes"/>
     <zone name="17571" adunit="gala_ip/_default" position="1" index="yes"/>
     <zone name="17700" adunit="gala_and/_default" position="0" index=""/>
     <zone name="17523" adunit="gala_ip/royals" position="0" index=""/>
@@ -732,18 +732,18 @@
     <zone name="24315" adunit="gala_and/royals" position="10" index="no"/>
     <zone name="25089" adunit="gala_and/royals" position="2" index="no"/>
     <zone name="25100" adunit="gala_ip/royals" position="2" index="no"/>
-    <zone name="25133" adunit="gala_and/royals" position="1" index=""/>
-    <zone name="25142" adunit="gala_and/royals" position="2" index=""/>
-    <zone name="25150" adunit="gala_and/royals" position="10" index=""/>
-    <zone name="25158" adunit="gala_ip/royals" position="1" index=""/>
-    <zone name="25167" adunit="gala_ip/royals" position="2" index=""/>
-    <zone name="25175" adunit="gala_ip/royals" position="10" index=""/>
-    <zone name="25253" adunit="gala_and/royals" position="2" index=""/>
-    <zone name="25261" adunit="gala_ip/royals" position="2" index=""/>
-    <zone name="25556" adunit="gala_and/royals" position="3" index=""/>
-    <zone name="25568" adunit="gala_ip/royals" position="2" index=""/>
+    <zone name="25133" adunit="gala_and/royals" position="1" index="yes"/>
+    <zone name="25142" adunit="gala_and/royals" position="2" index="yes"/>
+    <zone name="25150" adunit="gala_and/royals" position="10" index="yes"/>
+    <zone name="25158" adunit="gala_ip/royals" position="1" index="yes"/>
+    <zone name="25167" adunit="gala_ip/royals" position="3" index="yes"/>
+    <zone name="25175" adunit="gala_ip/royals" position="10" index="yes"/>
+    <zone name="25253" adunit="gala_and/royals" position="3" index="yes"/>
+    <zone name="25261" adunit="gala_ip/royals" position="2" index="yes"/>
+    <zone name="25556" adunit="gala_and/royals" position="3" index="yes"/>
+    <zone name="25568" adunit="gala_ip/royals" position="3" index="yes"/>
     <zone name="17531" adunit="gala_ip/starnews/bilder" position="0" index=""/>
-    <zone name="17533" adunit="gala_ip/starnews" position="0" index=""/>
+    <zone name="17533" adunit="gala_ip/starnews" position="0" index="yes"/>
     <zone name="17547" adunit="gala_ip/starnews" position="1" index="yes"/>
     <zone name="17549" adunit="gala_ip/starnews" position="1" index="no"/>
     <zone name="17723" adunit="gala_and/starnews" position="1" index="no"/>
@@ -762,32 +762,32 @@
     <zone name="24331" adunit="gala_and/starnews/bilder" position="10" index="no"/>
     <zone name="25084" adunit="gala_and/starnews" position="2" index="no"/>
     <zone name="25098" adunit="gala_ip/starnews" position="2" index="no"/>
-    <zone name="25135" adunit="gala_and/starnews" position="1" index=""/>
-    <zone name="25144" adunit="gala_and/starnews" position="2" index=""/>
-    <zone name="25152" adunit="gala_and/starnews" position="10" index=""/>
-    <zone name="25160" adunit="gala_ip/starnews" position="1" index=""/>
-    <zone name="25169" adunit="gala_ip/starnews" position="2" index=""/>
-    <zone name="25177" adunit="gala_ip/starnews" position="10" index=""/>
-    <zone name="25255" adunit="gala_and/starnews" position="2" index=""/>
-    <zone name="25263" adunit="gala_ip/starnews" position="2" index=""/>
-    <zone name="25552" adunit="gala_and/starnews" position="3" index=""/>
-    <zone name="25566" adunit="gala_ip/starnews" position="2" index=""/>
+    <zone name="25135" adunit="gala_and/starnews" position="1" index="yes"/>
+    <zone name="25144" adunit="gala_and/starnews" position="2" index="yes"/>
+    <zone name="25152" adunit="gala_and/starnews" position="10" index="yes"/>
+    <zone name="25160" adunit="gala_ip/starnews" position="1" index="yes"/>
+    <zone name="25169" adunit="gala_ip/starnews" position="3" index="yes"/>
+    <zone name="25177" adunit="gala_ip/starnews" position="10" index="yes"/>
+    <zone name="25255" adunit="gala_and/starnews" position="3" index="yes"/>
+    <zone name="25263" adunit="gala_ip/starnews" position="2" index="yes"/>
+    <zone name="25552" adunit="gala_and/starnews" position="3" index="yes"/>
+    <zone name="25566" adunit="gala_ip/starnews" position="3" index="yes"/>
     <zone name="25113" adunit="gala_ip/starnews" position="2" index="no"/>
     <zone name="25115" adunit="gala_and/starnews" position="2" index="no"/>
-    <zone name="25117" adunit="gala_and/starnews" position="2" index=""/>
-    <zone name="25119" adunit="gala_and/starnews" position="0" index=""/>
-    <zone name="25121" adunit="gala_and/starnews" position="1" index=""/>
-    <zone name="25123" adunit="gala_and/starnews" position="10" index=""/>
-    <zone name="25125" adunit="gala_ip/starnews" position="10" index=""/>
-    <zone name="25127" adunit="gala_ip/starnews" position="1" index=""/>
-    <zone name="25129" adunit="gala_ip/starnews" position="2" index=""/>
+    <zone name="25117" adunit="gala_and/starnews" position="2" index="yes"/>
+    <zone name="25119" adunit="gala_and/starnews" position="0" index="yes"/>
+    <zone name="25121" adunit="gala_and/starnews" position="1" index="yes"/>
+    <zone name="25123" adunit="gala_and/starnews" position="10" index="yes"/>
+    <zone name="25125" adunit="gala_ip/starnews" position="10" index="yes"/>
+    <zone name="25127" adunit="gala_ip/starnews" position="1" index="yes"/>
+    <zone name="25129" adunit="gala_ip/starnews" position="2" index="yes"/>
     <zone name="25131" adunit="gala_ip/starnews" position="0" index=""/>
     <zone name="25518" adunit="gala_ip/starnews" position="1" index="no"/>
     <zone name="25521" adunit="gala_ip/starnews" position="10" index="no"/>
     <zone name="25524" adunit="gala_and/starnews" position="10" index="no"/>
     <zone name="25526" adunit="gala_and/starnews" position="1" index="no"/>
     <zone name="25528" adunit="gala_and/starnews" position="3" index=""/>
-    <zone name="25530" adunit="gala_ip/starnews" position="2" index=""/>
+    <zone name="25530" adunit="gala_ip/starnews" position="3" index="yes"/>
     <zone name="17525" adunit="gala_ip/_default" position="0" index=""/>
     <zone name="17559" adunit="gala_ip/_default" position="1" index="yes"/>
     <zone name="17712" adunit="gala_and/_default" position="1" index="yes"/>
@@ -800,12 +800,12 @@
     <zone name="24482" adunit="gala_ip/_default" position="1" index="no"/>
     <zone name="25508" adunit="gala_and/_default" position="10" index="no"/>
     <zone name="25510" adunit="gala_and/_default" position="1" index="no"/>
-    <zone name="25558" adunit="gala_and/_default" position="3" index=""/>
-    <zone name="25570" adunit="gala_ip/_default" position="2" index=""/>
-    <zone name="17763" adunit="goalgames_ip/_default" position="1" index="no"/>
-    <zone name="17765" adunit="goalgames_ipad/_default" position="1" index="no"/>
-    <zone name="17767" adunit="goalgames_and/_default" position="1" index="no"/>
-    <zone name="17769" adunit="goalgames_tab/_default" position="1" index="no"/>
+    <zone name="25558" adunit="gala_and/_default" position="3" index="yes"/>
+    <zone name="25570" adunit="gala_ip/_default" position="3" index="yes"/>
+    <zone name="17763" adunit="goalgames_ip/_default" position="1" index=""/>
+    <zone name="17765" adunit="goalgames_ipad/_default" position="1" index=""/>
+    <zone name="17767" adunit="goalgames_and/_default" position="1" index=""/>
+    <zone name="17769" adunit="goalgames_tab/_default" position="1" index=""/>
     <zone name="17771" adunit="goalgames_tab/_default" position="0" index=""/>
     <zone name="17773" adunit="goalgames_and/_default" position="0" index=""/>
     <zone name="17775" adunit="goalgames_ipad/_default" position="0" index=""/>
@@ -815,53 +815,53 @@
     <zone name="17782" adunit="goalgames_ipad/homepage" position="0" index=""/>
     <zone name="17784" adunit="goalgames_and/homepage" position="0" index=""/>
     <zone name="12347" adunit="grazia_and/_default" position="0" index=""/>
-    <zone name="12349" adunit="grazia_ip/_default" position="1" index="no"/>
+    <zone name="12349" adunit="grazia_ip/_default" position="1" index=""/>
     <zone name="12355" adunit="grazia_ip/_default" position="0" index=""/>
-    <zone name="16754" adunit="grazia_and/_default" position="1" index="no"/>
-    <zone name="16756" adunit="grazia_and/_default" position="10" index="no"/>
-    <zone name="16760" adunit="grazia_ipad/_default" position="1" index="no"/>
+    <zone name="16754" adunit="grazia_and/_default" position="1" index=""/>
+    <zone name="16756" adunit="grazia_and/_default" position="10" index=""/>
+    <zone name="16760" adunit="grazia_ipad/_default" position="1" index=""/>
     <zone name="16766" adunit="grazia_ipad/_default" position="0" index=""/>
     <zone name="16768" adunit="grazia_ipad/_default" position="0" index=""/>
-    <zone name="12345" adunit="grazia_ip/homepage" position="1" index="no"/>
+    <zone name="12345" adunit="grazia_ip/homepage" position="1" index=""/>
     <zone name="12351" adunit="grazia_and/homepage" position="0" index=""/>
     <zone name="12353" adunit="grazia_ip/homepage" position="0" index=""/>
-    <zone name="16750" adunit="grazia_and/homepage" position="1" index="no"/>
-    <zone name="16752" adunit="grazia_and/homepage" position="10" index="no"/>
-    <zone name="16758" adunit="grazia_ipad/homepage" position="1" index="no"/>
+    <zone name="16750" adunit="grazia_and/homepage" position="1" index=""/>
+    <zone name="16752" adunit="grazia_and/homepage" position="10" index=""/>
+    <zone name="16758" adunit="grazia_ipad/homepage" position="1" index=""/>
     <zone name="16762" adunit="grazia_ipad/homepage" position="0" index=""/>
     <zone name="16764" adunit="grazia_ipad/homepage" position="0" index=""/>
-    <zone name="15823" adunit="k50667_and/homepage" position="1" index="no"/>
+    <zone name="15823" adunit="k50667_and/homepage" position="1" index=""/>
     <zone name="21804" adunit="k50667_ip/_default" position="0" index=""/>
     <zone name="21806" adunit="k50667_and/_default" position="0" index=""/>
-    <zone name="23518" adunit="k50667_ip/_default" position="1" index="no"/>
-    <zone name="23524" adunit="k50667_ip/_default" position="2" index="no"/>
-    <zone name="23526" adunit="k50667_ip/_default" position="10" index="no"/>
-    <zone name="23532" adunit="k50667_and/_default" position="2" index="no"/>
-    <zone name="23534" adunit="k50667_and/_default" position="10" index="no"/>
-    <zone name="23536" adunit="k50667_and/_default" position="1" index="no"/>
-    <zone name="23548" adunit="k50667_ipad/_default" position="1" index="no"/>
-    <zone name="23552" adunit="k50667_ipad/_default" position="10" index="no"/>
+    <zone name="23518" adunit="k50667_ip/_default" position="1" index=""/>
+    <zone name="23524" adunit="k50667_ip/_default" position="2" index=""/>
+    <zone name="23526" adunit="k50667_ip/_default" position="10" index=""/>
+    <zone name="23532" adunit="k50667_and/_default" position="2" index=""/>
+    <zone name="23534" adunit="k50667_and/_default" position="10" index=""/>
+    <zone name="23536" adunit="k50667_and/_default" position="1" index=""/>
+    <zone name="23548" adunit="k50667_ipad/_default" position="1" index=""/>
+    <zone name="23552" adunit="k50667_ipad/_default" position="10" index=""/>
     <zone name="23554" adunit="k50667_ipad/_default" position="0" index=""/>
-    <zone name="23556" adunit="k50667_tab/_default" position="1" index="no"/>
-    <zone name="23560" adunit="k50667_tab/_default" position="10" index="no"/>
+    <zone name="23556" adunit="k50667_tab/_default" position="1" index=""/>
+    <zone name="23560" adunit="k50667_tab/_default" position="10" index=""/>
     <zone name="23562" adunit="k50667_tab/_default" position="0" index=""/>
-    <zone name="23564" adunit="k50667_tab/_default" position="1" index="no"/>
-    <zone name="23568" adunit="k50667_tab/_default" position="10" index="no"/>
+    <zone name="23564" adunit="k50667_tab/_default" position="1" index=""/>
+    <zone name="23568" adunit="k50667_tab/_default" position="10" index=""/>
     <zone name="23570" adunit="k50667_tab/_default" position="0" index=""/>
     <zone name="23931" adunit="k50667_ipad/_default" position="0" index=""/>
     <zone name="23933" adunit="k50667_tab/_default" position="0" index=""/>
     <zone name="23935" adunit="k50667_tab/_default" position="0" index=""/>
     <zone name="25206" adunit="k50667_ipad/_default" position="2" index=""/>
     <zone name="25220" adunit="k50667_tab/_default" position="2" index=""/>
-    <zone name="15805" adunit="k50667_ip/homepage" position="1" index="no"/>
+    <zone name="15805" adunit="k50667_ip/homepage" position="1" index=""/>
     <zone name="15813" adunit="k50667_ip/homepage" position="0" index=""/>
     <zone name="15815" adunit="k50667_and/homepage" position="0" index=""/>
-    <zone name="23520" adunit="k50667_ip/homepage" position="2" index="no"/>
-    <zone name="23522" adunit="k50667_ip/homepage" position="10" index="no"/>
-    <zone name="23528" adunit="k50667_and/homepage" position="2" index="no"/>
-    <zone name="23530" adunit="k50667_and/homepage" position="10" index="no"/>
-    <zone name="23540" adunit="k50667_ipad/homepage" position="1" index="no"/>
-    <zone name="23544" adunit="k50667_ipad/homepage" position="10" index="no"/>
+    <zone name="23520" adunit="k50667_ip/homepage" position="2" index=""/>
+    <zone name="23522" adunit="k50667_ip/homepage" position="10" index=""/>
+    <zone name="23528" adunit="k50667_and/homepage" position="2" index=""/>
+    <zone name="23530" adunit="k50667_and/homepage" position="10" index=""/>
+    <zone name="23540" adunit="k50667_ipad/homepage" position="1" index=""/>
+    <zone name="23544" adunit="k50667_ipad/homepage" position="10" index=""/>
     <zone name="23546" adunit="k50667_ipad/homepage" position="0" index=""/>
     <zone name="23929" adunit="k50667_ipad/homepage" position="0" index=""/>
     <zone name="25832" adunit="manager-magazin_and/homepage" position="10" index=""/>
@@ -1641,12 +1641,12 @@
     <zone name="11699" adunit="spiegel_ip/wissenschaft" position="2" index=""/>
     <zone name="11697" adunit="spiegel_ip/wissenschaft" position="1" index=""/>
     <zone name="16062" adunit="stern_ipad/_default" position="1" index="no"/>
-    <zone name="19989" adunit="stern_and/_default" position="10" index="no"/>
-    <zone name="19991" adunit="stern_and/_default" position="2" index="no"/>
-    <zone name="19993" adunit="stern_ip/_default" position="10" index="no"/>
-    <zone name="20411" adunit="stern_ip/_default" position="2" index="no"/>
-    <zone name="23708" adunit="stern_ip/_default" position="1" index="no"/>
-    <zone name="23795" adunit="stern_and/_default" position="1" index="no"/>
+    <zone name="19989" adunit="stern_and/_default" position="10" index=""/>
+    <zone name="19991" adunit="stern_and/_default" position="2" index=""/>
+    <zone name="19993" adunit="stern_ip/_default" position="10" index=""/>
+    <zone name="20411" adunit="stern_ip/_default" position="2" index=""/>
+    <zone name="23708" adunit="stern_ip/_default" position="1" index=""/>
+    <zone name="23795" adunit="stern_and/_default" position="1" index=""/>
     <zone name="24550" adunit="stern_tab/_default" position="1" index="no"/>
     <zone name="24552" adunit="stern_tab/_default" position="2" index="no"/>
     <zone name="24554" adunit="stern_tab/_default" position="10" index="no"/>
@@ -1664,71 +1664,71 @@
     <zone name="16897" adunit="stern_ipad/auto" position="1" index="no"/>
     <zone name="16899" adunit="stern_ipad/auto" position="0" index=""/>
     <zone name="17120" adunit="stern_ipad/auto" position="0" index=""/>
-    <zone name="19645" adunit="stern_ip/auto" position="1" index="no"/>
+    <zone name="19645" adunit="stern_ip/auto" position="1" index=""/>
     <zone name="19712" adunit="stern_ip/auto" position="0" index=""/>
     <zone name="19923" adunit="stern_and/auto" position="0" index=""/>
-    <zone name="19927" adunit="stern_and/auto" position="1" index="no"/>
-    <zone name="23746" adunit="stern_ip/auto" position="2" index="no"/>
-    <zone name="23785" adunit="stern_ip/auto" position="10" index="no"/>
-    <zone name="23841" adunit="stern_and/auto" position="10" index="no"/>
-    <zone name="23878" adunit="stern_and/auto" position="2" index="no"/>
+    <zone name="19927" adunit="stern_and/auto" position="1" index=""/>
+    <zone name="23746" adunit="stern_ip/auto" position="2" index=""/>
+    <zone name="23785" adunit="stern_ip/auto" position="10" index=""/>
+    <zone name="23841" adunit="stern_and/auto" position="10" index=""/>
+    <zone name="23878" adunit="stern_and/auto" position="2" index=""/>
     <zone name="24656" adunit="stern_tab/auto" position="1" index="no"/>
     <zone name="24658" adunit="stern_tab/auto" position="2" index="no"/>
     <zone name="24660" adunit="stern_tab/auto" position="10" index="no"/>
     <zone name="24662" adunit="stern_tab/auto" position="0" index=""/>
     <zone name="24724" adunit="stern_tab/auto" position="0" index=""/>
-    <zone name="25319" adunit="stern_ipad/auto" position="10" index=""/>
-    <zone name="25321" adunit="stern_ipad/auto" position="10" index=""/>
-    <zone name="25373" adunit="stern_ipad/auto" position="2" index=""/>
-    <zone name="25375" adunit="stern_ipad/auto" position="2" index=""/>
-    <zone name="25429" adunit="stern_ipad/auto" position="1" index=""/>
-    <zone name="25431" adunit="stern_ipad/auto" position="1" index=""/>
+    <zone name="25319" adunit="stern_ipad/auto" position="10" index="yes"/>
+    <zone name="25321" adunit="stern_ipad/auto" position="10" index="no"/>
+    <zone name="25373" adunit="stern_ipad/auto" position="2" index="yes"/>
+    <zone name="25375" adunit="stern_ipad/auto" position="2" index="no"/>
+    <zone name="25429" adunit="stern_ipad/auto" position="1" index="yes"/>
+    <zone name="25431" adunit="stern_ipad/auto" position="1" index="no"/>
     <zone name="25465" adunit="stern_ipad/auto" position="0" index=""/>
     <zone name="25495" adunit="stern_ipad/auto" position="0" index=""/>
     <zone name="16913" adunit="stern_ipad/digital" position="1" index="no"/>
     <zone name="16915" adunit="stern_ipad/digital" position="1" index="no"/>
     <zone name="16917" adunit="stern_ipad/digital" position="0" index=""/>
     <zone name="17114" adunit="stern_ipad/digital" position="0" index=""/>
-    <zone name="19652" adunit="stern_ip/digital" position="1" index="no"/>
+    <zone name="19652" adunit="stern_ip/digital" position="1" index=""/>
     <zone name="19704" adunit="stern_ip/digital" position="0" index=""/>
     <zone name="19919" adunit="stern_and/digital" position="0" index=""/>
-    <zone name="19940" adunit="stern_and/digital" position="1" index="no"/>
-    <zone name="23726" adunit="stern_ip/digital" position="2" index="no"/>
-    <zone name="23765" adunit="stern_ip/digital" position="10" index="no"/>
-    <zone name="23821" adunit="stern_and/digital" position="10" index="no"/>
-    <zone name="23858" adunit="stern_and/digital" position="2" index="no"/>
+    <zone name="19940" adunit="stern_and/digital" position="1" index=""/>
+    <zone name="23726" adunit="stern_ip/digital" position="2" index=""/>
+    <zone name="23765" adunit="stern_ip/digital" position="10" index=""/>
+    <zone name="23821" adunit="stern_and/digital" position="10" index=""/>
+    <zone name="23858" adunit="stern_and/digital" position="2" index=""/>
     <zone name="24576" adunit="stern_tab/digital" position="1" index="no"/>
     <zone name="24578" adunit="stern_tab/digital" position="2" index="no"/>
     <zone name="24580" adunit="stern_tab/digital" position="10" index="no"/>
     <zone name="24582" adunit="stern_tab/digital" position="0" index=""/>
     <zone name="24726" adunit="stern_tab/digital" position="0" index=""/>
-    <zone name="25283" adunit="stern_ipad/digital" position="10" index=""/>
-    <zone name="25285" adunit="stern_ipad/digital" position="10" index=""/>
-    <zone name="25337" adunit="stern_ipad/digital" position="2" index=""/>
-    <zone name="25339" adunit="stern_ipad/digital" position="2" index=""/>
-    <zone name="25393" adunit="stern_ipad/digital" position="1" index=""/>
-    <zone name="25395" adunit="stern_ipad/digital" position="1" index=""/>
+    <zone name="25283" adunit="stern_ipad/digital" position="10" index="yes"/>
+    <zone name="25285" adunit="stern_ipad/digital" position="10" index="no"/>
+    <zone name="25337" adunit="stern_ipad/digital" position="2" index="yes"/>
+    <zone name="25339" adunit="stern_ipad/digital" position="2" index="no"/>
+    <zone name="25393" adunit="stern_ipad/digital" position="1" index="yes"/>
+    <zone name="25395" adunit="stern_ipad/digital" position="1" index="no"/>
     <zone name="25447" adunit="stern_ipad/digital" position="0" index=""/>
     <zone name="25477" adunit="stern_ipad/digital" position="0" index=""/>
-    <zone name="20409" adunit="stern_ip/familie" position="1" index="no"/>
+    <zone name="20409" adunit="stern_ip/familie" position="1" index=""/>
     <zone name="20415" adunit="stern_ip/familie" position="0" index=""/>
-    <zone name="20419" adunit="stern_and/familie" position="1" index="no"/>
+    <zone name="20419" adunit="stern_and/familie" position="1" index=""/>
     <zone name="20424" adunit="stern_and/familie" position="0" index=""/>
-    <zone name="23734" adunit="stern_ip/familie" position="2" index="no"/>
-    <zone name="23773" adunit="stern_ip/familie" position="10" index="no"/>
-    <zone name="23829" adunit="stern_and/familie" position="10" index="no"/>
-    <zone name="23866" adunit="stern_and/familie" position="2" index="no"/>
+    <zone name="23734" adunit="stern_ip/familie" position="2" index=""/>
+    <zone name="23773" adunit="stern_ip/familie" position="10" index=""/>
+    <zone name="23829" adunit="stern_and/familie" position="10" index=""/>
+    <zone name="23866" adunit="stern_and/familie" position="2" index=""/>
     <zone name="24608" adunit="stern_tab/familie" position="1" index="no"/>
     <zone name="24610" adunit="stern_tab/familie" position="2" index="no"/>
     <zone name="24612" adunit="stern_tab/familie" position="10" index="no"/>
     <zone name="24614" adunit="stern_tab/familie" position="0" index=""/>
     <zone name="24728" adunit="stern_tab/familie" position="0" index=""/>
-    <zone name="25299" adunit="stern_ipad/familie" position="10" index=""/>
-    <zone name="25301" adunit="stern_ipad/familie" position="10" index=""/>
-    <zone name="25353" adunit="stern_ipad/familie" position="2" index=""/>
-    <zone name="25355" adunit="stern_ipad/familie" position="2" index=""/>
-    <zone name="25409" adunit="stern_ipad/familie" position="1" index=""/>
-    <zone name="25411" adunit="stern_ipad/familie" position="1" index=""/>
+    <zone name="25299" adunit="stern_ipad/familie" position="10" index="yes"/>
+    <zone name="25301" adunit="stern_ipad/familie" position="10" index="no"/>
+    <zone name="25353" adunit="stern_ipad/familie" position="2" index="yes"/>
+    <zone name="25355" adunit="stern_ipad/familie" position="2" index="no"/>
+    <zone name="25409" adunit="stern_ipad/familie" position="1" index="yes"/>
+    <zone name="25411" adunit="stern_ipad/familie" position="1" index="no"/>
     <zone name="25455" adunit="stern_ipad/familie" position="0" index=""/>
     <zone name="25485" adunit="stern_ipad/familie" position="0" index=""/>
     <zone name="16064" adunit="stern_ipad/fotografie" position="1" index="no"/>
@@ -1736,49 +1736,49 @@
     <zone name="17132" adunit="stern_ipad/fotografie" position="0" index=""/>
     <zone name="19702" adunit="stern_ip/fotografie" position="0" index=""/>
     <zone name="19921" adunit="stern_and/fotografie" position="0" index=""/>
-    <zone name="19929" adunit="stern_and/fotografie" position="1" index="no"/>
-    <zone name="19938" adunit="stern_and/fotografie" position="1" index="no"/>
+    <zone name="19929" adunit="stern_and/fotografie" position="1" index=""/>
+    <zone name="19938" adunit="stern_and/fotografie" position="1" index=""/>
     <zone name="16933" adunit="stern_ipad/fotografie" position="1" index="no"/>
     <zone name="16935" adunit="stern_ipad/fotografie" position="1" index="no"/>
     <zone name="16937" adunit="stern_ipad/fotografie" position="0" index=""/>
     <zone name="17110" adunit="stern_ipad/fotografie" position="0" index=""/>
-    <zone name="19648" adunit="stern_ip/fotografie" position="1" index="no"/>
+    <zone name="19648" adunit="stern_ip/fotografie" position="1" index=""/>
     <zone name="19708" adunit="stern_ip/fotografie" position="0" index=""/>
-    <zone name="23750" adunit="stern_ip/fotografie" position="2" index="no"/>
-    <zone name="23789" adunit="stern_ip/fotografie" position="10" index="no"/>
-    <zone name="23799" adunit="stern_and/fotografie" position="1" index="no"/>
-    <zone name="23845" adunit="stern_and/fotografie" position="10" index="no"/>
-    <zone name="23882" adunit="stern_and/fotografie" position="2" index="no"/>
+    <zone name="23750" adunit="stern_ip/fotografie" position="2" index=""/>
+    <zone name="23789" adunit="stern_ip/fotografie" position="10" index=""/>
+    <zone name="23799" adunit="stern_and/fotografie" position="1" index=""/>
+    <zone name="23845" adunit="stern_and/fotografie" position="10" index=""/>
+    <zone name="23882" adunit="stern_and/fotografie" position="2" index=""/>
     <zone name="24672" adunit="stern_tab/fotografie" position="1" index="no"/>
     <zone name="24674" adunit="stern_tab/fotografie" position="2" index="no"/>
     <zone name="24676" adunit="stern_tab/fotografie" position="10" index="no"/>
     <zone name="24678" adunit="stern_tab/fotografie" position="0" index=""/>
     <zone name="24720" adunit="stern_tab/fotografie" position="0" index=""/>
-    <zone name="25323" adunit="stern_ipad/fotografie" position="10" index=""/>
-    <zone name="25325" adunit="stern_ipad/fotografie" position="10" index=""/>
-    <zone name="25377" adunit="stern_ipad/fotografie" position="2" index=""/>
-    <zone name="25379" adunit="stern_ipad/fotografie" position="2" index=""/>
-    <zone name="25433" adunit="stern_ipad/fotografie" position="1" index=""/>
-    <zone name="25435" adunit="stern_ipad/fotografie" position="1" index=""/>
+    <zone name="25323" adunit="stern_ipad/fotografie" position="10" index="yes"/>
+    <zone name="25325" adunit="stern_ipad/fotografie" position="10" index="no"/>
+    <zone name="25377" adunit="stern_ipad/fotografie" position="2" index="yes"/>
+    <zone name="25379" adunit="stern_ipad/fotografie" position="2" index="no"/>
+    <zone name="25433" adunit="stern_ipad/fotografie" position="1" index="yes"/>
+    <zone name="25435" adunit="stern_ipad/fotografie" position="1" index="no"/>
     <zone name="25467" adunit="stern_ipad/fotografie" position="0" index=""/>
     <zone name="25497" adunit="stern_ipad/fotografie" position="0" index=""/>
-    <zone name="20407" adunit="stern_ip/genuss" position="1" index="no"/>
+    <zone name="20407" adunit="stern_ip/genuss" position="1" index=""/>
     <zone name="20413" adunit="stern_ip/genuss" position="0" index=""/>
-    <zone name="20417" adunit="stern_and/genuss" position="1" index="no"/>
+    <zone name="20417" adunit="stern_and/genuss" position="1" index=""/>
     <zone name="20422" adunit="stern_and/genuss" position="0" index=""/>
-    <zone name="24484" adunit="stern_ip/genuss" position="2" index="no"/>
-    <zone name="24490" adunit="stern_ip/genuss" position="10" index="no"/>
+    <zone name="24484" adunit="stern_ip/genuss" position="2" index=""/>
+    <zone name="24490" adunit="stern_ip/genuss" position="10" index=""/>
     <zone name="24704" adunit="stern_tab/genuss" position="1" index="no"/>
     <zone name="24706" adunit="stern_tab/genuss" position="2" index="no"/>
     <zone name="24708" adunit="stern_tab/genuss" position="10" index="no"/>
     <zone name="24710" adunit="stern_tab/genuss" position="0" index=""/>
     <zone name="24712" adunit="stern_tab/genuss" position="0" index=""/>
-    <zone name="25303" adunit="stern_ipad/genuss" position="10" index=""/>
-    <zone name="25305" adunit="stern_ipad/genuss" position="10" index=""/>
-    <zone name="25357" adunit="stern_ipad/genuss" position="2" index=""/>
-    <zone name="25359" adunit="stern_ipad/genuss" position="2" index=""/>
-    <zone name="25413" adunit="stern_ipad/genuss" position="1" index=""/>
-    <zone name="25415" adunit="stern_ipad/genuss" position="1" index=""/>
+    <zone name="25303" adunit="stern_ipad/genuss" position="10" index="yes"/>
+    <zone name="25305" adunit="stern_ipad/genuss" position="10" index="no"/>
+    <zone name="25357" adunit="stern_ipad/genuss" position="2" index="yes"/>
+    <zone name="25359" adunit="stern_ipad/genuss" position="2" index="no"/>
+    <zone name="25413" adunit="stern_ipad/genuss" position="1" index="yes"/>
+    <zone name="25415" adunit="stern_ipad/genuss" position="1" index="no"/>
     <zone name="25457" adunit="stern_ipad/genuss" position="0" index=""/>
     <zone name="25487" adunit="stern_ipad/genuss" position="0" index=""/>
     <zone name="25589" adunit="stern_and/genuss" position="2" index=""/>
@@ -1787,45 +1787,45 @@
     <zone name="16903" adunit="stern_ipad/gesundheit" position="1" index="no"/>
     <zone name="16905" adunit="stern_ipad/gesundheit" position="0" index=""/>
     <zone name="17118" adunit="stern_ipad/gesundheit" position="0" index=""/>
-    <zone name="19654" adunit="stern_ip/gesundheit" position="1" index="no"/>
+    <zone name="19654" adunit="stern_ip/gesundheit" position="1" index=""/>
     <zone name="19710" adunit="stern_ip/gesundheit" position="0" index=""/>
     <zone name="19898" adunit="stern_and/gesundheit" position="0" index=""/>
-    <zone name="19942" adunit="stern_and/gesundheit" position="1" index="no"/>
-    <zone name="23738" adunit="stern_ip/gesundheit" position="2" index="no"/>
-    <zone name="23777" adunit="stern_ip/gesundheit" position="10" index="no"/>
-    <zone name="23833" adunit="stern_and/gesundheit" position="10" index="no"/>
-    <zone name="23870" adunit="stern_and/gesundheit" position="2" index="no"/>
+    <zone name="19942" adunit="stern_and/gesundheit" position="1" index=""/>
+    <zone name="23738" adunit="stern_ip/gesundheit" position="2" index=""/>
+    <zone name="23777" adunit="stern_ip/gesundheit" position="10" index=""/>
+    <zone name="23833" adunit="stern_and/gesundheit" position="10" index=""/>
+    <zone name="23870" adunit="stern_and/gesundheit" position="2" index=""/>
     <zone name="24624" adunit="stern_tab/gesundheit" position="1" index="no"/>
     <zone name="24626" adunit="stern_tab/gesundheit" position="2" index="no"/>
     <zone name="24628" adunit="stern_tab/gesundheit" position="10" index="no"/>
     <zone name="24630" adunit="stern_tab/gesundheit" position="0" index=""/>
     <zone name="24730" adunit="stern_tab/gesundheit" position="0" index=""/>
     <zone name="25311" adunit="stern_ipad/gesundheit" position="10" index=""/>
-    <zone name="25313" adunit="stern_ipad/gesundheit" position="10" index=""/>
+    <zone name="25313" adunit="stern_ipad/gesundheit" position="10" index="no"/>
     <zone name="25365" adunit="stern_ipad/gesundheit" position="2" index=""/>
-    <zone name="25367" adunit="stern_ipad/gesundheit" position="2" index=""/>
+    <zone name="25367" adunit="stern_ipad/gesundheit" position="2" index="no"/>
     <zone name="25421" adunit="stern_ipad/gesundheit" position="1" index=""/>
-    <zone name="25423" adunit="stern_ipad/gesundheit" position="1" index=""/>
+    <zone name="25423" adunit="stern_ipad/gesundheit" position="1" index="no"/>
     <zone name="25461" adunit="stern_ipad/gesundheit" position="0" index=""/>
     <zone name="25491" adunit="stern_ipad/gesundheit" position="0" index=""/>
-    <zone name="16060" adunit="stern_ipad/homepage" position="1" index="no"/>
+    <zone name="16060" adunit="stern_ipad/homepage" position="1" index="yes"/>
     <zone name="16072" adunit="stern_ipad/homepage" position="0" index=""/>
     <zone name="17136" adunit="stern_ipad/homepage" position="0" index=""/>
-    <zone name="17893" adunit="stern_ipad/homepage" position="1" index="no"/>
-    <zone name="17928" adunit="stern_ipad/homepage" position="1" index="no"/>
-    <zone name="19678" adunit="stern_ip/homepage" position="1" index="no"/>
+    <zone name="17893" adunit="stern_ipad/homepage" position="1" index="yes"/>
+    <zone name="17928" adunit="stern_ipad/homepage" position="1" index="yes"/>
+    <zone name="19678" adunit="stern_ip/homepage" position="1" index=""/>
     <zone name="19716" adunit="stern_ip/homepage" position="0" index=""/>
     <zone name="19925" adunit="stern_and/homepage" position="0" index=""/>
-    <zone name="19958" adunit="stern_and/homepage" position="1" index="no"/>
-    <zone name="21704" adunit="stern_ip/homepage" position="1" index="no"/>
+    <zone name="19958" adunit="stern_and/homepage" position="1" index=""/>
+    <zone name="21704" adunit="stern_ip/homepage" position="1" index=""/>
     <zone name="21778" adunit="stern_quiz_battle_and/homepage" position="1" index="no"/>
-    <zone name="21822" adunit="stern_and/homepage" position="1" index="no"/>
+    <zone name="21822" adunit="stern_and/homepage" position="1" index=""/>
     <zone name="21845" adunit="stern_quiz_battle_ip/homepage" position="0" index=""/>
     <zone name="21869" adunit="stern_quiz_battle_and/homepage" position="0" index=""/>
     <zone name="21874" adunit="stern_quiz_battle_ip/homepage" position="1" index="no"/>
-    <zone name="23720" adunit="stern_ip/homepage" position="2" index="no"/>
-    <zone name="23759" adunit="stern_ip/homepage" position="10" index="no"/>
-    <zone name="23852" adunit="stern_and/homepage" position="2" index="no"/>
+    <zone name="23720" adunit="stern_ip/homepage" position="2" index=""/>
+    <zone name="23759" adunit="stern_ip/homepage" position="10" index=""/>
+    <zone name="23852" adunit="stern_and/homepage" position="2" index=""/>
     <zone name="24540" adunit="stern_tab/homepage" position="1" index="no"/>
     <zone name="24542" adunit="stern_tab/homepage" position="2" index="no"/>
     <zone name="24544" adunit="stern_tab/homepage" position="10" index="no"/>
@@ -1841,224 +1841,224 @@
     <zone name="16885" adunit="stern_ipad/kultur" position="1" index="no"/>
     <zone name="16887" adunit="stern_ipad/kultur" position="0" index=""/>
     <zone name="17124" adunit="stern_ipad/kultur" position="0" index=""/>
-    <zone name="19656" adunit="stern_ip/kultur" position="1" index="no"/>
+    <zone name="19656" adunit="stern_ip/kultur" position="1" index=""/>
     <zone name="19685" adunit="stern_ip/kultur" position="0" index=""/>
     <zone name="19917" adunit="stern_and/kultur" position="0" index=""/>
-    <zone name="19944" adunit="stern_and/kultur" position="1" index="no"/>
-    <zone name="23728" adunit="stern_ip/kultur" position="2" index="no"/>
-    <zone name="23767" adunit="stern_ip/kultur" position="10" index="no"/>
-    <zone name="23823" adunit="stern_and/kultur" position="10" index="no"/>
-    <zone name="23860" adunit="stern_and/kultur" position="2" index="no"/>
+    <zone name="19944" adunit="stern_and/kultur" position="1" index=""/>
+    <zone name="23728" adunit="stern_ip/kultur" position="2" index=""/>
+    <zone name="23767" adunit="stern_ip/kultur" position="10" index=""/>
+    <zone name="23823" adunit="stern_and/kultur" position="10" index=""/>
+    <zone name="23860" adunit="stern_and/kultur" position="2" index=""/>
     <zone name="24584" adunit="stern_tab/kultur" position="1" index="no"/>
     <zone name="24586" adunit="stern_tab/kultur" position="2" index="no"/>
     <zone name="24588" adunit="stern_tab/kultur" position="10" index="no"/>
     <zone name="24590" adunit="stern_tab/kultur" position="0" index=""/>
     <zone name="24734" adunit="stern_tab/kultur" position="0" index=""/>
     <zone name="25287" adunit="stern_ipad/kultur" position="10" index=""/>
-    <zone name="25289" adunit="stern_ipad/kultur" position="10" index=""/>
+    <zone name="25289" adunit="stern_ipad/kultur" position="10" index="no"/>
     <zone name="25341" adunit="stern_ipad/kultur" position="2" index=""/>
-    <zone name="25343" adunit="stern_ipad/kultur" position="2" index=""/>
+    <zone name="25343" adunit="stern_ipad/kultur" position="2" index="no"/>
     <zone name="25397" adunit="stern_ipad/kultur" position="1" index=""/>
-    <zone name="25399" adunit="stern_ipad/kultur" position="1" index=""/>
+    <zone name="25399" adunit="stern_ipad/kultur" position="1" index="no"/>
     <zone name="25449" adunit="stern_ipad/kultur" position="0" index=""/>
     <zone name="25479" adunit="stern_ipad/kultur" position="0" index=""/>
     <zone name="16907" adunit="stern_ipad/lifestyle" position="1" index="no"/>
     <zone name="16909" adunit="stern_ipad/lifestyle" position="1" index="no"/>
     <zone name="16911" adunit="stern_ipad/lifestyle" position="0" index=""/>
     <zone name="17116" adunit="stern_ipad/lifestyle" position="0" index=""/>
-    <zone name="19658" adunit="stern_ip/lifestyle" position="1" index="no"/>
+    <zone name="19658" adunit="stern_ip/lifestyle" position="1" index=""/>
     <zone name="19683" adunit="stern_ip/lifestyle" position="0" index=""/>
     <zone name="19914" adunit="stern_and/lifestyle" position="0" index=""/>
-    <zone name="19946" adunit="stern_and/lifestyle" position="1" index="no"/>
-    <zone name="23730" adunit="stern_ip/lifestyle" position="2" index="no"/>
-    <zone name="23769" adunit="stern_ip/lifestyle" position="10" index="no"/>
-    <zone name="23825" adunit="stern_and/lifestyle" position="10" index="no"/>
-    <zone name="23862" adunit="stern_and/lifestyle" position="2" index="no"/>
+    <zone name="19946" adunit="stern_and/lifestyle" position="1" index=""/>
+    <zone name="23730" adunit="stern_ip/lifestyle" position="2" index=""/>
+    <zone name="23769" adunit="stern_ip/lifestyle" position="10" index=""/>
+    <zone name="23825" adunit="stern_and/lifestyle" position="10" index=""/>
+    <zone name="23862" adunit="stern_and/lifestyle" position="2" index=""/>
     <zone name="24592" adunit="stern_tab/lifestyle" position="1" index="no"/>
     <zone name="24594" adunit="stern_tab/lifestyle" position="2" index="no"/>
     <zone name="24596" adunit="stern_tab/lifestyle" position="10" index="no"/>
     <zone name="24598" adunit="stern_tab/lifestyle" position="0" index=""/>
     <zone name="24736" adunit="stern_tab/lifestyle" position="0" index=""/>
     <zone name="25291" adunit="stern_ipad/lifestyle" position="10" index=""/>
-    <zone name="25293" adunit="stern_ipad/lifestyle" position="10" index=""/>
+    <zone name="25293" adunit="stern_ipad/lifestyle" position="10" index="no"/>
     <zone name="25345" adunit="stern_ipad/lifestyle" position="2" index=""/>
-    <zone name="25347" adunit="stern_ipad/lifestyle" position="2" index=""/>
+    <zone name="25347" adunit="stern_ipad/lifestyle" position="2" index="10"/>
     <zone name="25401" adunit="stern_ipad/lifestyle" position="1" index=""/>
-    <zone name="25403" adunit="stern_ipad/lifestyle" position="1" index=""/>
+    <zone name="25403" adunit="stern_ipad/lifestyle" position="1" index="no"/>
     <zone name="25451" adunit="stern_ipad/lifestyle" position="0" index=""/>
     <zone name="25481" adunit="stern_ipad/lifestyle" position="0" index=""/>
-    <zone name="21331" adunit="stern_ip/mbooklet" position="1" index="no"/>
+    <zone name="21331" adunit="stern_ip/mbooklet" position="1" index=""/>
     <zone name="16871" adunit="stern_ipad/panorama" position="1" index="no"/>
     <zone name="16873" adunit="stern_ipad/panorama" position="1" index="no"/>
     <zone name="16875" adunit="stern_ipad/panorama" position="0" index=""/>
     <zone name="17128" adunit="stern_ipad/panorama" position="0" index=""/>
-    <zone name="19660" adunit="stern_ip/panorama" position="1" index="no"/>
+    <zone name="19660" adunit="stern_ip/panorama" position="1" index=""/>
     <zone name="19680" adunit="stern_ip/panorama" position="0" index=""/>
     <zone name="19912" adunit="stern_and/panorama" position="0" index=""/>
-    <zone name="19948" adunit="stern_and/panorama" position="1" index="no"/>
-    <zone name="23724" adunit="stern_ip/panorama" position="2" index="no"/>
-    <zone name="23763" adunit="stern_ip/panorama" position="10" index="no"/>
-    <zone name="23819" adunit="stern_and/panorama" position="10" index="no"/>
-    <zone name="23856" adunit="stern_and/panorama" position="2" index="no"/>
+    <zone name="19948" adunit="stern_and/panorama" position="1" index=""/>
+    <zone name="23724" adunit="stern_ip/panorama" position="2" index=""/>
+    <zone name="23763" adunit="stern_ip/panorama" position="10" index=""/>
+    <zone name="23819" adunit="stern_and/panorama" position="10" index=""/>
+    <zone name="23856" adunit="stern_and/panorama" position="2" index=""/>
     <zone name="24568" adunit="stern_tab/panorama" position="1" index="no"/>
     <zone name="24570" adunit="stern_tab/panorama" position="2" index="no"/>
     <zone name="24572" adunit="stern_tab/panorama" position="10" index="no"/>
     <zone name="24574" adunit="stern_tab/panorama" position="0" index=""/>
     <zone name="24738" adunit="stern_tab/panorama" position="0" index=""/>
     <zone name="25279" adunit="stern_ipad/panorama" position="10" index=""/>
-    <zone name="25281" adunit="stern_ipad/panorama" position="10" index=""/>
+    <zone name="25281" adunit="stern_ipad/panorama" position="10" index="no"/>
     <zone name="25333" adunit="stern_ipad/panorama" position="2" index=""/>
-    <zone name="25335" adunit="stern_ipad/panorama" position="2" index=""/>
+    <zone name="25335" adunit="stern_ipad/panorama" position="2" index="no"/>
     <zone name="25389" adunit="stern_ipad/panorama" position="1" index=""/>
-    <zone name="25391" adunit="stern_ipad/panorama" position="1" index=""/>
+    <zone name="25391" adunit="stern_ipad/panorama" position="1" index="no"/>
     <zone name="25445" adunit="stern_ipad/panorama" position="0" index=""/>
     <zone name="25475" adunit="stern_ipad/panorama" position="0" index=""/>
     <zone name="16919" adunit="stern_ipad/panorama" position="1" index="no"/>
     <zone name="16921" adunit="stern_ipad/panorama" position="1" index="no"/>
     <zone name="16923" adunit="stern_ipad/panorama" position="0" index=""/>
     <zone name="17112" adunit="stern_ipad/panorama" position="0" index=""/>
-    <zone name="19672" adunit="stern_ip/panorama" position="1" index="no"/>
+    <zone name="19672" adunit="stern_ip/panorama" position="1" index=""/>
     <zone name="19698" adunit="stern_ip/panorama" position="0" index=""/>
     <zone name="19900" adunit="stern_and/panorama" position="0" index=""/>
-    <zone name="19956" adunit="stern_and/panorama" position="1" index="no"/>
-    <zone name="23740" adunit="stern_ip/panorama" position="2" index="no"/>
-    <zone name="23779" adunit="stern_ip/panorama" position="10" index="no"/>
-    <zone name="23835" adunit="stern_and/panorama" position="10" index="no"/>
-    <zone name="23872" adunit="stern_and/panorama" position="2" index="no"/>
+    <zone name="19956" adunit="stern_and/panorama" position="1" index=""/>
+    <zone name="23740" adunit="stern_ip/panorama" position="2" index=""/>
+    <zone name="23779" adunit="stern_ip/panorama" position="10" index=""/>
+    <zone name="23835" adunit="stern_and/panorama" position="10" index=""/>
+    <zone name="23872" adunit="stern_and/panorama" position="2" index=""/>
     <zone name="24632" adunit="stern_tab/panorama" position="1" index="no"/>
     <zone name="24634" adunit="stern_tab/panorama" position="2" index="no"/>
     <zone name="24636" adunit="stern_tab/panorama" position="10" index="no"/>
     <zone name="24638" adunit="stern_tab/panorama" position="0" index=""/>
     <zone name="24751" adunit="stern_tab/panorama" position="0" index=""/>
-    <zone name="19674" adunit="stern_ip/panorama" position="1" index="no"/>
+    <zone name="19674" adunit="stern_ip/panorama" position="1" index=""/>
     <zone name="19700" adunit="stern_ip/panorama" position="0" index=""/>
-    <zone name="19934" adunit="stern_and/panorama" position="1" index="no"/>
-    <zone name="23742" adunit="stern_ip/panorama" position="2" index="no"/>
-    <zone name="23781" adunit="stern_ip/panorama" position="10" index="no"/>
-    <zone name="23837" adunit="stern_and/panorama" position="10" index="no"/>
-    <zone name="23874" adunit="stern_and/panorama" position="2" index="no"/>
+    <zone name="19934" adunit="stern_and/panorama" position="1" index=""/>
+    <zone name="23742" adunit="stern_ip/panorama" position="2" index=""/>
+    <zone name="23781" adunit="stern_ip/panorama" position="10" index=""/>
+    <zone name="23837" adunit="stern_and/panorama" position="10" index=""/>
+    <zone name="23874" adunit="stern_and/panorama" position="2" index=""/>
     <zone name="24640" adunit="stern_tab/panorama" position="1" index="no"/>
     <zone name="24642" adunit="stern_tab/panorama" position="2" index="no"/>
     <zone name="24644" adunit="stern_tab/panorama" position="10" index="no"/>
     <zone name="24646" adunit="stern_tab/panorama" position="0" index=""/>
     <zone name="24753" adunit="stern_tab/panorama" position="0" index=""/>
     <zone name="16124" adunit="stern_ipad/politik" position="1" index="no"/>
-    <zone name="19676" adunit="stern_ip/politik" position="1" index="no"/>
+    <zone name="19676" adunit="stern_ip/politik" position="1" index=""/>
     <zone name="19714" adunit="stern_ip/politik" position="0" index=""/>
-    <zone name="19960" adunit="stern_and/politik" position="1" index="no"/>
+    <zone name="19960" adunit="stern_and/politik" position="1" index=""/>
     <zone name="16865" adunit="stern_ipad/politik" position="1" index="no"/>
     <zone name="16867" adunit="stern_ipad/politik" position="1" index="no"/>
     <zone name="16869" adunit="stern_ipad/politik" position="0" index=""/>
     <zone name="17130" adunit="stern_ipad/politik" position="0" index=""/>
-    <zone name="19662" adunit="stern_ip/politik" position="1" index="no"/>
+    <zone name="19662" adunit="stern_ip/politik" position="1" index=""/>
     <zone name="19687" adunit="stern_ip/politik" position="0" index=""/>
     <zone name="19910" adunit="stern_and/politik" position="0" index=""/>
-    <zone name="19950" adunit="stern_and/politik" position="1" index="no"/>
-    <zone name="23722" adunit="stern_ip/politik" position="2" index="no"/>
+    <zone name="19950" adunit="stern_and/politik" position="1" index=""/>
+    <zone name="23722" adunit="stern_ip/politik" position="2" index=""/>
     <zone name="23761" adunit="stern_ip/politik" position="10" index="no"/>
-    <zone name="23817" adunit="stern_and/politik" position="10" index="no"/>
-    <zone name="23854" adunit="stern_and/politik" position="2" index="no"/>
+    <zone name="23817" adunit="stern_and/politik" position="10" index=""/>
+    <zone name="23854" adunit="stern_and/politik" position="2" index=""/>
     <zone name="24560" adunit="stern_tab/politik" position="1" index="no"/>
     <zone name="24562" adunit="stern_tab/politik" position="2" index="no"/>
     <zone name="24564" adunit="stern_tab/politik" position="10" index="no"/>
     <zone name="24566" adunit="stern_tab/politik" position="0" index=""/>
     <zone name="24740" adunit="stern_tab/politik" position="0" index=""/>
     <zone name="25275" adunit="stern_ipad/politik" position="10" index=""/>
-    <zone name="25277" adunit="stern_ipad/politik" position="10" index=""/>
+    <zone name="25277" adunit="stern_ipad/politik" position="10" index="no"/>
     <zone name="25331" adunit="stern_ipad/politik" position="2" index=""/>
     <zone name="25385" adunit="stern_ipad/politik" position="1" index=""/>
-    <zone name="25387" adunit="stern_ipad/politik" position="1" index=""/>
+    <zone name="25387" adunit="stern_ipad/politik" position="1" index="no"/>
     <zone name="25443" adunit="stern_ipad/politik" position="0" index=""/>
     <zone name="25473" adunit="stern_ipad/politik" position="0" index=""/>
     <zone name="16925" adunit="stern_ipad/reise" position="1" index="no"/>
     <zone name="16927" adunit="stern_ipad/reise" position="1" index="no"/>
     <zone name="16929" adunit="stern_ipad/reise" position="0" index=""/>
     <zone name="17108" adunit="stern_ipad/reise" position="0" index=""/>
-    <zone name="19664" adunit="stern_ip/reise" position="1" index="no"/>
+    <zone name="19664" adunit="stern_ip/reise" position="1" index=""/>
     <zone name="19689" adunit="stern_ip/reise" position="0" index=""/>
     <zone name="19908" adunit="stern_and/reise" position="0" index=""/>
-    <zone name="19952" adunit="stern_and/reise" position="1" index="no"/>
-    <zone name="23744" adunit="stern_ip/reise" position="2" index="no"/>
-    <zone name="23783" adunit="stern_ip/reise" position="10" index="no"/>
-    <zone name="23839" adunit="stern_and/reise" position="10" index="no"/>
-    <zone name="23876" adunit="stern_and/reise" position="2" index="no"/>
+    <zone name="19952" adunit="stern_and/reise" position="1" index=""/>
+    <zone name="23744" adunit="stern_ip/reise" position="2" index=""/>
+    <zone name="23783" adunit="stern_ip/reise" position="10" index=""/>
+    <zone name="23839" adunit="stern_and/reise" position="10" index=""/>
+    <zone name="23876" adunit="stern_and/reise" position="2" index=""/>
     <zone name="24648" adunit="stern_tab/reise" position="1" index="no"/>
     <zone name="24650" adunit="stern_tab/reise" position="2" index="no"/>
     <zone name="24652" adunit="stern_tab/reise" position="10" index="no"/>
     <zone name="24654" adunit="stern_tab/reise" position="0" index=""/>
     <zone name="24743" adunit="stern_tab/reise" position="0" index=""/>
     <zone name="25315" adunit="stern_ipad/reise" position="10" index=""/>
-    <zone name="25317" adunit="stern_ipad/reise" position="10" index=""/>
+    <zone name="25317" adunit="stern_ipad/reise" position="10" index="no"/>
     <zone name="25369" adunit="stern_ipad/reise" position="2" index=""/>
-    <zone name="25371" adunit="stern_ipad/reise" position="2" index=""/>
+    <zone name="25371" adunit="stern_ipad/reise" position="2" index="no"/>
     <zone name="25425" adunit="stern_ipad/reise" position="1" index=""/>
-    <zone name="25427" adunit="stern_ipad/reise" position="1" index=""/>
+    <zone name="25427" adunit="stern_ipad/reise" position="1" index="no"/>
     <zone name="25463" adunit="stern_ipad/reise" position="0" index=""/>
     <zone name="25493" adunit="stern_ipad/reise" position="0" index=""/>
-    <zone name="23710" adunit="stern_ip/spezial_1" position="1" index="no"/>
+    <zone name="23710" adunit="stern_ip/spezial_1" position="1" index=""/>
     <zone name="23714" adunit="stern_ip/spezial_1" position="0" index=""/>
-    <zone name="23752" adunit="stern_ip/spezial_1" position="2" index="no"/>
-    <zone name="23791" adunit="stern_ip/spezial_1" position="10" index="no"/>
-    <zone name="23801" adunit="stern_and/spezial_1" position="1" index="no"/>
+    <zone name="23752" adunit="stern_ip/spezial_1" position="2" index=""/>
+    <zone name="23791" adunit="stern_ip/spezial_1" position="10" index=""/>
+    <zone name="23801" adunit="stern_and/spezial_1" position="1" index=""/>
     <zone name="23805" adunit="stern_and/spezial_1" position="0" index=""/>
     <zone name="23809" adunit="stern_and/spezial_1" position="0" index=""/>
     <zone name="23811" adunit="stern_and/spezial_1" position="0" index=""/>
-    <zone name="23847" adunit="stern_and/spezial_1" position="10" index="no"/>
-    <zone name="23884" adunit="stern_and/spezial_1" position="2" index="no"/>
+    <zone name="23847" adunit="stern_and/spezial_1" position="10" index=""/>
+    <zone name="23884" adunit="stern_and/spezial_1" position="2" index=""/>
     <zone name="24680" adunit="stern_tab/spezial_1" position="1" index="no"/>
     <zone name="24682" adunit="stern_tab/spezial_1" position="2" index="no"/>
     <zone name="24684" adunit="stern_tab/spezial_1" position="10" index="no"/>
     <zone name="24686" adunit="stern_tab/spezial_1" position="0" index=""/>
     <zone name="24718" adunit="stern_tab/spezial_1" position="0" index=""/>
-    <zone name="23712" adunit="stern_ip/spezial_2" position="1" index="no"/>
+    <zone name="23712" adunit="stern_ip/spezial_2" position="1" index=""/>
     <zone name="23716" adunit="stern_ip/spezial_2" position="0" index=""/>
-    <zone name="23754" adunit="stern_ip/spezial_2" position="2" index="no"/>
-    <zone name="23793" adunit="stern_ip/spezial_2" position="10" index="no"/>
-    <zone name="23803" adunit="stern_and/spezial_2" position="1" index="no"/>
+    <zone name="23754" adunit="stern_ip/spezial_2" position="2" index=""/>
+    <zone name="23793" adunit="stern_ip/spezial_2" position="10" index=""/>
+    <zone name="23803" adunit="stern_and/spezial_2" position="1" index=""/>
     <zone name="23807" adunit="stern_and/spezial_2" position="0" index=""/>
     <zone name="23813" adunit="stern_and/spezial_2" position="0" index=""/>
-    <zone name="23815" adunit="stern_and/spezial_2" position="10" index="no"/>
-    <zone name="23849" adunit="stern_and/spezial_2" position="10" index="no"/>
-    <zone name="23886" adunit="stern_and/spezial_2" position="2" index="no"/>
+    <zone name="23815" adunit="stern_and/spezial_2" position="10" index=""/>
+    <zone name="23849" adunit="stern_and/spezial_2" position="10" index=""/>
+    <zone name="23886" adunit="stern_and/spezial_2" position="2" index=""/>
     <zone name="24688" adunit="stern_tab/spezial_2" position="1" index="no"/>
     <zone name="24690" adunit="stern_tab/spezial_2" position="2" index="no"/>
     <zone name="24692" adunit="stern_tab/spezial_2" position="10" index="no"/>
     <zone name="24694" adunit="stern_tab/spezial_2" position="0" index=""/>
     <zone name="24716" adunit="stern_tab/spezial_2" position="0" index=""/>
-    <zone name="19650" adunit="stern_ip/sport" position="1" index="no"/>
+    <zone name="19650" adunit="stern_ip/sport" position="1" index=""/>
     <zone name="19706" adunit="stern_ip/sport" position="0" index=""/>
     <zone name="16877" adunit="stern_ipad/sport" position="1" index="no"/>
     <zone name="16879" adunit="stern_ipad/sport" position="1" index="no"/>
     <zone name="16881" adunit="stern_ipad/sport" position="0" index=""/>
     <zone name="17126" adunit="stern_ipad/sport" position="0" index=""/>
-    <zone name="19666" adunit="stern_ip/sport" position="1" index="no"/>
+    <zone name="19666" adunit="stern_ip/sport" position="1" index=""/>
     <zone name="19691" adunit="stern_ip/sport" position="0" index=""/>
     <zone name="19906" adunit="stern_and/sport" position="0" index=""/>
-    <zone name="19954" adunit="stern_and/sport" position="1" index="no"/>
-    <zone name="23732" adunit="stern_ip/sport" position="2" index="no"/>
-    <zone name="23771" adunit="stern_ip/sport" position="10" index="no"/>
-    <zone name="23827" adunit="stern_and/sport" position="10" index="no"/>
-    <zone name="23864" adunit="stern_and/sport" position="2" index="no"/>
+    <zone name="19954" adunit="stern_and/sport" position="1" index=""/>
+    <zone name="23732" adunit="stern_ip/sport" position="2" index=""/>
+    <zone name="23771" adunit="stern_ip/sport" position="10" index=""/>
+    <zone name="23827" adunit="stern_and/sport" position="10" index=""/>
+    <zone name="23864" adunit="stern_and/sport" position="2" index=""/>
     <zone name="24600" adunit="stern_tab/sport" position="1" index="no"/>
     <zone name="24602" adunit="stern_tab/sport" position="2" index="no"/>
     <zone name="24604" adunit="stern_tab/sport" position="10" index="no"/>
     <zone name="24606" adunit="stern_tab/sport" position="0" index=""/>
     <zone name="24747" adunit="stern_tab/sport" position="0" index=""/>
     <zone name="25295" adunit="stern_ipad/sport" position="10" index=""/>
-    <zone name="25297" adunit="stern_ipad/sport" position="10" index=""/>
+    <zone name="25297" adunit="stern_ipad/sport" position="10" index="no"/>
     <zone name="25349" adunit="stern_ipad/sport" position="2" index=""/>
-    <zone name="25351" adunit="stern_ipad/sport" position="2" index=""/>
+    <zone name="25351" adunit="stern_ipad/sport" position="2" index="no"/>
     <zone name="25405" adunit="stern_ipad/sport" position="1" index=""/>
-    <zone name="25407" adunit="stern_ipad/sport" position="1" index=""/>
+    <zone name="25407" adunit="stern_ipad/sport" position="1" index="no"/>
     <zone name="25453" adunit="stern_ipad/sport" position="0" index=""/>
     <zone name="25483" adunit="stern_ipad/sport" position="0" index=""/>
     <zone name="23083" adunit="stern_ip/tv" position="0" index=""/>
-    <zone name="23085" adunit="stern_ip/tv" position="1" index="no"/>
-    <zone name="23756" adunit="stern_ip/tv" position="2" index="no"/>
-    <zone name="23787" adunit="stern_ip/tv" position="10" index="no"/>
-    <zone name="23797" adunit="stern_and/tv" position="1" index="no"/>
-    <zone name="23843" adunit="stern_and/tv" position="10" index="no"/>
-    <zone name="23880" adunit="stern_and/tv" position="2" index="no"/>
+    <zone name="23085" adunit="stern_ip/tv" position="1" index=""/>
+    <zone name="23756" adunit="stern_ip/tv" position="2" index=""/>
+    <zone name="23787" adunit="stern_ip/tv" position="10" index=""/>
+    <zone name="23797" adunit="stern_and/tv" position="1" index=""/>
+    <zone name="23843" adunit="stern_and/tv" position="10" index=""/>
+    <zone name="23880" adunit="stern_and/tv" position="2" index=""/>
     <zone name="24664" adunit="stern_tab/tv" position="1" index="no"/>
     <zone name="24666" adunit="stern_tab/tv" position="2" index="no"/>
     <zone name="24668" adunit="stern_tab/tv" position="10" index="no"/>
@@ -2068,24 +2068,24 @@
     <zone name="16070" adunit="stern_ipad/videos" position="0" index=""/>
     <zone name="16074" adunit="stern_ipad/videos" position="" index="no"/>
     <zone name="17134" adunit="stern_ipad/videos" position="0" index=""/>
-    <zone name="19668" adunit="stern_ip/videos" position="1" index="no"/>
+    <zone name="19668" adunit="stern_ip/videos" position="1" index=""/>
     <zone name="19694" adunit="stern_ip/videos" position="0" index=""/>
     <zone name="19904" adunit="stern_and/videos" position="0" index=""/>
-    <zone name="19931" adunit="stern_and/videos" position="1" index="no"/>
+    <zone name="19931" adunit="stern_and/videos" position="1" index=""/>
     <zone name="21333" adunit="stern_ipad/videos" position="" index="no"/>
-    <zone name="24486" adunit="stern_ip/videos" position="2" index="no"/>
-    <zone name="24488" adunit="stern_ip/videos" position="10" index="no"/>
+    <zone name="24486" adunit="stern_ip/videos" position="2" index=""/>
+    <zone name="24488" adunit="stern_ip/videos" position="10" index=""/>
     <zone name="24696" adunit="stern_tab/videos" position="1" index="no"/>
     <zone name="24698" adunit="stern_tab/videos" position="2" index="no"/>
     <zone name="24700" adunit="stern_tab/videos" position="10" index="no"/>
     <zone name="24702" adunit="stern_tab/videos" position="0" index=""/>
     <zone name="24714" adunit="stern_tab/videos" position="0" index=""/>
     <zone name="25327" adunit="stern_ipad/videos" position="10" index=""/>
-    <zone name="25329" adunit="stern_ipad/videos" position="10" index=""/>
+    <zone name="25329" adunit="stern_ipad/videos" position="10" index="no"/>
     <zone name="25381" adunit="stern_ipad/videos" position="2" index=""/>
-    <zone name="25383" adunit="stern_ipad/videos" position="2" index=""/>
+    <zone name="25383" adunit="stern_ipad/videos" position="2" index="no"/>
     <zone name="25437" adunit="stern_ipad/videos" position="1" index=""/>
-    <zone name="25439" adunit="stern_ipad/videos" position="1" index=""/>
+    <zone name="25439" adunit="stern_ipad/videos" position="1" index="no"/>
     <zone name="25469" adunit="stern_ipad/videos" position="0" index=""/>
     <zone name="25499" adunit="stern_ipad/videos" position="0" index=""/>
     <zone name="25585" adunit="stern_and/videos" position="1" index=""/>
@@ -2095,25 +2095,25 @@
     <zone name="16891" adunit="stern_ipad/wirtschaft" position="1" index="no"/>
     <zone name="16893" adunit="stern_ipad/wirtschaft" position="0" index=""/>
     <zone name="17122" adunit="stern_ipad/wirtschaft" position="0" index=""/>
-    <zone name="19670" adunit="stern_ip/wirtschaft" position="1" index="no"/>
+    <zone name="19670" adunit="stern_ip/wirtschaft" position="1" index=""/>
     <zone name="19696" adunit="stern_ip/wirtschaft" position="0" index=""/>
     <zone name="19902" adunit="stern_and/wirtschaft" position="0" index=""/>
-    <zone name="19936" adunit="stern_and/wirtschaft" position="1" index="no"/>
-    <zone name="23736" adunit="stern_ip/wirtschaft" position="2" index="no"/>
-    <zone name="23775" adunit="stern_ip/wirtschaft" position="10" index="no"/>
-    <zone name="23831" adunit="stern_and/wirtschaft" position="10" index="no"/>
-    <zone name="23868" adunit="stern_and/wirtschaft" position="2" index="no"/>
+    <zone name="19936" adunit="stern_and/wirtschaft" position="1" index=""/>
+    <zone name="23736" adunit="stern_ip/wirtschaft" position="2" index=""/>
+    <zone name="23775" adunit="stern_ip/wirtschaft" position="10" index=""/>
+    <zone name="23831" adunit="stern_and/wirtschaft" position="10" index=""/>
+    <zone name="23868" adunit="stern_and/wirtschaft" position="2" index=""/>
     <zone name="24616" adunit="stern_tab/wirtschaft" position="1" index="no"/>
     <zone name="24618" adunit="stern_tab/wirtschaft" position="2" index="no"/>
     <zone name="24620" adunit="stern_tab/wirtschaft" position="10" index="no"/>
     <zone name="24622" adunit="stern_tab/wirtschaft" position="0" index=""/>
     <zone name="24749" adunit="stern_tab/wirtschaft" position="0" index=""/>
     <zone name="25307" adunit="stern_ipad/wirtschaft" position="10" index=""/>
-    <zone name="25309" adunit="stern_ipad/wirtschaft" position="10" index=""/>
+    <zone name="25309" adunit="stern_ipad/wirtschaft" position="10" index="no"/>
     <zone name="25361" adunit="stern_ipad/wirtschaft" position="2" index=""/>
-    <zone name="25363" adunit="stern_ipad/wirtschaft" position="2" index=""/>
+    <zone name="25363" adunit="stern_ipad/wirtschaft" position="2" index="no"/>
     <zone name="25417" adunit="stern_ipad/wirtschaft" position="1" index=""/>
-    <zone name="25419" adunit="stern_ipad/wirtschaft" position="1" index=""/>
+    <zone name="25419" adunit="stern_ipad/wirtschaft" position="1" index="no"/>
     <zone name="25459" adunit="stern_ipad/wirtschaft" position="0" index=""/>
     <zone name="25489" adunit="stern_ipad/wirtschaft" position="0" index=""/>
     <zone name="19364" adunit="tripwolf_ip/_default" position="1" index="no"/>
@@ -2353,5 +2353,15 @@
     <zone name="20171" adunit="wetter-deutschland_ipad/homepage" position="1" index="no"/>
     <zone name="24813" adunit="wetter-deutschland_tab/homepage" position="1" index=""/>
     <zone name="24831" adunit="wetter-deutschland_tab/homepage" position="0" index=""/>
-    
+    <zone name="17535" adunit="testseiteems/gala_ip_banner" position="1" index=""/>
+    <zone name="17535" adunit="testseiteems/gala_ip_banner" position="2" index=""/>
+    <zone name="17229" adunit="testseiteems/gala_ip_banner" position="3" index=""/>
+    <zone name="17535" adunit="testseiteems/gala_ip_banner" position="10" index=""/>
+    <zone name="17539" adunit="testseiteems/gala_ip_int" position="" index=""/>
+    <zone name="17732" adunit="testseiteems/gala_and_banner" position="1" index=""/>
+    <zone name="17732" adunit="testseiteems/gala_and_banner" position="2" index=""/>
+    <zone name="17732" adunit="testseiteems/gala_and_banner" position="3" index=""/>
+    <zone name="17732" adunit="testseiteems/gala_and_banner" position="10" index=""/>
+    <zone name="17734" adunit="testseiteems/gala_and_interstitial" position="" index=""/>
+
 </zonemapping>
