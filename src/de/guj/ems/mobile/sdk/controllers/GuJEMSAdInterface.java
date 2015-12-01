@@ -4,6 +4,7 @@ import android.Manifest.permission;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Vibrator;
+import android.view.View;
 import android.webkit.JavascriptInterface;
 
 import com.google.android.gms.ads.doubleclick.PublisherAdView;
@@ -85,7 +86,13 @@ public class GuJEMSAdInterface {
 			SdkLog.e(TAG, "Vibration not possible in this app.", e);
 		}
 	}
-	
+
+	@JavascriptInterface
+	public void hideAdView(PublisherAdView view) {
+		SdkLog.i(TAG, "ems_hideadview called.");
+		view.setVisibility(View.GONE);
+	}
+
 	public void doAppEvent(PublisherAdView adView, String name, String info) {
 		if ("vibratePattern".equals(name)) {
 			try {
@@ -108,6 +115,8 @@ public class GuJEMSAdInterface {
 			catch (Exception e) {
 				SdkLog.e(TAG, "Error parsing length value for vibration", e);
 			}
+		} else if ("hideAdView".equals(name)) {
+			hideAdView(adView);
 		}
 	}
 
