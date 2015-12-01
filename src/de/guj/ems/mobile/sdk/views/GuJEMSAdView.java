@@ -53,6 +53,7 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 	private boolean hasAdUnitId = false;
 
 	private int position = 0;
+	private boolean destroyOnDetach = true;
 
 	private boolean disallowRectangle = false;
 	private boolean disallowBillboard = false;
@@ -419,7 +420,7 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 			AdSize[] adSizes = { AdSize.BANNER, new AdSize(768, 90),
 					new AdSize(728, 90), new AdSize(768, 300),
 					new AdSize(1024, 220), new AdSize(800, 250),
-					new AdSize(300, 250) };
+					new AdSize(300, 250), new AdSize(1, 1)};
 			if (((DFPSettingsAdapter) this.settings).isNoRectangle() || this.disallowRectangle) {
 				SdkLog.d(TAG, settings.hashCode() + " removing accepted size: 300x250");
 				adSizes[6] = new AdSize(1, 1);
@@ -445,7 +446,7 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 			AdSize[] adSizes = { AdSize.BANNER, new AdSize(320, 50),
 					new AdSize(300, 75), new AdSize(300, 50),
 					new AdSize(768, 90), new AdSize(728, 90),
-					new AdSize(300, 150), new AdSize(300, 250) };
+					new AdSize(300, 150), new AdSize(300, 250), new AdSize(1, 1) };
 			if (((DFPSettingsAdapter) this.settings).isNoTwoToOne() || this.disallowTwoToOne) {
 				SdkLog.d(TAG, settings.hashCode() + " removing accepted size: 300x150");
 				adSizes[6] = new AdSize(1, 1);
@@ -604,10 +605,26 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 		return settings;
 	}
 
+	/**
+	 * destroy view
+	 */
+	public void destroyView() {
+		removeAllViews();
+	}
+
+	/**
+	 * tell view that on detach : dont detroy
+	 */
+	public void setNoDestroyOnDetach(boolean val) {
+		this.destroyOnDetach = !val;
+	}
+
 	@Override
 	protected void onDetachedFromWindow() {
 		super.onDetachedFromWindow();
-		removeAllViews();
+		if (this.destroyOnDetach) {
+			this.destroyView();
+		}
 	}
 
 	@Deprecated
