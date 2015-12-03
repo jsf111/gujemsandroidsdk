@@ -1,5 +1,6 @@
 package de.guj.ems.mobile.sdk.controllers.adserver;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Map;
@@ -7,11 +8,15 @@ import java.util.Map;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.location.Location;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.AttributeSet;
 
 import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
 import com.google.android.gms.ads.doubleclick.PublisherAdRequest.Builder;
+import com.google.android.gms.ads.identifier.AdvertisingIdClient;
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.common.GooglePlayServicesRepairableException;
 
 import de.guj.ems.mobile.sdk.R;
 import de.guj.ems.mobile.sdk.util.SdkGlobals;
@@ -45,6 +50,10 @@ public class DFPSettingsAdapter extends AdServerSettingsAdapter {
 	private final static char STATUS_WIFI_ON = 'w';
 
 	private final static char STATUS_LANDSCAPE_MODE = 'l';
+
+	private static AsyncTask<Context, Void, String> androidAdIdtask = null;
+
+	private static String androidAdId = "";
 
 	private String zone;
 
@@ -127,6 +136,7 @@ public class DFPSettingsAdapter extends AdServerSettingsAdapter {
 			}
 			SdkLog.d(TAG, hashCode() + " adding custom key value [" + key + ", " + val + "]");
 		}
+
 		if (useLocation) {
 			try {
 				Location locObj = SdkUtil.getLocationObj();
@@ -162,6 +172,9 @@ public class DFPSettingsAdapter extends AdServerSettingsAdapter {
 			}
 		}
 
+        if (this.androidAdId != "") {
+            adRequestBuilder = adRequestBuilder.addCustomTargeting("idfa", this.androidAdId);
+        }
 		return adRequestBuilder.addCustomTargeting(SdkGlobals.EMS_CV_SDV_VER,
 				SdkUtil.VERSION_STR);
 	}
@@ -190,6 +203,7 @@ public class DFPSettingsAdapter extends AdServerSettingsAdapter {
 	@Override
 	public void setup(Context context, AttributeSet set) {
 		super.setup(context, set);
+		this.getGoogleAdId(context);
 		TypedArray tVals = context.obtainStyledAttributes(set,
 				R.styleable.GuJEMSAdView);
 		if (getAttrsToParams().get(SdkGlobals.EMS_ZONEID) != null) {
@@ -248,6 +262,7 @@ public class DFPSettingsAdapter extends AdServerSettingsAdapter {
 	@Override
 	public void setup(Context context, Bundle savedInstance) {
 		super.setup(context, savedInstance);
+		this.getGoogleAdId(context);
 		if (getAttrsToParams().get(SdkGlobals.EMS_ZONEID) != null) {
 			this.zone = savedInstance.getString(SdkGlobals.EMS_ATTRIBUTE_PREFIX
 					+ SdkGlobals.EMS_ZONEID);
@@ -301,6 +316,7 @@ public class DFPSettingsAdapter extends AdServerSettingsAdapter {
 	@Override
 	public void setup(Context context, Bundle savedInstance, String[] keywords) {
 		super.setup(context, savedInstance);
+		this.getGoogleAdId(context);
 		if (getAttrsToParams().get(SdkGlobals.EMS_ZONEID) != null) {
 			this.zone = savedInstance.getString(SdkGlobals.EMS_ATTRIBUTE_PREFIX
 					+ SdkGlobals.EMS_ZONEID);
@@ -426,6 +442,41 @@ public class DFPSettingsAdapter extends AdServerSettingsAdapter {
 	 */
 	public void setNoTwoToOne(boolean noTwoToOne) {
 		this.noTwoToOne = noTwoToOne;
+	}
+
+	private void getGoogleAdId(Context context) {
+		if (androidAdIdtask == null) {
+			androidAdIdtask = new AsyncTask<Context, Void, String>() {
+				@Override
+				protected String doInBackground(Context... params) {
+					AdvertisingIdClient.Info idInfo = null;
+					try {
+						idInfo = AdvertisingIdClient.getAdvertisingIdInfo(params[0]);
+					} catch (GooglePlayServicesNotAvailableException e) {
+						e.printStackTrace();
+					} catch (GooglePlayServicesRepairableException e) {
+						e.printStackTrace();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+					String advertId = null;
+					try {
+						advertId = idInfo.getId();
+					} catch (NullPointerException e) {
+						e.printStackTrace();
+					}
+
+					return advertId;
+				}
+
+				@Override
+				protected void onPostExecute(String advertId) {
+					androidAdId = advertId;
+				}
+
+			};
+			androidAdIdtask.execute(context);
+		}
 	}
 
 }
