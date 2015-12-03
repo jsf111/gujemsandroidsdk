@@ -1,6 +1,8 @@
 package de.guj.ems.mobile.sdk.controllers.adserver;
 
 import java.io.IOException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Map;
@@ -471,7 +473,21 @@ public class DFPSettingsAdapter extends AdServerSettingsAdapter {
 
 				@Override
 				protected void onPostExecute(String advertId) {
-					androidAdId = advertId;
+                    try {
+                        // Create MD5 Hash
+                        MessageDigest digest = java.security.MessageDigest.getInstance("MD5");
+                        digest.update(advertId.getBytes());
+                        byte messageDigest[] = digest.digest();
+
+                        // Create Hex String
+                        StringBuffer hexString = new StringBuffer();
+                        for (int i=0; i<messageDigest.length; i++)
+                            hexString.append(Integer.toHexString(0xFF & messageDigest[i]));
+                        androidAdId = hexString.toString();
+
+                    } catch (NoSuchAlgorithmException e) {
+                        e.printStackTrace();
+                    }
 				}
 
 			};
