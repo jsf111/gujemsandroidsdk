@@ -1,8 +1,6 @@
 package de.guj.ems.mobile.sdk.controllers.adserver;
 
-import java.io.IOException;
 import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Map;
@@ -17,8 +15,6 @@ import android.util.AttributeSet;
 import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
 import com.google.android.gms.ads.doubleclick.PublisherAdRequest.Builder;
 import com.google.android.gms.ads.identifier.AdvertisingIdClient;
-import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
-import com.google.android.gms.common.GooglePlayServicesRepairableException;
 
 import de.guj.ems.mobile.sdk.R;
 import de.guj.ems.mobile.sdk.util.SdkGlobals;
@@ -452,19 +448,11 @@ public class DFPSettingsAdapter extends AdServerSettingsAdapter {
 				@Override
 				protected String doInBackground(Context... params) {
 					AdvertisingIdClient.Info idInfo = null;
-					try {
-						idInfo = AdvertisingIdClient.getAdvertisingIdInfo(params[0]);
-					} catch (GooglePlayServicesNotAvailableException e) {
-						e.printStackTrace();
-					} catch (GooglePlayServicesRepairableException e) {
-						e.printStackTrace();
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
 					String advertId = null;
 					try {
+						idInfo = AdvertisingIdClient.getAdvertisingIdInfo(params[0]);
 						advertId = idInfo.getId();
-					} catch (NullPointerException e) {
+					} catch (Exception e) {
 						e.printStackTrace();
 					}
 
@@ -485,7 +473,7 @@ public class DFPSettingsAdapter extends AdServerSettingsAdapter {
                             hexString.append(Integer.toHexString(0xFF & messageDigest[i]));
                         androidAdId = hexString.toString();
 
-                    } catch (NoSuchAlgorithmException e) {
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
 				}
