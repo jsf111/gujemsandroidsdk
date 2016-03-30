@@ -89,6 +89,8 @@ gujView.setOnAdErrorListener(new IOnAdErrorListener() {
 });
 /* block rectangle */
 gujView.setNoRectangle(true);
+/* set Content URL for Targeting */
+gujView.setContentUrl("http://gujmedia.de");
 /* load ad */
 gujView.load();
 /* add adView to Layout */
