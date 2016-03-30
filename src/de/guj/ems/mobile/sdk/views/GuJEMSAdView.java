@@ -60,6 +60,7 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 	private boolean disallowDesktopBillboard = false;
 	private boolean disallowLeaderboard = false;
 	private boolean disallowTwoToOne = false;
+	private String contentUrl = "";
 
 	/**
 	 * Initialize view without configuration
@@ -351,6 +352,10 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 				Builder requestBuilder = ((DFPSettingsAdapter) settings)
 						.getGoogleRequestBuilder(this.position);
 
+				if (!this.contentUrl.equals("")) {
+					requestBuilder.setContentUrl(this.contentUrl);
+				}
+
 				if (!this.hasAdUnitId) {
 					String adunit = ((DFPSettingsAdapter) settings)
 							.mapToDfpAdUnit();
@@ -415,6 +420,10 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 		this.setAdSizes();
 	}
 
+	public void setContentUrl(String contentUrl) {
+		this.contentUrl = contentUrl;
+	}
+
 	private void setAdSizes() {
 		if (SdkUtil.isLargerThanPhone()) {
 			AdSize[] adSizes = { AdSize.BANNER, new AdSize(768, 90),
@@ -446,14 +455,26 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 			AdSize[] adSizes = { AdSize.BANNER, new AdSize(320, 50),
 					new AdSize(300, 75), new AdSize(300, 50),
 					new AdSize(768, 90), new AdSize(728, 90),
-					new AdSize(300, 150), new AdSize(300, 250), new AdSize(1, 1) };
+					new AdSize(300, 150), new AdSize(300, 250), new AdSize(1, 1),
+					new AdSize(320, 53), new AdSize(320, 75),
+					new AdSize(320, 80), new AdSize(320, 100),
+					new AdSize(320, 106), new AdSize(320, 150),
+					new AdSize(320, 160), new AdSize(320, 250),
+					new AdSize(320, 320), new AdSize(320, 416)
+
+			};
 			if (((DFPSettingsAdapter) this.settings).isNoTwoToOne() || this.disallowTwoToOne) {
 				SdkLog.d(TAG, settings.hashCode() + " removing accepted size: 300x150");
 				adSizes[6] = new AdSize(1, 1);
+				adSizes[14] = new AdSize(1, 1);
+				adSizes[15] = new AdSize(1, 1);
 			}
 			if (((DFPSettingsAdapter) this.settings).isNoRectangle() || this.disallowRectangle) {
 				SdkLog.d(TAG, settings.hashCode() + " removing accepted size: 300x250");
 				adSizes[7] = new AdSize(1, 1);
+				adSizes[16] = new AdSize(1, 1);
+				adSizes[17] = new AdSize(1, 1);
+				adSizes[18] = new AdSize(1, 1);
 			}
 
 			if (((DFPSettingsAdapter) this.settings).isNoLeaderboard() || this.disallowLeaderboard) {
