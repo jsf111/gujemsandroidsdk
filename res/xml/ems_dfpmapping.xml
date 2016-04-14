@@ -1428,6 +1428,32 @@
     <zone name="20357" adunit="n-tv_tab/wissen" position="10" index="no"/>
     <zone name="22842" adunit="n-tv_and/wissen" position="10" index="no"/>
     <zone name="22866" adunit="n-tv_ip/wissen" position="10" index="no"/>
+    <zone name="99853" adunit="n-tv_ip/startupnews" position="1" index="yes"/>
+    <zone name="99852" adunit="n-tv_ip/startupnews" position="2" index="yes"/>
+    <zone name="99851" adunit="n-tv_ip/startupnews" position="10" index="yes"/>
+    <zone name="99854" adunit="n-tv_ip/startupnews" position="0"/>
+    <zone name="99850" adunit="n-tv_ip/startupnews" position="1" index="no"/>
+    <zone name="99849" adunit="n-tv_ip/startupnews" position="2" index="no"/>
+    <zone name="99848" adunit="n-tv_ip/startupnews" position="10" index="no"/>
+    <zone name="99860" adunit="n-tv_and/startupnews" position="1" index="yes"/>
+    <zone name="99859" adunit="n-tv_and/startupnews" position="2" index="yes"/>
+    <zone name="99858" adunit="n-tv_and/startupnews" position="10" index="yes"/>
+    <zone name="99861" adunit="n-tv_and/startupnews" position="0"/>
+    <zone name="99857" adunit="n-tv_and/startupnews" position="1" index="no"/>
+    <zone name="99856" adunit="n-tv_and/startupnews" position="2" index="no"/>
+    <zone name="99855" adunit="n-tv_and/startupnews" position="10" index="no"/>
+    <zone name="99846" adunit="n-tv_ipad/startupnews" position="1" index="yes"/>
+    <zone name="99845" adunit="n-tv_ipad/startupnews" position="1" index="yes"/>
+    <zone name="99847" adunit="n-tv_ipad/startupnews" position="0"/>
+    <zone name="99844" adunit="n-tv_ipad/startupnews" position="1" index="no"/>
+    <zone name="99843" adunit="n-tv_ipad/startupnews" position="2" index="no"/>
+    <zone name="99842" adunit="n-tv_ipad/startupnews" position="10" index="no"/>
+    <zone name="99840" adunit="n-tv_tab/startupnews" position="1" index="yes"/>
+    <zone name="99839" adunit="n-tv_tab/startupnews" position="1" index="yes"/>
+    <zone name="99841" adunit="n-tv_tab/startupnews" position="0"/>
+    <zone name="99838" adunit="n-tv_tab/startupnews" position="1" index="no"/>
+    <zone name="99837" adunit="n-tv_tab/startupnews" position="10" index="no"/>
+    <zone name="99836" adunit="n-tv_tab/startupnews" position="10" index="no"/>    
     <zone name="24471" adunit="n-tv_teleboerse_and/_default" position="10" index=""/>
     <zone name="24469" adunit="n-tv_teleboerse_and/_default" position="0" index=""/>
     <zone name="24473" adunit="n-tv_teleboerse_and/_default" position="2" index=""/>
