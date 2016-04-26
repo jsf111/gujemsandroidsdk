@@ -399,6 +399,7 @@ public class GuJEMSVideoPlayer extends RelativeLayout {
 	
 	public void resume() {
 		mVideoPlayerController.resume();
+		mVideoAdPlayer.resumeAd();
 	}	
 	
 	public VideoView getVideoView() {

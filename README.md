@@ -1,5 +1,7 @@
 # gujemsandroidsdk
 
+**Latest stable Version 2.0.2**
+
 ## Requirements
 
 The SDK supports **Android 2.2 and higher**.  
@@ -97,7 +99,7 @@ gujView.load();
 addView(gujView);
 ```` 
 ### interstitial ad
-**The interstitial ad can oly create programmatically.**
+**The interstitial ad can only create programmatically.**
 Let's have a look on an example:
 ```java
 Intent target = new Intent(getApplicationContext(), <TARGET-ACTIVITY>);
