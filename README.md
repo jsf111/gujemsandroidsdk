@@ -1,23 +1,27 @@
 # gujemsandroidsdk
 
-**Latest stable Version 2.0.2**
+**Latest stable Version 2.1**
 
 ## Requirements
 
 The SDK supports **Android 2.2 and higher**.  
 Language Support: **Java**  
-Use **Android SDK Tools v23 or higher**.
+Use **Android SDK Tools v23 or higher**
 Dependencies **Google Play Services v25 or higher required**
 
 ## Installation
 
-The SDK is available as a downloadable Eclipse project. A gradle build archive will be available soon.
+The SDK is available as a gradle project.
 
-1. Extract and import the SDK to your Eclipse project.
-2. Set the SDK as Android Library ("Project Properties" -> "Android" -> "Is Library").
-3. Add the SDK to your project ("Project Properties" -> Android -> Add...).
-4. Add "Google Play Services" to the SDK.
-5. Well done! :-)
+1. Extract and import the SDK (GuJeMSSDK) to your project.
+2. Add our SDK to you gradle File.
+```
+dependencies {
+       compile project(':GuJeMSSDK')
+       [...]
+}
+```
+3. Well done!
 
 ## Usage
 If you are interested in upgrading the SDK please move forward to Chapter "Upgrading from v1.4.x to v2.0.x".
@@ -39,7 +43,7 @@ You have two possibilities to add one or more banner ads to your app. The first 
 To get the ems namespace add the following attribute to your Root-View:
 ```xml
 xmlns:ems="http://schemas.android.com/apk/res/[your package path]"
-````
+```
 Let's have a look on the attributes for GuJEMSAdView:
 - ems_onAdEmpty : Method which is called, when no ad was found.
 - ems_onAdError : Method which is called, when an error occured
@@ -49,7 +53,7 @@ Let's have a look on the attributes for GuJEMSAdView:
 - ems_kw : **[true / false]** Allow transmission of keywords 
 - ems_noRectangle, ems_noBillboard, ems_no[...] : Block special ad sizes for this ad slot
 
-You also have the possibility to ad banner ad programmatically:
+You also have the possibility to add banner ad programmatically:
 
 - Create an separate layout file for your banner ad 
 - Add a GuJEMSAdView to the file. Example:
@@ -63,8 +67,9 @@ You also have the possibility to ad banner ad programmatically:
 </de.guj.ems.mobile.sdk.views.GuJEMSAdView>
 ```
 - Create the view in your code. Example: 
+
 ```java
-/* initialize the GujEMSAdView */ 
+/* initialize the GujEMSAdView */
 GuJEMSAdView gujView = new GuJEMSAdView(getApplicationContext(), R.id.banner_top, false);
 /* set Ad Unit Id and position */
 gujView.setAdUnitId("sdktest", 1);
@@ -74,19 +79,19 @@ gujView.getSettings().addCustomRequestParameter("ind", "no");
 gujView.setOnAdEmptyListener(new IOnAdEmptyListener() {
     @Override
     public void onAdEmpty() {
-        /*** Do something ***/
+        /* Do something */
     }
 });
 /* set event listener called when error occured */
 gujView.setOnAdErrorListener(new IOnAdErrorListener() {
     @Override
     public void onAdError(String msg) {
-        /*** Do something ***/
+        /* Do something */
     }
 
     @Override
     public void onAdError(String msg, Throwable t) {
-        /*** Do something ***/
+        /* Do something */
     }
 });
 /* block rectangle */
@@ -97,10 +102,12 @@ gujView.setContentUrl("http://gujmedia.de");
 gujView.load();
 /* add adView to Layout */
 addView(gujView);
-```` 
+```
+
 ### interstitial ad
 **The interstitial ad can only create programmatically.**
 Let's have a look on an example:
+
 ```java
 Intent target = new Intent(getApplicationContext(), <TARGET-ACTIVITY>);
 Intent i = new Intent(getActivity(),
@@ -118,6 +125,7 @@ i.putExtra("target", target);
 /* open interstitial */
 getActivity().sendBroadcast(i);
 ```
+
 If the intent “target” is not set, the interstitial closes itself and returns to the previous view. The Class ListenerEvents isn't part of the SDK.
 
 ### video ad
@@ -125,6 +133,9 @@ Please have a look at the chapter "Video Advertising".
 
 ### native ad
 Please have a look at the chapter "Native Advertisitng".
+
+### inflow ad
+Please have a look at the chapter "InFlow Ad"
 
 ## Upgrading from v1.4.x to v2.0.x
 
@@ -210,7 +221,7 @@ By default the GuJEMSAdViews accept all feasible ad sizes. You can block large a
 	ems:ems_noDesktopBillboard="true" <!-- blocks 800x250 ads on tablets -->
 	ems:ems_noLeaderboard="true" <!-- blocks 728x90 and 768x90 ads on both smartphones and tables -->
 	ems:ems_noTwoToOne="true" <!-- blocks 300x150 ads on smartphones -->
-```	
+```
 - Programmatically supressing them
 ```java
 	GuJEMSAdView.setNoRectangle(true)
@@ -218,7 +229,7 @@ By default the GuJEMSAdViews accept all feasible ad sizes. You can block large a
 	GuJEMSAdView.setNoDesktopBillboard(true)
 	GuJEMSAdView.setNoLeaderboard(true)
 	GuJEMSAdView.setNoTwoToOne(true)
-```	
+```
 #### "as" parameter as custom value
 
 This is no longer supported. Set the zone or adunit with the respective setter method for GuJEMSAdView	
@@ -227,6 +238,41 @@ This is no longer supported. Set the zone or adunit with the respective setter m
 #### Google Ad Exchange
 
 Providing inventory to the Google Ad Exchange for programmatic advertising is handled internally by the SDK and configured by G+J e|MS via the adserver.
+
+<a name="inflow"></a>
+## InFlow Ad
+Usage only in ScrollViews!
+
+You have two possibilities to add an InFlow to your app. The first way is by adding a view to your layout file.
+
+ ```xml
+<de.guj.ems.mobile.sdk.views.video.GuJEMSInFlowView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/InFlowPlayer"
+    app:ems_adUnit="">
+</de.guj.ems.mobile.sdk.views.video.GuJEMSInFlowView>
+ ```
+- ems_adUnit : [your InFlow Ad Unit Id]
+
+You also have the possibility to add InFlow ad programmatically:
+
+1. Add the InFlow View to your layout
+ ```xml
+<de.guj.ems.mobile.sdk.views.video.GuJEMSInFlowView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/InFlowPlayer"
+</de.guj.ems.mobile.sdk.views.video.GuJEMSInFlowView>
+ ```
+2. Add the following code to your App:
+```java
+GuJEMSInFlowView inflow = (GuJEMSInFlowView)rootView.findViewById(R.id.InFlowPlayer);
+/** Change the colour of the sound on/off button and the close button  -> use Hexcode**/
+inflow.setColorToButtons("#00a600");
+/** Set AdUnit **/
+inflow.setAdUnit(adUnitId);
+```
 
 <a name="video"></a>
 ## Video Advertising
