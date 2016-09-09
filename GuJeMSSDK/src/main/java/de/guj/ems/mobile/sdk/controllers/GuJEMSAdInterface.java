@@ -11,6 +11,7 @@ import com.google.android.gms.ads.doubleclick.PublisherAdView;
 
 import de.guj.ems.mobile.sdk.util.SdkLog;
 import de.guj.ems.mobile.sdk.util.SdkUtil;
+import de.guj.ems.mobile.sdk.util.ThirdPartyConnector;
 
 /**
  * Add e|MS specific functionality by providing an AppEventListener interface
@@ -117,9 +118,9 @@ public class GuJEMSAdInterface {
 			}
 		} else if ("hideAdView".equals(name)) {
 			hideAdView(adView);
-		} else if ("FacebookParty12345".equals(name)) {
+		} else if ("handOverAdViewToFacebook".equals(name)) {
 			hideAdView(adView);
-			/*loadFBA(info);*/
+			ThirdPartyConnector.getInstance().callByType(ThirdPartyConnector.facebook, adView, info);
 		}
 	}
 

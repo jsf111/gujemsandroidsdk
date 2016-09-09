@@ -25,6 +25,7 @@ import com.google.ads.interactivemedia.v3.api.player.VideoAdPlayer.VideoAdPlayer
 import de.guj.ems.mobile.sdk.R;
 import de.guj.ems.mobile.sdk.util.SdkLog;
 import de.guj.ems.mobile.sdk.util.SdkUtil;
+import de.guj.ems.mobile.sdk.util.ThirdPartyConnector;
 
 public class GuJEMSInFlowView extends LinearLayout {
 
@@ -271,6 +272,10 @@ public class GuJEMSInFlowView extends LinearLayout {
 					case CONTENT_RESUME_REQUESTED:
 						if (currentAd == null) {
 							SdkLog.d(TAG, "no InFlow found");
+							ThirdPartyConnector.getInstance().callByType(
+									ThirdPartyConnector.teads,
+									mRootView
+							);
 							getViewTreeObserver().removeOnScrollChangedListener(
 									mScrollChangedListener);
 							getViewTreeObserver().removeOnWindowFocusChangeListener(
