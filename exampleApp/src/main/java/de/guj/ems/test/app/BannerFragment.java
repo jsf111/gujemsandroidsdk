@@ -2,7 +2,11 @@ package de.guj.ems.test.app;
 
 import de.guj.ems.mobile.sdk.controllers.IOnAdEmptyListener;
 import de.guj.ems.mobile.sdk.controllers.IOnAdErrorListener;
+import de.guj.ems.mobile.sdk.util.ThirdPartyConnector;
 import de.guj.ems.mobile.sdk.views.GuJEMSAdView;
+import de.guj.ems.test.app.ThirdParty.ExternalTargetingConnector;
+import de.guj.ems.test.app.ThirdParty.FacebookAudienceConnector;
+
 import android.app.Fragment;
 import android.content.Context;
 import android.graphics.Color;
@@ -17,6 +21,8 @@ import android.widget.TextView;
 
 public class BannerFragment extends Fragment {
 
+    private FacebookAudienceConnector fb = null;
+    private ExternalTargetingConnector et = null;
     private LinearLayout rl;
 
 	@Override
@@ -24,9 +30,27 @@ public class BannerFragment extends Fragment {
             Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_banner, container, false);
+
+        if (fb == null) {
+            fb = new FacebookAudienceConnector(getContext());
+        }
+        if (et == null) {
+            et = new ExternalTargetingConnector(getContext());
+        }
+
+        ThirdPartyConnector.getInstance().registerCallback(fb);
+        ThirdPartyConnector.getInstance().registerCallback(et);
+
         this.rl = (LinearLayout)rootView.findViewById(R.id.BannerFragmentView);
 
         return rootView;
+    }
+
+    @Override
+    public void onDestroyView() {
+        ThirdPartyConnector.getInstance().removeCallback(fb);
+        ThirdPartyConnector.getInstance().removeCallback(et);
+        super.onDestroyView();
     }
 
     @Override

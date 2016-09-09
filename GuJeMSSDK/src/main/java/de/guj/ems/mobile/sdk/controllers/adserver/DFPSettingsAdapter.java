@@ -20,6 +20,7 @@ import de.guj.ems.mobile.sdk.R;
 import de.guj.ems.mobile.sdk.util.SdkGlobals;
 import de.guj.ems.mobile.sdk.util.SdkLog;
 import de.guj.ems.mobile.sdk.util.SdkUtil;
+import de.guj.ems.mobile.sdk.util.ThirdPartyConnector;
 
 /**
  * New ad view settings adapter connecting the app to
@@ -175,6 +176,8 @@ public class DFPSettingsAdapter extends AdServerSettingsAdapter {
         if (this.androidAdId != "") {
             adRequestBuilder = adRequestBuilder.addCustomTargeting("idfa", this.androidAdId);
         }
+
+		ThirdPartyConnector.getInstance().callByType(ThirdPartyConnector.targeting, adRequestBuilder);
 
 		return adRequestBuilder.addCustomTargeting(SdkGlobals.EMS_CV_SDV_VER,
 				SdkUtil.VERSION_STR);
