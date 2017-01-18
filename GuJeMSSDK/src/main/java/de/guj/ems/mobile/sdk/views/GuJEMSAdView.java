@@ -590,7 +590,7 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 			this.position = Integer.parseInt(vals[1]);
 			this.adView.setAdUnitId(getContext().getResources().getString(
 					R.string.ems_dfpNetwork)
-					+ vals[0].replace("\\/6032\\/", ""));
+					+ vals[0].replace("/6032/", "").replaceAll("\\/6032\\/", ""));
 			if ("yes".equals(vals[2])) {
 				settings.addCustomRequestParameter("ind", "yes");
 			}
@@ -599,7 +599,7 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 			this.position = position;
 			this.adView.setAdUnitId(getContext().getResources().getString(
 					R.string.ems_dfpNetwork)
-					+ adUnitId.replace("\\/6032\\/", ""));
+					+ adUnitId.replace("/6032/", "").replaceAll("\\/6032\\/", ""));
 		}
 		SdkLog.d(
 				TAG,
