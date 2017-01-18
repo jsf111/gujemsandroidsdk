@@ -24,6 +24,8 @@ public class InterstitialSwitchReceiver extends BroadcastReceiver implements
 
 	private PublisherInterstitialAd interstitial;
 
+	private boolean interstitalBlock = false;
+
 	private final static String TAG = "InterstitialSwitchReceiver";
 
 	private AdServerSettingsAdapter settings;
@@ -139,6 +141,9 @@ public class InterstitialSwitchReceiver extends BroadcastReceiver implements
 	@Override
 	public void onAppEvent(String arg0, String arg1) {
 		SdkLog.d(TAG, "Received app event " + arg0 + "(" + arg1 + ")");
+		if (arg0.equals("interstitialBlocker")) {
+			this.interstitalBlock = true;
+		}
 		GuJEMSAdInterface.getInstance().doAppEvent(null, arg0, arg1);
 	}
 
@@ -151,7 +156,12 @@ public class InterstitialSwitchReceiver extends BroadcastReceiver implements
 		if (this.onAdSuccess != null) {
 			this.onAdSuccess.onAdSuccess();
 		}
-		interstitial.show();
+
+		if (!this.interstitalBlock) {
+			interstitial.show();
+		} else {
+			this.interstitalBlock = false;
+		}
 	}
 
 	@Override
