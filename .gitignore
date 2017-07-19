@@ -1,0 +1,6 @@
+.idea/
+build/
+captures/
+gujemsandroidsdk/build/
+*.iml
+.gradle/
