@@ -3,4 +3,5 @@ build/
 captures/
 gujemsandroidsdk/build/
 *.iml
+local.properties
 .gradle/

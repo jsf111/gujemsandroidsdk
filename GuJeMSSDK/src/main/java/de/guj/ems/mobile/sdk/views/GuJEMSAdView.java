@@ -50,7 +50,7 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 
 	private final String TAG = "GuJEMSAdView";
 
-	private boolean hasAdUnitId = false;
+	protected boolean hasAdUnitId = false;
 
 	private int position = 0;
 	private boolean destroyOnDetach = true;
@@ -356,7 +356,7 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 				SdkLog.i(TAG, settings.hashCode() + " starting ad request");
 
 				Builder requestBuilder = ((DFPSettingsAdapter) settings)
-						.getGoogleRequestBuilder(this.position);
+						.getGoogleRequestBuilder(this.position, this.hasAdUnitId);
 
 				if (!this.contentUrl.equals("")) {
 					requestBuilder.setContentUrl(this.contentUrl);
@@ -595,13 +595,13 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
 			if ("yes".equals(vals[2])) {
 				settings.addCustomRequestParameter("ind", "yes");
 			}
-			settings.addCustomRequestParameter("pos", this.position);
 		} else {
 			this.position = position;
 			this.adView.setAdUnitId(getContext().getResources().getString(
 					R.string.ems_dfpNetwork)
 					+ adUnitId.replace("/6032/", "").replaceAll("\\/6032\\/", ""));
 		}
+		settings.addCustomRequestParameter("pos", this.position);
 		SdkLog.d(
 				TAG,
 				settings.hashCode()

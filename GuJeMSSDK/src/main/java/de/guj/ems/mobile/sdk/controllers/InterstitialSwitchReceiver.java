@@ -121,7 +121,7 @@ public class InterstitialSwitchReceiver extends BroadcastReceiver implements
 
 		// adserver request
 		Builder requestBuilder = ((DFPSettingsAdapter) settings)
-				.getGoogleRequestBuilder(0);
+				.getGoogleRequestBuilder(0, true);
 		interstitial = new PublisherInterstitialAd(arg0);
 		if (this.adUnitId != null) {
 			interstitial.setAdUnitId("/6032/"+this.adUnitId.replaceAll("/6032/", "").replaceAll("\\/6032\\/", ""));
