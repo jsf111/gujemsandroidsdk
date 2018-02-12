@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-   	<string name="ems_loading">Lädt&#8230;</string>
-   	<string name="ems_native_ad_marker">Anzeige</string>
-	<string name="ems_close">Schliessen</string>
-	<string name="ems_sound">Sound an/aus</string>
+    <string name="ems_loading">Lädt&#8230;</string>
+    <string name="ems_native_ad_marker">Anzeige</string>
+    <string name="ems_close">Schliessen</string>
+    <string name="ems_sound">Sound an/aus</string>
     <string name="ems_siteId">siteId</string>
     <string name="ems_zoneId">zoneId</string>
     <string name="ems_adUnit">adUnit</string>

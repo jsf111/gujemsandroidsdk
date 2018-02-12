@@ -6,35 +6,33 @@ import de.guj.ems.mobile.sdk.controllers.adserver.IAdServerSettingsAdapter;
 
 /**
  * Singleton that holds the data fetched from a remote json file
- * 
- * 
+ *
  * @author stein16
- * 
  */
 abstract class JSONContent {
 
-	private JSONObject json;
+    private JSONObject json;
 
-	JSONContent() {
-		init();
-	}
+    JSONContent() {
+        init();
+    }
 
-	synchronized protected void feed(JSONObject j) {
-		this.json = j;
-	}
+    synchronized protected void feed(JSONObject j) {
+        this.json = j;
+    }
 
-	synchronized JSONObject getJSON() {
-		return this.json;
-	}
+    synchronized JSONObject getJSON() {
+        return this.json;
+    }
 
-	String getRemotePath() {
-		return SdkUtil.getContext().getPackageName().replaceAll("\\.", "/")
-				+ (SdkUtil.isLargerThanPhone() ? "/xl/" : "/");
-	}
+    String getRemotePath() {
+        return SdkUtil.getContext().getPackageName().replaceAll("\\.", "/")
+                + (SdkUtil.isLargerThanPhone() ? "/xl/" : "/");
+    }
 
-	abstract void init();
+    abstract void init();
 
-	public abstract IAdServerSettingsAdapter process(
-			IAdServerSettingsAdapter settings);
+    public abstract IAdServerSettingsAdapter process(
+            IAdServerSettingsAdapter settings);
 
 }

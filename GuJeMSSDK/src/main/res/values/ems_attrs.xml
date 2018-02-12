@@ -30,25 +30,13 @@
         <attr name="ems_geo" />
         <attr name="ems_lat" />
         <attr name="ems_lon" />
-        <attr name="ems_noRectangle"/>
-        <attr name="ems_noBillboard"/>
-        <attr name="ems_noDesktopBillboard"/>
-        <attr name="ems_noLeaderboard"/>
-        <attr name="ems_noTwoToOne"/>
-        <attr name="ems_noThreeToOne"/>
+        <attr name="ems_noRectangle" />
+        <attr name="ems_noBillboard" />
+        <attr name="ems_noDesktopBillboard" />
+        <attr name="ems_noLeaderboard" />
+        <attr name="ems_noTwoToOne" />
+        <attr name="ems_noThreeToOne" />
     </declare-styleable>
-    
-    <!-- attribute usage for native content ad view -->
-    <declare-styleable name="GuJEMSNativeContentAdView">
-        <attr name="ems_onAdSuccess" />
-        <attr name="ems_onAdEmpty" />
-        <attr name="ems_onAdError" />
-        <attr name="ems_adUnit" />
-        <attr name="ems_kw" />
-        <attr name="ems_geo" />
-        <attr name="ems_lat" />
-        <attr name="ems_lon" />
-    </declare-styleable>    
 
     <!-- attribute usage for video player -->
     <declare-styleable name="GuJEMSVideoPlayer">

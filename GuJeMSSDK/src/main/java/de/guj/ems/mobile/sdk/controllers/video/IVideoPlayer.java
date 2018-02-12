@@ -8,7 +8,7 @@ package de.guj.ems.mobile.sdk.controllers.video;
 public interface IVideoPlayer {
 
     /**
-     *  Interface for alerting caller of major video events.
+     * Interface for alerting caller of major video events.
      */
     public interface PlayerCallback {
 

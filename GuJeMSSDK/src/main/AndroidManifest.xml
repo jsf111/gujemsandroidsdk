@@ -5,12 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="de.guj.ems.mobile.sdk"
     android:versionCode="12"
-    android:versionName="2.0.2" >
+    android:versionName="2.0.2">
 
     <!-- The G+J e|MS Android SDK requires Android 2.2 (FROYO) or later and has been tested with Android 6.0 Marshmallow -->
-    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="23"
-        tools:overrideLibrary="com.google.android.gms"/>/>
-    
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23"
+        tools:overrideLibrary="com.google.android.gms" />/>
+
     <!-- *** Required permissions *** -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -41,16 +43,15 @@
     <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
 
     <application>
-        
+
         <!-- Google Ad SDK -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
 
         <!-- Receiver to check whether an interstitial can be displayed -->
-        <receiver android:name="de.guj.ems.mobile.sdk.controllers.InterstitialSwitchReceiver" >
-        </receiver>
-        
+        <receiver android:name="de.guj.ems.mobile.sdk.controllers.InterstitialSwitchReceiver"></receiver>
+
     </application>
 
 </manifest>

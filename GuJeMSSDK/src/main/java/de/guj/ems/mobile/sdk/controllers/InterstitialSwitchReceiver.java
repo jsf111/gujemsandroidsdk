@@ -17,187 +17,195 @@ import de.guj.ems.mobile.sdk.util.SdkLog;
 import de.guj.ems.mobile.sdk.util.SdkUtil;
 
 public class InterstitialSwitchReceiver extends BroadcastReceiver implements
-		AppEventListener, IOnAdSuccessListener, IOnAdEmptyListener,
-		IOnAdErrorListener {
+        AppEventListener, IOnAdSuccessListener, IOnAdEmptyListener,
+        IOnAdErrorListener {
 
-	private static final long serialVersionUID = -8422088298217436485L;
+    private static final long serialVersionUID = -8422088298217436485L;
 
-	private PublisherInterstitialAd interstitial;
+    private PublisherInterstitialAd interstitial;
 
-	private boolean interstitalBlock = false;
+    private boolean interstitialBlock = false;
 
-	private final static String TAG = "InterstitialSwitchReceiver";
+    private final static String TAG = "InterstitialSwitchReceiver";
 
-	private AdServerSettingsAdapter settings;
+    private AdServerSettingsAdapter settings;
 
-	private String adUnitId;
+    private String adUnitId;
 
-	private IOnAdSuccessListener onAdSuccess;
+    private IOnAdSuccessListener onAdSuccess;
 
-	private IOnAdEmptyListener onAdEmpty;
+    private IOnAdEmptyListener onAdEmpty;
 
-	private IOnAdErrorListener onAdError;
+    private IOnAdErrorListener onAdError;
 
-	private Intent target;
+    private Intent target;
 
-	private Context context;
+    private Context context;
 
-	private class AdResponseReceiver extends ResultReceiver {
+    private class AdResponseReceiver extends ResultReceiver {
 
-		private InterstitialSwitchReceiver receiver;
+        private InterstitialSwitchReceiver receiver;
 
-		AdResponseReceiver(Handler handler) {
-			super(handler);
-		}
+        AdResponseReceiver(Handler handler) {
+            super(handler);
+        }
 
-		@Override
-		protected void onReceiveResult(int resultCode, Bundle resultData) {
+        @Override
+        protected void onReceiveResult(int resultCode, Bundle resultData) {
 
-			if (receiver != null) {
-				receiver.onReceiveResult(resultCode, resultData);
-			}
-		}
+            if (receiver != null) {
+                receiver.onReceiveResult(resultCode, resultData);
+            }
+        }
 
-		void setReceiver(InterstitialSwitchReceiver receiver) {
-			this.receiver = receiver;
-		}
+        void setReceiver(InterstitialSwitchReceiver receiver) {
+            this.receiver = receiver;
+        }
 
-	}
+    }
 
-	private AdResponseReceiver responseReceiver;
+    private AdResponseReceiver responseReceiver;
 
-	public InterstitialSwitchReceiver() {
-		super();
-		responseReceiver = new AdResponseReceiver(new Handler());
-		responseReceiver.setReceiver(this);
-	}
+    public InterstitialSwitchReceiver() {
+        super();
+        responseReceiver = new AdResponseReceiver(new Handler());
+        responseReceiver.setReceiver(this);
+    }
 
-	@Override
-	public void onReceive(Context arg0, Intent arg1) {
+    @Override
+    public void onReceive(Context arg0, Intent arg1) {
 
-		if (SdkUtil.getContext() == null) {
-			SdkUtil.setContext(arg0);
-		}
+        if (SdkUtil.getContext() == null) {
+            SdkUtil.setContext(arg0);
+        }
 
-		this.context = arg0;
+        this.context = arg0;
 
-		try {
-			this.adUnitId = (String) arg1.getExtras().get("adUnitId");
-		} catch (Exception e) {
-			this.adUnitId = null;
-		}
+        try {
+            this.adUnitId = (String) arg1.getExtras().get("adUnitId");
+        } catch (Exception e) {
+            this.adUnitId = null;
+        }
+        SdkLog.d(TAG, "onReceive");
+        if(arg1 == null) {
+            SdkLog.d(TAG, "intent received is null");
+        } else {
+            SdkLog.d(TAG, "intent received is not null");
+        }
+        // original target when interstitial not available
+        this.target = (Intent) arg1.getExtras().get("target");
+        if (this.target != null) {
+            this.target.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        }
 
-		// original target when interstitial not available
-		this.target = (Intent) arg1.getExtras().get("target");
-		if (this.target != null) {
-			this.target.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		}
+        // ad space settings
+        this.settings = new DFPSettingsAdapter();
+        this.settings.setup(SdkUtil.getContext(), arg1.getExtras());
 
-		// ad space settings
-		this.settings = new DFPSettingsAdapter();
-		this.settings.setup(SdkUtil.getContext(), arg1.getExtras());
+        // proxy the events
+        if (this.settings.getOnAdSuccessListener() != null) {
+            this.onAdSuccess = this.settings.getOnAdSuccessListener();
+        }
+        if (this.settings.getOnAdErrorListener() != null) {
+            this.onAdError = this.settings.getOnAdErrorListener();
+        }
+        if (this.settings.getOnAdEmptyListener() != null) {
+            this.onAdEmpty = this.settings.getOnAdEmptyListener();
+        }
+        this.settings.setOnAdSuccessListener(this);
+        this.settings.setOnAdEmptyListener(this);
+        this.settings.setOnAdErrorListener(this);
 
-		// proxy the events
-		if (this.settings.getOnAdSuccessListener() != null) {
-			this.onAdSuccess = this.settings.getOnAdSuccessListener();
-		}
-		if (this.settings.getOnAdErrorListener() != null) {
-			this.onAdError = this.settings.getOnAdErrorListener();
-		}
-		if (this.settings.getOnAdEmptyListener() != null) {
-			this.onAdEmpty = this.settings.getOnAdEmptyListener();
-		}
-		this.settings.setOnAdSuccessListener(this);
-		this.settings.setOnAdEmptyListener(this);
-		this.settings.setOnAdErrorListener(this);
-
-		try {
-			if (arg1.getExtras().containsKey("ems_kw")) {
-				this.settings.addCustomRequestParameter("kw", (String) arg1.getExtras().get("ems_kw"));
-			}
-		} catch (Exception e) {
-		}
+        try {
+            if (arg1.getExtras().containsKey("ems_kw")) {
+                this.settings.addCustomRequestParameter("kw", (String) arg1.getExtras().get("ems_kw"));
+            }
+        } catch (Exception e) {
+        }
 
 
-		// adserver request
-		Builder requestBuilder = ((DFPSettingsAdapter) settings)
-				.getGoogleRequestBuilder(0);
-		interstitial = new PublisherInterstitialAd(arg0);
-		if (this.adUnitId != null) {
-			interstitial.setAdUnitId("/6032/"+this.adUnitId.replaceAll("/6032/", "").replaceAll("\\/6032\\/", ""));
-		} else {
-			this.adUnitId = ((DFPSettingsAdapter) settings).mapToDfpAdUnit();
-			interstitial.setAdUnitId(this.adUnitId);
-		}
+        // adserver request
+        Builder requestBuilder = ((DFPSettingsAdapter) settings)
+                .getGoogleRequestBuilder(0, true);
+        interstitial = new PublisherInterstitialAd(arg0);
+        if (this.adUnitId != null) {
+            interstitial.setAdUnitId("/6032/" + this.adUnitId.replaceAll("/6032/", "").replaceAll("\\/6032\\/", ""));
+        } else {
+            this.adUnitId = ((DFPSettingsAdapter) settings).mapToDfpAdUnit();
+            interstitial.setAdUnitId(this.adUnitId);
+        }
 
-		SdkLog.d(TAG, "Using mapped DFP ad unit " + this.adUnitId);
+        SdkLog.d(TAG, "Using mapped DFP ad unit " + this.adUnitId);
 
-		interstitial.setAdListener(new GuJEMSAdListener(settings));
-		interstitial.setAppEventListener(this);
-		interstitial.loadAd(requestBuilder.build());
+        interstitial.setAdListener(new GuJEMSAdListener(settings));
+        interstitial.setAppEventListener(this);
+        interstitial.loadAd(requestBuilder.build());
 
-	}
+    }
 
-	@Override
-	public void onAppEvent(String arg0, String arg1) {
-		SdkLog.d(TAG, "Received app event " + arg0 + "(" + arg1 + ")");
-		if (arg0.equals("interstitialBlocker")) {
-			this.interstitalBlock = true;
-		}
-		GuJEMSAdInterface.getInstance().doAppEvent(null, arg0, arg1);
-	}
+    @Override
+    public void onAppEvent(String arg0, String arg1) {
+        SdkLog.d(TAG, "Received app event " + arg0 + "(" + arg1 + ")");
+        if (arg0.equals("interstitialBlocker")) {
+            SdkLog.d(TAG, "Interstitial block received - set interstitialBlock to true");
+            this.interstitialBlock = true;
+        }
+        GuJEMSAdInterface.getInstance().doAppEvent(null, arg0, arg1);
+    }
 
-	private void onReceiveResult(int resultCode, Bundle resultData) {
-		SdkLog.d(TAG, "onReceiveResult " + resultCode + " " + resultData);
-	}
+    private void onReceiveResult(int resultCode, Bundle resultData) {
+        SdkLog.d(TAG, "onReceiveResult " + resultCode + " " + resultData);
+    }
 
-	@Override
-	public void onAdSuccess() {
-		if (this.onAdSuccess != null) {
-			this.onAdSuccess.onAdSuccess();
-		}
+    @Override
+    public void onAdSuccess() {
+        if (this.onAdSuccess != null) {
+            this.onAdSuccess.onAdSuccess();
+        }
 
-		if (!this.interstitalBlock) {
-			interstitial.show();
-		} else {
-			this.interstitalBlock = false;
-		}
-	}
+        if (!this.interstitialBlock) {
+            SdkLog.d(TAG, "show interstitial");
+            interstitial.show();
+        } else {
+            SdkLog.d(TAG, "interstitialBlock is true - dont show interstitial");
+            this.interstitialBlock = false;
+        }
+    }
 
-	@Override
-	public void onAdError(String msg) {
-		if (this.onAdError != null) {
-			this.onAdError.onAdError(msg);
-		}
-		if (target != null) {
-			this.context.startActivity(target);
-		} else {
-			SdkLog.i(TAG, "No target. Back to previous view.");
-		}
-	}
+    @Override
+    public void onAdError(String msg) {
+        if (this.onAdError != null) {
+            this.onAdError.onAdError(msg);
+        }
+        if (target != null) {
+            this.context.startActivity(target);
+        } else {
+            SdkLog.i(TAG, "No target. Back to previous view.");
+        }
+    }
 
-	@Override
-	public void onAdError(String msg, Throwable t) {
-		if (this.onAdError != null) {
-			this.onAdError.onAdError(msg, t);
-		}
-		if (target != null) {
-			this.context.startActivity(target);
-		} else {
-			SdkLog.i(TAG, "No target. Back to previous view.");
-		}
-	}
+    @Override
+    public void onAdError(String msg, Throwable t) {
+        if (this.onAdError != null) {
+            this.onAdError.onAdError(msg, t);
+        }
+        if (target != null) {
+            this.context.startActivity(target);
+        } else {
+            SdkLog.i(TAG, "No target. Back to previous view.");
+        }
+    }
 
-	@Override
-	public void onAdEmpty() {
-		if (this.onAdEmpty != null) {
-			this.onAdEmpty.onAdEmpty();
-		}
-		if (target != null) {
-			this.context.startActivity(target);
-		} else {
-			SdkLog.i(TAG, "No target. Back to previous view.");
-		}
-	}
+    @Override
+    public void onAdEmpty() {
+        if (this.onAdEmpty != null) {
+            this.onAdEmpty.onAdEmpty();
+        }
+        if (target != null) {
+            this.context.startActivity(target);
+        } else {
+            SdkLog.i(TAG, "No target. Back to previous view.");
+        }
+    }
 
 }

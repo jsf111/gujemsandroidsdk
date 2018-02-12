@@ -5,5 +5,6 @@ package de.guj.ems.mobile.sdk.util;
  */
 public interface ThirdPartyConnectorInterface {
     public boolean isTypeOf(int t);
+
     public void call(Object... o);
 }

@@ -1,2 +1,2 @@
-include ':GuJeMSSDK'
+include ':gujemssdk'
 include ':exampleApp'

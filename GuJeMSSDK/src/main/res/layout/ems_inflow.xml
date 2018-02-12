@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:animateLayoutChanges="true"
-    android:layout_centerHorizontal="true">
+    android:layout_gravity="center_horizontal">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -23,6 +23,7 @@
             android:background="@null"
             android:contentDescription="@string/ems_close"
             android:src="@drawable/ems_close_button_states" />
+
         <ImageButton
             android:id="@+id/ems_inflow_sound"
             android:layout_width="wrap_content"
@@ -32,6 +33,7 @@
             android:background="@null"
             android:contentDescription="@string/ems_sound"
             android:src="@drawable/ems_sound_button_on" />
+
         <de.guj.ems.mobile.sdk.views.video.GuJEMSVideoPlayer
             android:id="@+id/ems_inflow_player"
             android:layout_width="match_parent"

@@ -1,32 +1,70 @@
 ﻿# gujemsandroidsdk
 
-**Latest stable Version 2.1.3**
+**Latest Version 2.1.9**
 
 ## Requirements
 
-The SDK supports **Android 2.3.3 and higher**.  
+The SDK supports **Android 4.3 (Android SDK Version 18) and higher**.  
 Language Support: **Java**  
+
+## Changelog
+
+- YieldLab Banner Ad Integration
+
+## New Features since 2.1.6
+
+- Smartclip
+- Autonative
+- Facebook Audience
+- Yieldlab Banner Ads
 
 ## Installation
 
-The SDK is available as a gradle project.
+The SDK is available as a maven library over jcenter.
 
-1. Extract and import the SDK (GuJeMSSDK) to your project.
-2. Add our SDK to you gradle File.
+1. In your project level build.gradle file enable jcenter.
+
+```
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+```
+
+2. In your module/app level build.gradle file include the gujemssdk as dependency.
+
 ```
 dependencies {
-       compile project(':GuJeMSSDK')
+       compile 'com.gujems.android:gujemssdk:0.0.3'
        [...]
 }
 ```
-3. Well done!
 
 ## Usage
-If you are interested in upgrading the SDK please move forward to Chapter "Upgrading from v1.4.x to v2.0.x".
-In this chapter we will show you how to add banner ads, interstitial ads, video ads and native ads to your android app.
+If you are interested in upgrading the SDK please move forward to Chapter "Upgrading from v1.4.x to v2.1.x".
+In this chapter we will show you how to add banner ads, interstitial ads and video ads to your android app.
 
-Before you start with the implementation please make sure that you recieved your Ad Unit Id. 
-### banner ad
+Before you start with the implementation please make sure that you received your Ad Unit Id. 
+
+# Example App
+
+Every feature of this SDK is showcased inside the [exampleApp](../exampleApp).
+
+## Initialization
+First of all set the context of the SDKUtil from your MainActivity class, which guarantees the functionality of the GuJEMSSDK.
+```java
+/*
+* MainActivity class 
+*/
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+        [...]
+        SdkUtil.setContext(getApplicationContext()); 
+}
+```
+
+### Banner Ad
 You have two possibilities to add one or more banner ads to your app. The first way is by adding a view to your layout file.
 ```xml
 <de.guj.ems.mobile.sdk.views.GuJEMSAdView
@@ -51,9 +89,9 @@ Let's have a look on the attributes for GuJEMSAdView:
 - ems_kw : **[true / false]** Allow transmission of keywords 
 - ems_noRectangle, ems_noBillboard, ems_no[...] : Block special ad sizes for this ad slot
 
-You also have the possibility to add banner ad programmatically:
+You also have the possibility to add a banner ad programmatically:
 
-- Create an separate layout file for your banner ad 
+- Create a separate layout file for your banner ad 
 - Add a GuJEMSAdView to the file. Example:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -102,7 +140,30 @@ gujView.load();
 addView(gujView);
 ```
 
-### interstitial ad
+
+#####YieldLab Banner Ad Integration
+
+If you want to use YieldLab with your banner ad's, you have to add following initialisation as early as
+possible in your app. Following YieldLab Ids are only examples and have to be changed.
+
+````java
+HashMap<String, String> ylMap = new HashMap<String, String>();
+ylMap.put("aaa", "1111111");
+ylMap.put("bbb", "2222222");
+ylMap.put("ccc", "3333333");
+ylMap.put("ddd", "4444444");
+ylMap.put("eee", "5555555");
+YieldLab.init(ylMap, 4);
+````
+
+In addition to that, following code has to be run before a series of ad-calls. For example after
+a new view(app-page) is creaed.
+
+````java
+YieldLab.request();
+````
+
+### Interstitial Ad
 **The interstitial ad can only create programmatically.**
 Let's have a look on an example:
 
@@ -128,16 +189,13 @@ getActivity().sendBroadcast(i);
 
 If the intent “target” is not set, the interstitial closes itself and returns to the previous view. The Class ListenerEvents isn't part of the SDK.
 
-### video ad
+### Video Ad
 Please have a look at the chapter "Video Advertising".
 
-### native ad
-Please have a look at the chapter "Native Advertisitng".
-
-### inflow ad
+### Inflow Ad
 Please have a look at the chapter "InFlow Ad"
 
-## Upgrading from v1.4.x to v2.0.x
+## Upgrading from v1.4.x to v2.1.x
 
 If you are not upgrading please contact us for an additional update you will need.
 
@@ -184,7 +242,7 @@ Providing a target activity / intent to an interstitial is no longer supported. 
 
 #### Video Interstitial has been removed
 
-Google interstitials are capable of displaying video by themselves.
+Google interstitials are capable of displaying videos by themselves.
 
 #### Other changes
 
@@ -198,17 +256,13 @@ The experimental use of video interstitials as a preroll player has been removed
 
 The Google publisher ID no longer needs to be set manually
 
-#### Native Content Ads
-
-We are now supporting Google's Native Content Ads. See [Native advertising} (#native) on how to utilize native ads an adjust them to your layout.
-
 #### Android Marshmallow permission management
 
 All permissions that may be revoked by the user are optional and checked for. Your app should work flawlessly in case a user removes, for example, the location permission.
 
 #### Manifest permissions
 
-All SDK permissions other than location adn networking have been commented out in the manifest. Please check the manifest if you previously had certain permissions set, e.g. for camera access or vibration
+All SDK permissions other than location and networking have been commented out in the manifest. Please check the manifest if you previously had certain permissions set, e.g. for camera access or vibration
 
 #### Ad sizes
 
@@ -274,7 +328,45 @@ inflow.setColorToButtons("#00a600");
 inflow.setAdUnit(adUnitId);
 ```
 
-<a name="video"></a>
+## SmartClip
+
+Current SmartClip Version: 1.0.2
+
+If you wish to incorporate SmartClip as Inflow fallback within your app, you just have to enable
+SmartClip at the beginning of your app.
+
+```java
+ @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        [...]
+        SdkUtil.enableSmartClip();
+        [...]
+    }
+```
+
+Furthermore you can get notified when the SmartClip ad has started or finished.
+For this to work you have to add an **SimpleSmartClipListener** reference to the InFlow View( The Inflow
+View gets replaced by SmartClip).
+
+Example:
+```java
+        GuJEMSInFlowView inflow = (GuJEMSInFlowView) rootView.findViewById(id);
+        inflow.setColorToButtons("#00a600");
+        inflow.setAdUnit(adUnitId);
+        inflow.addSmartClipListener(new SimpleSmartClipListener() {
+            @Override
+            public void onStartCallback(ScAdView scAdView) {
+                System.out.println("SimpleSmartClipListener start");
+            }
+
+            @Override
+            public void onEndCallback(ScAdView scAdView) {
+                System.out.println("SimpleSmartClipListener end");
+            }
+        });
+```
+
+
 ## Video Advertising
 
 The new SDK comes with the current beta version of the Google IMA3 SDK for Android. A player capable of displaying ads from G+J e|MS is included as well as a view displaying videos with ads: GuJEMSVideoView. Both the view and the player are based on the IMA3 reference implementation.
@@ -353,45 +445,151 @@ Depending on the lifecyle of your avctivity / fragment, add these
 
 Everything else is handled via G+J e|MS and the respective adserver.
 
-<a name="native"></a>
-## Native Advertising
 
-The new SDK comes with the current beta version of Google NativeContentAds. These ads are meant to be fully customized and display content in the same style and layout as your app. Native content ads are typically filled with things like a headline, an image, a logo and a call to action.
+##AutoNative Ads
 
-### Here's how to incorporate native content ads
+From Version 2.1.7 and onwards you can use AutoNative ads in your app.
+Our implementation for AutoNative ads allows you to freely style and structure your AutoNative ads.
 
-In your activity's or fragment's layout include the view like this (please not that the view is ONLY capable of displaying native ads and should not replace or be placed instead of normal ad views.
+####How does it work?
+
+Android provides the functionality to give every view a tag attribute. Within our sdk there are
+5 different types of tags related to AutoNative:
+
+1. Teaser Tag for an ImageView: **ems_auto_native_teaser**
+2. Headline Tag for a TextView: **ems_auto_native_headline**
+3. SubHeadline Tag for a TextView: **ems_auto_native_sub_headline**
+4. TeaserText Tag for a TextView: **ems_auto_native_teaser_text**
+5. AdLabel Tag for a generic View: **ems_auto_native_ad_label**
+
+For example, you can give a TextView the Headline Tag
 
 ```xml
-<de.guj.ems.mobile.sdk.views.GuJEMSNativeContentAdView
-	android:id="@+id/ad24757"
-	android:layout_width="match_parent"
-	android:layout_height="wrap_content"
-	ems:ems_adUnit="[provided_adUnit]"
-/> 
-```
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="ems_auto_native_headline"/>
+```           
 
-The view accepts all the same additional attributes as GuJEMSAdView. [provided_adUnit] will be a string you receive from G+J e|MS - it reflects the app's name or category in the app where native ads should be displayed. If you are unable to set the adUnit via xml, you can set the ad unit programmatically with setAdUnit.
+Our sdk provides a view/layout with the neccessary information, if it uses our predefined tags.
+In the example above, the TextView's text would be set to the headline of the AutoNative ad.
+To use AutoNative ads within your app, you have to do two distinct steps.
+
+1. Create a layout for your AutoNative ad and place all or some of the four tags previously
+mentioned on the corresponding views. The only restriction is that you can use every tag only one
+time per layout. Example of an AutoNative Layout with every possible tag:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/autonative1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DDDDDD"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:visibility="visible">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="ems_auto_native_ad_label"
+        android:background="@android:color/white"
+        android:padding="2px"
+        android:text="Advertisement" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:tag="ems_auto_native_teaser" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:tag="ems_auto_native_headline"
+        android:textSize="26sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:tag="ems_auto_native_sub_headline"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:tag="ems_auto_native_teaser_text"
+        android:textSize="12sp" />
+</LinearLayout>
+```  
+
+Very important is the correct mapping of tags and views. The **ems_auto_native_teaser** tag
+has to be placed inside an ImageView, every other tag inside a TextView.
+
+2. Initializing the AutoNativeTask. In order to insert the necessary information into the
+AutoNative ad, you have to instantiate an AutoNativeLoader. This loader notifies
+the GUJEmsSDK to insert the AutoNative ad informations into the views - this initialization mechanism
+is an asynchronous operation. The code for this process looks like this:
+
 ```java
- GuJEMSNativeContentAdView adview = new GuJEMSNativeContentAdView(
-    getApplicationContext(),
-    R.layout.layout_native, /* seperate layout file - see banner ad for more informations */
-    false
-);
-/* set Ad Unit Id */
-adview.setAdUnitId("sdktest");
-/* load ad */
-adview.load();
-addView(adview);
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_autonative, container, false);
+        url = "http://www.your-domain.com";
+        SdkUtil.setAutonativeBaseUrl(url);
+        int correlator = SdkUtil.getCorrelator();
+        this.createView(11, 1, correlator, rootView.findViewById(R.id.autonative1));
+        this.createView(12, 2, correlator, rootView.findViewById(R.id.autonative2));
+        return rootView;
+    }
+
+    private void createView(int pos, int tile, int correlator, View view) {
+        try {
+            AutoNativeConfig autoNativeConfig = new AutoNativeConfig(
+                    AutoNativeConfig.TeaserAspectRatio.OneToOne,
+                    util.getStringSettingByKey(GlobalData.preferenceAdUnit),
+                    pos,
+                    tile,
+                    correlator
+            );
+            new AutoNativeLoader(autoNativeConfig, getContext(), view);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 ```
 
-### Here's how to change the style and layout for the view
+First you have to set the base URL for your app. This is important for the click url, which leads
+the user to the linked article. After that you have to create an AutoNativeConfig object. This configuration
+expects five arguments.
+1. TeaserAspectRatio: possible formats are 1:1, 2:1, 2:3.
+2. AdUnitId which is able to deliver AutoNative ads.
+3. Position: Ad position 
+4. Tile: number to indicate consecutive AutoNative ads within one "page/view". If for example
+three AutoNative ads are present on one "page/view", the first ad gets the Tile value 1, the second 2
+and the third 3. The tile number is used to prevent multiple instances of the same ad.
+5. Correlator: long random number. indicates a correlation of ad calls. Every sequence of related AutoNative ad calls
+(on the same page) should have the same correlator. You can use our convenience method SdkUtil.getCorrelator().
 
-The SDK folder contains
+The last step to get a working AutoNative ad is to instantiate the AutoNativeTaskInitializer. This
+object expects the **AutoNativeConfig**, the context and the view which contains the 
+previously mentioned AutoNative tags. In this case we use the example AutoNative layout from above,
+with the id **R.id.autonative1**.
 
-R.layout.ems_nativead
-R.values.ems_nativead_style
+####AutoNative AdLabel
 
-These may be adapted to your needs - as long as non of the views's holding content are removed. You may also create copies for large resolutions devices or unified smartphone/tablet apps.
+Every AutoNative Ad has a flag, which indicates if an Ad Label should be presented to the user or not.
+ You can map your individually styled Ad Label to our Sdk with the **ems_auto_native_ad_label** tag. 
+ If the Ad Label flag of the request is false, our sdk removes the 
+ view containing the tag. If the flag is true, nothing happens and the user can see your Ad Label.
 
-The SDK will take care of filling the view with the corresponding received from the adserver.
+####Error Handling
+
+-**Empty ad request response**: If an autonative ad request returns an empty response (no ad available),
+the autonative view gets automatically removed.
+
+##Facebook Audience Integration
+
+An example usage for the Facebook Audience Sdk can be found in our exampleApp under the folder
+"thirdParty".

@@ -1,7 +1,5 @@
 package de.guj.ems.mobile.sdk.util;
 
-import android.support.annotation.NonNull;
-
 import java.util.ArrayList;
 
 /**
@@ -12,15 +10,15 @@ public class ThirdPartyConnector {
 
     public final static int facebook = 1;
     public final static int targeting = 2;
-    public final static int teads = 3;
 
-    private ArrayList<ThirdPartyConnectorInterface> callbacks = new ArrayList<ThirdPartyConnectorInterface>();
+    private ArrayList<ThirdPartyConnectorInterface> callbacks = new ArrayList<>();
 
     public void registerCallback(ThirdPartyConnectorInterface c) {
         if (!callbacks.contains(c)) {
             callbacks.add(c);
         }
     }
+
     public void removeCallback(ThirdPartyConnectorInterface c) {
         callbacks.remove(c);
     }

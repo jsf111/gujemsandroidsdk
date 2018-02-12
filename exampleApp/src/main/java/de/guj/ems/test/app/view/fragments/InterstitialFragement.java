@@ -1,8 +1,8 @@
-package de.guj.ems.test.app;
+package de.guj.ems.test.app.view.fragments;
 
-import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,14 +11,18 @@ import android.widget.Button;
 import java.io.Serializable;
 
 import de.guj.ems.mobile.sdk.controllers.InterstitialSwitchReceiver;
+import de.guj.ems.test.app.GlobalData;
+import de.guj.ems.test.app.ListenerEvents;
+import de.guj.ems.test.app.R;
+import de.guj.ems.test.app.util;
 
 public class InterstitialFragement extends Fragment implements Serializable {
-	@Override
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+                             Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.fragment_interstitial, container, false);
 
-        Button click = (Button)rootView.findViewById(R.id.buttonInterstitial);
+        Button click = (Button) rootView.findViewById(R.id.buttonInterstitial);
         click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,14 +36,14 @@ public class InterstitialFragement extends Fragment implements Serializable {
                     if (!kw.trim().equals("")) {
                         i.putExtra("ems_kw", kw);
                     }
-                    ListenerEvents le = new ListenerEvents(
+                  /*  ListenerEvents le = new ListenerEvents(
                             rootView, R.id.FragmentInterstitialTextView);
                     i.putExtra("ems_onAdSuccess", le);
                     i.putExtra("ems_onAdEmpty", le);
-                    i.putExtra("ems_onAdError", le);
+                    i.putExtra("ems_onAdError", le);*/
 
                     getActivity().sendBroadcast(i);
-                } catch(Exception e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }

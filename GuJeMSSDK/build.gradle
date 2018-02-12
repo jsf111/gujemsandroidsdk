@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 26
+    buildToolsVersion '26.0.0'
 
     defaultConfig {
-        minSdkVersion 10
-        targetSdkVersion 23
+        minSdkVersion 18
+        targetSdkVersion 26
     }
 
     buildTypes {
@@ -18,7 +18,10 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.google.ads.interactivemedia.v3:interactivemedia:3.5.2'
-    compile 'com.google.android.gms:play-services-ads:9.0.0'
+    compile 'com.google.android.gms:play-services-ads:11.0.2'
 }
+
+apply from: 'install.gradle'
+apply from: 'bintray.gradle'

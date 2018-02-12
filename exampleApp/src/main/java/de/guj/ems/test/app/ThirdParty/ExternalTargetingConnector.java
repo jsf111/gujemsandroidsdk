@@ -1,4 +1,4 @@
-package de.guj.ems.test.app.ThirdParty;
+package de.guj.ems.test.app.thirdParty;
 
 import android.content.Context;
 

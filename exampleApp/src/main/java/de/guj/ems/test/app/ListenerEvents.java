@@ -14,51 +14,47 @@ import de.guj.ems.mobile.sdk.util.SdkLog;
 /**
  * Created by gohl2 on 17.11.2015.
  */
-public class ListenerEvents implements IOnAdSuccessListener, IOnAdEmptyListener, IOnAdErrorListener, Serializable {
+public class ListenerEvents implements IOnAdSuccessListener, IOnAdEmptyListener, IOnAdErrorListener {
 
-    private static View View = null;
-    private static int messageBox = -1;
+    private View view = null;
+    private int messageBox = -1;
 
     public ListenerEvents(View tv, int id) {
-        this.View = tv;
+        this.view = tv;
         this.messageBox = id;
-    }
-
-    public ListenerEvents() {
-
     }
 
     @Override
     public void onAdSuccess() {
-        if (this.View != null) {
-            ((TextView)this.View.findViewById(this.messageBox)).setText("Ad loaded successfully");
+        if (this.view != null) {
+            ((TextView) this.view.findViewById(this.messageBox)).setText("Ad loaded successfully");
         }
         SdkLog.d("AdEventListener", "Ad loaded");
     }
 
     @Override
     public void onAdEmpty() {
-        if (this.View != null) {
-            ((TextView)this.View.findViewById(this.messageBox)).setTextColor(Color.YELLOW);
-            ((TextView)this.View.findViewById(this.messageBox)).setText("Ad is empty");
+        if (this.view != null) {
+            ((TextView) this.view.findViewById(this.messageBox)).setTextColor(Color.YELLOW);
+            ((TextView) this.view.findViewById(this.messageBox)).setText("Ad is empty");
         }
         SdkLog.d("AdEventListener", "Ad is empty");
     }
 
     @Override
     public void onAdError(String msg) {
-        if (this.View != null) {
-            ((TextView)this.View.findViewById(this.messageBox)).setTextColor(Color.RED);
-            ((TextView)this.View.findViewById(this.messageBox)).setText("Ad error: " + msg);
+        if (this.view != null) {
+            ((TextView) this.view.findViewById(this.messageBox)).setTextColor(Color.RED);
+            ((TextView) this.view.findViewById(this.messageBox)).setText("Ad error: " + msg);
         }
-        SdkLog.d("AdEventListener", "Ad error: "+msg);
+        SdkLog.d("AdEventListener", "Ad error: " + msg);
     }
 
     @Override
     public void onAdError(String msg, Throwable t) {
-        if (this.View != null) {
-            ((TextView)this.View.findViewById(this.messageBox)).setTextColor(Color.RED);
-            ((TextView)this.View.findViewById(this.messageBox)).setText("Ad error: " + msg);
+        if (this.view != null) {
+            ((TextView) this.view.findViewById(this.messageBox)).setTextColor(Color.RED);
+            ((TextView) this.view.findViewById(this.messageBox)).setText("Ad error: " + msg);
         }
         SdkLog.d("AdEventListener", "Ad error: " + msg);
     }
