@@ -36,7 +36,7 @@ allprojects {
 
 ```
 dependencies {
-       compile 'com.gujems.android:gujemssdk:0.0.3'
+       compile 'com.gujems.android:gujemssdk:2.1.9'
        [...]
 }
 ```
