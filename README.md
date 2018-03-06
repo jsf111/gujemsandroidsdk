@@ -1,10 +1,11 @@
-﻿# gujemsandroidsdk
+﻿﻿# gujemsandroidsdk
 
-**Latest Version 2.1.9**
+**Latest Version 2.1.91**
 
 ## Requirements
 
-The SDK supports **Android 4.3 (Android SDK Version 18) and higher**.  
+The SDK supports **Android 4.0 (Android SDK Version 14) and higher**.
+The Example App requires Android SDK Version 18 or higher.
 Language Support: **Java**  
 
 ## Changelog
@@ -36,7 +37,7 @@ allprojects {
 
 ```
 dependencies {
-       compile 'com.gujems.android:gujemssdk:2.1.9'
+       compile 'com.gujems.android:gujemssdk:2.1.91'
        [...]
 }
 ```
