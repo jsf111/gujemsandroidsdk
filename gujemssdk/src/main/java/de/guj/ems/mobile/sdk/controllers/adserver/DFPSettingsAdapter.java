@@ -14,6 +14,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 import de.guj.ems.mobile.sdk.R;
+import de.guj.ems.mobile.sdk.controllers.IOnAdResizeListener;
 import de.guj.ems.mobile.sdk.util.AndroidIdRetriever;
 import de.guj.ems.mobile.sdk.util.SdkGlobals;
 import de.guj.ems.mobile.sdk.util.SdkLog;

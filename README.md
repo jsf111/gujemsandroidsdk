@@ -1,6 +1,6 @@
 ﻿﻿# gujemsandroidsdk
 
-**Latest Version 2.1.91**
+**Latest Version 2.2.0**
 
 ## Requirements
 
@@ -12,12 +12,9 @@ Language Support: **Java**
 
 - YieldLab Banner Ad Integration
 
-## New Features since 2.1.6
+## New Features since 2.1.91
 
-- Smartclip
-- Autonative
-- Facebook Audience
-- Yieldlab Banner Ads
+- Smartclip removed
 
 ## Installation
 
@@ -37,7 +34,7 @@ allprojects {
 
 ```
 dependencies {
-       compile 'com.gujems.android:gujemssdk:2.1.91'
+       compile 'com.gujems.android:gujemssdk:2.2.0'
        [...]
 }
 ```
@@ -140,6 +137,20 @@ gujView.load();
 /* add adView to Layout */
 addView(gujView);
 ```
+
+**OnAdResizeEvent**
+
+You can now listen on resize events for banner ads:
+
+````java
+gujView.setOnAdResizeListener(new IOnAdResizeListener() {
+    @Override
+    public void onResize(double width, double height) {
+        System.out.println("Ad resize event w: " + width + " h: " + height);
+    }
+});
+````
+
 
 
 #####YieldLab Banner Ad Integration
@@ -331,42 +342,7 @@ inflow.setAdUnit(adUnitId);
 
 ## SmartClip
 
-Current SmartClip Version: 1.0.2
-
-If you wish to incorporate SmartClip as Inflow fallback within your app, you just have to enable
-SmartClip at the beginning of your app.
-
-```java
- @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        [...]
-        SdkUtil.enableSmartClip();
-        [...]
-    }
-```
-
-Furthermore you can get notified when the SmartClip ad has started or finished.
-For this to work you have to add an **SimpleSmartClipListener** reference to the InFlow View( The Inflow
-View gets replaced by SmartClip).
-
-Example:
-```java
-        GuJEMSInFlowView inflow = (GuJEMSInFlowView) rootView.findViewById(id);
-        inflow.setColorToButtons("#00a600");
-        inflow.setAdUnit(adUnitId);
-        inflow.addSmartClipListener(new SimpleSmartClipListener() {
-            @Override
-            public void onStartCallback(ScAdView scAdView) {
-                System.out.println("SimpleSmartClipListener start");
-            }
-
-            @Override
-            public void onEndCallback(ScAdView scAdView) {
-                System.out.println("SimpleSmartClipListener end");
-            }
-        });
-```
-
+-Removed
 
 ## Video Advertising
 

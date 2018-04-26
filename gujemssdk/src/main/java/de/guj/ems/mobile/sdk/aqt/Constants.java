@@ -7,7 +7,7 @@ package de.guj.ems.mobile.sdk.aqt;
 
 class Constants {
 
-    public static final String AQT_URL = "aqt.emsmobile.de";
+    public static final String AQT_URL = "aqt.adalliance.io";
     public static final int COLLECTION_TIME = 2000; // in ms
     public static final String YL_URL = "ad.YieldLab.net/yp/";
 

@@ -11,10 +11,9 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.HashMap;
-
 import de.guj.ems.mobile.sdk.controllers.IOnAdEmptyListener;
 import de.guj.ems.mobile.sdk.controllers.IOnAdErrorListener;
+import de.guj.ems.mobile.sdk.controllers.IOnAdResizeListener;
 import de.guj.ems.mobile.sdk.controllers.IOnAdSuccessListener;
 import de.guj.ems.mobile.sdk.util.SdkUtil;
 import de.guj.ems.mobile.sdk.util.ThirdPartyConnector;
@@ -164,6 +163,12 @@ public class BannerFragment extends Fragment {
                 public void onAdError(String msg, Throwable t) {
                     message.setTextColor(Color.RED);
                     message.setText("Ad error: " + msg);
+                }
+            });
+            gujView.setOnAdResizeListener(new IOnAdResizeListener() {
+                @Override
+                public void onResize(double width, double height) {
+                    System.out.println("Ad resize event w: " + width + " h: " + height);
                 }
             });
             gujView.load();

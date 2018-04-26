@@ -20,13 +20,8 @@ import android.widget.LinearLayout;
 import com.google.ads.interactivemedia.v3.api.AdEvent;
 import com.google.ads.interactivemedia.v3.api.player.VideoAdPlayer.VideoAdPlayerCallback;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import de.guj.ems.mobile.sdk.R;
 import de.guj.ems.mobile.sdk.controllers.video.VideoErrorListener;
-import de.guj.ems.mobile.sdk.smartclip.SimpleSmartClipListener;
-import de.guj.ems.mobile.sdk.smartclip.SmartClipPaster;
 import de.guj.ems.mobile.sdk.util.SdkLog;
 import de.guj.ems.mobile.sdk.util.SdkUtil;
 import de.guj.ems.mobile.sdk.views.animations.ExpandAnimation;
@@ -51,8 +46,6 @@ public class GuJEMSInFlowView extends LinearLayout {
     private boolean videoSoundMuted = true;
     private Boolean mRequested = false;
     private long startTime = -1;
-
-    private List<SimpleSmartClipListener> listeners = new ArrayList<>();
 
     private final class InFlowFocusChangedListener implements ViewTreeObserver.OnWindowFocusChangeListener {
         @Override
@@ -277,7 +270,6 @@ public class GuJEMSInFlowView extends LinearLayout {
                     case CONTENT_RESUME_REQUESTED:
                         if (currentAd == null) {
                             SdkLog.d(TAG, "no InFlow found");
-                            smartClipFallback(mRootView);
                             getViewTreeObserver().removeOnScrollChangedListener(
                                     mScrollChangedListener);
                             getViewTreeObserver().removeOnWindowFocusChangeListener(
@@ -290,8 +282,8 @@ public class GuJEMSInFlowView extends LinearLayout {
         mVPlayer.getVideoPlayerController().addErrorListener(new VideoErrorListener() {
             @Override
             public void onEmptyVideo() {
-                //no inflow found - inform smartclip connector
-                smartClipFallback((View) mRootView.getParent());
+                //no inflow found
+                SdkLog.d(TAG,"no InFlow found");
             }
         });
 
@@ -342,20 +334,6 @@ public class GuJEMSInFlowView extends LinearLayout {
         }
 
         SdkLog.d(TAG, "View, listeners, volume, animations and ad ready.");
-    }
-
-    public void addSmartClipListener(SimpleSmartClipListener simpleSmartClipListener) {
-        this.listeners.add(simpleSmartClipListener);
-    }
-
-    private void smartClipFallback(View view) {
-        SdkLog.i(TAG, "SmartClip Fallback requested");
-        if (SdkUtil.isSmartClipEnabled()) {
-            SdkLog.i(TAG, "SmartClip enabled - start SmartClip routine");
-            new SmartClipPaster(mRootView, this.listeners).insertSmartClipView(SdkUtil.getContext());
-        } else {
-            SdkLog.i(TAG, "SmartClip disabled");
-        }
     }
 
     protected void changeSoundState() {

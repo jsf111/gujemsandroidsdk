@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         // init util class
         util.init(this);
         SdkUtil.setContext(getApplicationContext());
-        SdkUtil.enableSmartClip();
         HashMap<String, String> ylMap = new HashMap<String, String>();
         ylMap.put("aaa", "1111111");
         ylMap.put("bbb", "2222222");

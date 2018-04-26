@@ -8,7 +8,6 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.JavascriptInterface;
-import android.widget.LinearLayout;
 
 import com.google.android.gms.ads.doubleclick.PublisherAdView;
 
@@ -19,6 +18,7 @@ import de.guj.ems.mobile.sdk.aqt.AqtRequestCollector;
 import de.guj.ems.mobile.sdk.util.SdkLog;
 import de.guj.ems.mobile.sdk.util.SdkUtil;
 import de.guj.ems.mobile.sdk.util.ThirdPartyConnector;
+import de.guj.ems.mobile.sdk.views.GuJEMSAdView;
 
 /**
  * Add e|MS specific functionality by providing an AppEventListener interface
@@ -98,7 +98,7 @@ public class GuJEMSAdInterface {
         view.setVisibility(View.GONE);
     }
 
-    public void doAppEvent(PublisherAdView adView, String name, String info) {
+    public void doAppEvent(GuJEMSAdView gujView, PublisherAdView adView, String name, String info) {
         SdkLog.i(TAG, "doAppEvent from ad received: " + name + " ; " + info);
         switch (name.toLowerCase()) {
             case "vibratepattern":
@@ -130,7 +130,7 @@ public class GuJEMSAdInterface {
                 ThirdPartyConnector.getInstance().callByType(ThirdPartyConnector.facebook, adView, info);
                 break;
             case "setsize":
-                setAdSize(info, adView);
+                setAdSize(info, adView, gujView);
                 break;
             case "aqt":
                 try {
@@ -167,7 +167,8 @@ public class GuJEMSAdInterface {
      * @param adView container which
      */
     @JavascriptInterface
-    public void setAdSize(String data, final PublisherAdView adView) {
+    public void setAdSize(String data, final PublisherAdView adView, final GuJEMSAdView gujView) {
+        SdkLog.i(TAG, "set ad size");
         String[] dimensions = data.split(":");
         int width = 0;
         int height = 0;
@@ -194,6 +195,7 @@ public class GuJEMSAdInterface {
                  *  only set ad size
                  */
                 setLayoutSize(width, height, adView);
+                this.callAdResizeListener(gujView, width, height);
             } else if (dimensions.length == 4) {
                 /**
                  * request received in the form of:
@@ -213,18 +215,32 @@ public class GuJEMSAdInterface {
                 } else {
                     steps = 1;
                 }
+                final double w = width;
+                final double h = height;
                 for (int i = 1; i <= steps; i++) {
                     final int step = i;
+                    final int curi = i;
                     adView.postDelayed(new Runnable() {
                         @Override
                         public void run() {
                             setLayoutSize((int) (oldWidth + ((targetWidth - oldWidth) / steps) * step), (int) (oldHeight + ((targetHeight - oldHeight) / steps) * step), adView);
+                            if(curi == steps) {
+                                callAdResizeListener(gujView, w, h);
+                            }
                         }
                     }, (long) (duration / steps) * step);
                 }
             }
         } catch (NumberFormatException e) {
             SdkLog.e(TAG, "Error parsing numbers for setSize", e);
+        }
+    }
+
+    private void callAdResizeListener(GuJEMSAdView gujView, double width, double height) {
+        if(gujView != null) {
+            if(gujView.getOnAdResizeListener() != null) {
+                gujView.getOnAdResizeListener().onResize(width, height);
+            }
         }
     }
 

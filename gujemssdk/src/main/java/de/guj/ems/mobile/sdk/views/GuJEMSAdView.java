@@ -28,6 +28,7 @@ import de.guj.ems.mobile.sdk.controllers.GuJEMSAdInterface;
 import de.guj.ems.mobile.sdk.controllers.GuJEMSAdListener;
 import de.guj.ems.mobile.sdk.controllers.IOnAdEmptyListener;
 import de.guj.ems.mobile.sdk.controllers.IOnAdErrorListener;
+import de.guj.ems.mobile.sdk.controllers.IOnAdResizeListener;
 import de.guj.ems.mobile.sdk.controllers.IOnAdSuccessListener;
 import de.guj.ems.mobile.sdk.controllers.adserver.DFPSettingsAdapter;
 import de.guj.ems.mobile.sdk.controllers.adserver.IAdServerSettingsAdapter;
@@ -246,6 +247,10 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
         return settings.getOnAdSuccessListener();
     }
 
+    public IOnAdResizeListener getOnAdResizeListener() {
+        return settings.getOnAdResizeListener();
+    }
+
     private void handleInflatedLayout(AttributeSet attrs) {
         int w = attrs.getAttributeIntValue(
                 "http://schemas.android.com/apk/res/android", "layout_width",
@@ -357,7 +362,7 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
     public void onAppEvent(String arg0, String arg1) {
         SdkLog.d(TAG, settings.hashCode() + " received app event " + arg0 + "(" + arg1
                 + ")");
-        GuJEMSAdInterface.getInstance().doAppEvent(this.adView, arg0, arg1);
+        GuJEMSAdInterface.getInstance().doAppEvent(this, this.adView, arg0, arg1);
     }
 
     public void setNoRectangle(Boolean rS) {
@@ -608,6 +613,15 @@ public class GuJEMSAdView extends LinearLayout implements AppEventListener {
      */
     public void setOnAdSuccessListener(IOnAdSuccessListener l) {
         this.settings.setOnAdSuccessListener(l);
+    }
+
+    /**
+     * Add a listener to the view which responds to an ad resize event
+     *
+     * @param l Implemented listener
+     */
+    public void setOnAdResizeListener(IOnAdResizeListener l) {
+        this.settings.setOnAdResizeListener(l);
     }
 
     /**

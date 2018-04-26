@@ -8,6 +8,7 @@ import java.util.Map;
 
 import de.guj.ems.mobile.sdk.controllers.IOnAdEmptyListener;
 import de.guj.ems.mobile.sdk.controllers.IOnAdErrorListener;
+import de.guj.ems.mobile.sdk.controllers.IOnAdResizeListener;
 import de.guj.ems.mobile.sdk.controllers.IOnAdSuccessListener;
 
 /**
@@ -94,6 +95,13 @@ public interface IAdServerSettingsAdapter {
     public IOnAdSuccessListener getOnAdSuccessListener();
 
     /**
+     * Returns a listener object if defined
+     *
+     * @return listener which reacts to resize ad event
+     */
+    public IOnAdResizeListener getOnAdResizeListener();
+
+    /**
      * Retrieve a map of all actual request params defined in the settings
      *
      * @return map with all configured param values
@@ -146,6 +154,14 @@ public interface IAdServerSettingsAdapter {
      *          loading
      */
     public void setOnAdSuccessListener(IOnAdSuccessListener l);
+
+    /**
+     * Override the listener class
+     *
+     * @param l implementation of listener which reacts to resize ad
+     *          event
+     */
+    public void setOnAdResizeListener(IOnAdResizeListener l);
 
     /**
      * Initialize view type and declaration specific settings

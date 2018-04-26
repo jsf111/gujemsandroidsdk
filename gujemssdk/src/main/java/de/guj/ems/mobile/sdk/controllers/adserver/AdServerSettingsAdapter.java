@@ -14,6 +14,7 @@ import java.util.Map;
 import de.guj.ems.mobile.sdk.R;
 import de.guj.ems.mobile.sdk.controllers.IOnAdEmptyListener;
 import de.guj.ems.mobile.sdk.controllers.IOnAdErrorListener;
+import de.guj.ems.mobile.sdk.controllers.IOnAdResizeListener;
 import de.guj.ems.mobile.sdk.controllers.IOnAdSuccessListener;
 import de.guj.ems.mobile.sdk.util.SdkGlobals;
 import de.guj.ems.mobile.sdk.util.SdkLog;
@@ -38,6 +39,8 @@ public abstract class AdServerSettingsAdapter implements IAdServerSettingsAdapte
     private IOnAdSuccessListener onAdSuccessListener = null;
 
     private IOnAdErrorListener onAdErrorListener = null;
+
+    private IOnAdResizeListener onAdResizeListener = null;
 
     private Map<String, String> paramValues;
 
@@ -235,6 +238,14 @@ public abstract class AdServerSettingsAdapter implements IAdServerSettingsAdapte
         }
     }
 
+    private final void createResizeListener(final Object listener) {
+        try {
+            this.onAdResizeListener = (IOnAdResizeListener) listener;
+        } catch (Exception e) {
+            SdkLog.e(TAG, this.hashCode() + " Error setting onAdResizeListener", e);
+        }
+    }
+
     ;
 
     @Override
@@ -264,6 +275,11 @@ public abstract class AdServerSettingsAdapter implements IAdServerSettingsAdapte
     @Override
     public IOnAdSuccessListener getOnAdSuccessListener() {
         return this.onAdSuccessListener;
+    }
+
+    @Override
+    public IOnAdResizeListener getOnAdResizeListener() {
+        return this.onAdResizeListener;
     }
 
     @Override
@@ -393,6 +409,12 @@ public abstract class AdServerSettingsAdapter implements IAdServerSettingsAdapte
     @Override
     public void setOnAdSuccessListener(IOnAdSuccessListener l) {
         this.onAdSuccessListener = l;
+
+    }
+
+    @Override
+    public void setOnAdResizeListener(IOnAdResizeListener l) {
+        this.onAdResizeListener = l;
 
     }
 

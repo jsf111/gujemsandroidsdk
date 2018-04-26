@@ -87,7 +87,7 @@ public class InterstitialSwitchReceiver extends BroadcastReceiver implements
             this.adUnitId = null;
         }
         SdkLog.d(TAG, "onReceive");
-        if(arg1 == null) {
+        if (arg1 == null) {
             SdkLog.d(TAG, "intent received is null");
         } else {
             SdkLog.d(TAG, "intent received is not null");
@@ -150,7 +150,7 @@ public class InterstitialSwitchReceiver extends BroadcastReceiver implements
             SdkLog.d(TAG, "Interstitial block received - set interstitialBlock to true");
             this.interstitialBlock = true;
         }
-        GuJEMSAdInterface.getInstance().doAppEvent(null, arg0, arg1);
+        GuJEMSAdInterface.getInstance().doAppEvent(null, null, arg0, arg1);
     }
 
     private void onReceiveResult(int resultCode, Bundle resultData) {

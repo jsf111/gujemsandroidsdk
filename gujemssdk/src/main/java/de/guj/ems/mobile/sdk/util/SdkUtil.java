@@ -45,10 +45,6 @@ import de.guj.ems.mobile.sdk.R;
  */
 public class SdkUtil {
 
-    private static boolean USE_SMARTCLIP = false;
-
-    private static String SMARTCLIP_URL = null;
-
     private static int CORRELATOR = 0;
 
     private volatile static Intent BATTERY_INTENT = null;
@@ -314,7 +310,7 @@ public class SdkUtil {
         if (SdkUtil.WINDOW_MANAGER == null) {
             SdkUtil.WINDOW_MANAGER = getWinMgr();
         }
-        if(SdkUtil.WINDOW_MANAGER != null) {
+        if (SdkUtil.WINDOW_MANAGER != null) {
             SdkUtil.WINDOW_MANAGER.getDefaultDisplay().getMetrics(SdkUtil.METRICS);
         }
         return METRICS;
@@ -346,7 +342,7 @@ public class SdkUtil {
 
     private static WindowManager getWinMgr() {
         if (SdkUtil.WINDOW_MANAGER == null) {
-            if(SdkUtil.getContext() != null) {
+            if (SdkUtil.getContext() != null) {
                 SdkUtil.WINDOW_MANAGER = (WindowManager) SdkUtil.getContext()
                         .getSystemService(Context.WINDOW_SERVICE);
             } else {
@@ -557,18 +553,6 @@ public class SdkUtil {
         CONTEXT = c;
     }
 
-    public static void enableSmartClip() {
-        USE_SMARTCLIP = true;
-    }
-
-    public static void disableSmartClip() {
-        USE_SMARTCLIP = false;
-    }
-
-    public static boolean isSmartClipEnabled() {
-        return USE_SMARTCLIP;
-    }
-
     public final static void setAutonativeBaseUrl(String autonativeBaseUrl) {
         AUTONATIVE_BASE_URL = autonativeBaseUrl;
     }
@@ -584,14 +568,6 @@ public class SdkUtil {
 
     public static int getCorrelator() {
         return (int) System.currentTimeMillis();
-    }
-
-    public static void setSmartclipUrl(String smartclipUrl) {
-        SMARTCLIP_URL = smartclipUrl;
-    }
-
-    public static String getSmartclipUrl() {
-        return SMARTCLIP_URL;
     }
 
     public static Bitmap getBitmapFromURL(String src) {

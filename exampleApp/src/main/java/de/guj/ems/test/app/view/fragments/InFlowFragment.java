@@ -7,13 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.io.Serializable;
-
-import de.guj.ems.mobile.sdk.smartclip.SimpleSmartClipListener;
 import de.guj.ems.mobile.sdk.views.video.GuJEMSInFlowView;
 import de.guj.ems.test.app.GlobalData;
 import de.guj.ems.test.app.R;
 import de.guj.ems.test.app.util;
-import de.smartclip.mobileSDK.ScAdView;
 
 
 public class InFlowFragment extends Fragment implements Serializable {
@@ -37,17 +34,6 @@ public class InFlowFragment extends Fragment implements Serializable {
         GuJEMSInFlowView inflow = (GuJEMSInFlowView) rootView.findViewById(id);
         inflow.setColorToButtons("#00a600");
         inflow.setAdUnit(adUnitId);
-        inflow.addSmartClipListener(new SimpleSmartClipListener() {
-            @Override
-            public void onStartCallback(ScAdView scAdView) {
-                System.out.println("SimpleSmartClipListener start");
-            }
-
-            @Override
-            public void onEndCallback(ScAdView scAdView) {
-                System.out.println("SimpleSmartClipListener end");
-            }
-        });
     }
 
     @Override
